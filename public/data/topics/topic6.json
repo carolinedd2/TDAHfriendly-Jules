@@ -1,0 +1,63 @@
+
+{
+  "id": "6",
+  "title": "6. Receita Pública sob a ótica do MCASP",
+  "subtitle": "Enfoque Orçamentário e Patrimonial, e Classificações do MTO",
+  "icon": "💰",
+  "color": "bg-green",
+  "trail": "CONTABILIDADE_LRF",
+  "resumo": "O MCASP classifica a receita sob dois enfoques: o orçamentário (entrada de caixa) e o patrimonial (impacto no patrimônio). O MTO detalha as classificações orçamentárias e os estágios da receita que fundamentam esses registros, incluindo a classificação por natureza, institucional e por fontes de recursos.",
+  "content": "<p>A receita pública, sob a ótica do Manual de Contabilidade Aplicada ao Setor Público (MCASP), é analisada tanto pelo seu impacto no caixa (enfoque orçamentário) quanto pela sua influência no patrimônio líquido da entidade (enfoque patrimonial). O Manual Técnico de Orçamento (MTO), como o MTO 2025, fornece a estrutura de classificação e os estágios da receita orçamentária que são a base para esses registros contábeis. Este tópico explora as classificações da receita (Natureza, Institucional, Fontes de Recursos) e seus estágios.</p>",
+  "subtopics": [
+    {
+      "id": "6.1",
+      "title": "6.1 Estágios da Receita Orçamentária (Lei 4.320/64 e MTO Cap. 3.3)",
+      "resumo": "Previsão, Lançamento, Arrecadação e Recolhimento, conforme a Lei 4.320/64 e o detalhamento prático do MTO.",
+      "content": "<h4>Estágios da Receita Orçamentária (Lei nº 4.320/1964, Arts. 51-57 e MTO Cap. 3.3)</h4><p>A Lei nº 4.320/64 estabelece os estágios da receita orçamentária, que são detalhados e operacionalizados no MTO:</p><ul><li><strong>Previsão:</strong> Estimativa da arrecadação da receita constante da LOA. O MTO (Cap. 3.3.1 e Cap. 7) trata da elaboração das estimativas de receitas, um processo fundamental para o planejamento orçamentário.</li><li><strong>Lançamento (Art. 53 da Lei 4.320/64; MTO Cap. 3.3.2):</strong> Ato da repartição competente que verifica a procedência do crédito fiscal, a pessoa devedora e inscreve o débito. Aplica-se a impostos, taxas e contribuições de melhoria.</li><li><strong>Arrecadação (Art. 57 da Lei 4.320/64; MTO Cap. 3.3.3):</strong> Entrega dos recursos devidos ao Tesouro pelos contribuintes ou devedores, por meio dos agentes arrecadadores ou bancos autorizados.</li><li><strong>Recolhimento (MTO Cap. 3.3.4):</strong> Transferência dos valores arrecadados à conta específica do Tesouro, observando o princípio da unidade de tesouraria (Art. 56 da Lei 4.320/64).</li></ul><p>O MTO destaca que nem todas as etapas ocorrem para todos os tipos de receitas (ex: doações não são lançadas). A observância desses estágios é crucial para o registro contábil e o controle das receitas.</p>"
+    },
+    {
+      "id": "6.2",
+      "title": "6.2 Classificações Orçamentárias da Receita (MTO Cap. 3.2)",
+      "resumo": "O MTO detalha as classificações da receita por natureza, fonte/destinação, e esfera, que são a base para os registros no MCASP.",
+      "content": "<h4>Classificações Orçamentárias da Receita (MTO Cap. 3.2)</h4><p>O MTO, em seu Capítulo 3.2, apresenta as classificações da receita orçamentária, obrigatórias para todos os entes da Federação, que são fundamentais para os registros da CASP e do MCASP. As principais são:</p>",
+      "subtopics": [
+        {
+          "id": "6.2.1",
+          "title": "6.2.1 Classificação por Natureza de Receita (MTO Cap. 3.2.1 e Tabela 10.1.1)",
+          "resumo": "Identifica a origem do recurso segundo o fato gerador, detalhada em Categoria Econômica, Origem, Espécie e Tipo.",
+          "content": "<h5>Classificação por Natureza de Receita (MTO Cap. 3.2.1 e Tabela 10.1.1)</h5><p>É a mais detalhada e visa identificar a origem do recurso segundo o fato gerador. Estrutura-se em níveis:</p><ul><li><strong>Categoria Econômica:</strong> Receitas Correntes e Receitas de Capital. (MTO Cap. 3.2.1.1 e Tabela 10.1.3)</li><li><strong>Origem:</strong> Detalhamento das categorias econômicas (ex: Impostos, Taxas e Contribuições de Melhoria; Operações de Crédito, Alienação de Bens). (MTO Cap. 3.2.1.2 e Tabela 10.1.3)</li><li><strong>Espécie:</strong> Maior detalhamento da origem (ex: Contribuições Sociais, Contribuições Econômicas). (MTO Cap. 3.2.1.3 e Tabela 10.1.3)</li><li><strong>Desdobramentos para Identificação de Peculiaridades da Receita:</strong> Níveis adicionais para detalhamento. (MTO Cap. 3.2.1.4)</li><li><strong>Tipo:</strong> Identifica o tipo de arrecadação (Principal, Multas e Juros, Dívida Ativa, etc.). (MTO Cap. 3.2.1.5)</li></ul><p>O MTO (Tabela 10.1.2) fornece a lista completa das naturezas de receita válidas para a União. É importante notar que o classificador de receitas sofreu alterações para vigorar a partir de 2022, conforme Apêndice 7.1 do livro de Giacomoni, que apresenta o 'Novo Anexo nº 3 da Lei nº 4.320/64'.</p>"
+        },
+        {
+          "id": "6.2.2",
+          "title": "6.2.2 Classificação por Fonte/Destinação de Recursos (MTO Cap. 3.2.3 e Tabela 10.1.4)",
+          "resumo": "Agrupa receitas com as mesmas normas de aplicação na despesa, indicando se os recursos são vinculados ou livres. Essencial para o controle da aplicação de recursos com destinação específica.",
+          "content": "<h5>Classificação por Fonte/Destinação de Recursos (MTO Cap. 3.2.3 e Tabela 10.1.4)</h5><p>Esta classificação agrupa as receitas conforme as normas que regem sua aplicação na despesa. Ela indica se os recursos são de livre aplicação (como a maioria dos impostos não vinculados) ou se possuem uma destinação específica determinada por lei (recursos vinculados). É essencial para garantir que as receitas com finalidade específica sejam aplicadas corretamente, como as vinculadas à saúde, educação ou a fundos especiais. O MTO (Tabela 10.1.4) lista os códigos de fontes de recursos utilizados pela União.</p>"
+        },
+        {
+          "id": "6.2.3",
+          "title": "6.2.3 Classificação por Esfera Orçamentária (MTO Cap. 3.2.4)",
+          "resumo": "Identifica se a receita pertence ao Orçamento Fiscal, da Seguridade Social ou de Investimento das Empresas Estatais.",
+          "content": "<h5>Classificação por Esfera Orçamentária (MTO Cap. 3.2.4)</h5><p>Identifica a qual dos três orçamentos previstos no Art. 165, § 5º da CF a receita pertence: Orçamento Fiscal (F), Orçamento da Seguridade Social (S) ou Orçamento de Investimento das Empresas Estatais (I). Essa classificação é crucial para a consolidação das contas e para a análise do financiamento de cada esfera.</p>"
+        },
+        {
+          "id": "6.2.4",
+          "title": "6.2.4 Classificação Institucional da Receita",
+          "resumo": "Identifica as entidades ou unidades orçamentárias responsáveis pela arrecadação ou que são detentoras das receitas.",
+          "content": "<h5>Classificação Institucional da Receita</h5><p>Embora menos comum que na despesa, a classificação institucional da receita demonstra as entidades ou unidades orçamentárias que, respondendo pela arrecadação, são detentoras das receitas. É particularmente importante para órgãos com receitas próprias significativas (como autarquias que cobram taxas) ou fundos especiais que arrecadam diretamente. No orçamento da União, distingue-se entre receitas do Tesouro e receitas diretamente arrecadadas por órgãos, unidades e fundos.</p>"
+        },
+        {
+          "id": "6.2.5",
+          "title": "6.2.5 Identificador de Resultado Primário (MTO Cap. 3.2.2)",
+          "resumo": "Classifica as receitas como primárias (incluídas no cálculo do resultado primário) ou financeiras (não incluídas).",
+          "content": "<h5>Identificador de Resultado Primário (MTO Cap. 3.2.2)</h5><p>Classifica as receitas orçamentárias em primárias e financeiras. As <strong>receitas primárias</strong> são aquelas que efetivamente contribuem para o financiamento das despesas primárias e são consideradas no cálculo do resultado primário do governo (superávit ou déficit primário). Exemplos incluem impostos e contribuições. As <strong>receitas financeiras</strong>, como as provenientes de operações de crédito ou de remuneração de aplicações financeiras, não entram nesse cálculo, pois geralmente têm uma contrapartida no endividamento ou na redução de ativos financeiros.</p>"
+        }
+      ]
+    },
+    {
+      "id": "6.3",
+      "title": "6.3 Enfoque Patrimonial da Receita (VPA - MCASP Parte II)",
+      "resumo": "Variações Patrimoniais Aumentativas (VPA) que aumentam o Patrimônio Líquido, reconhecidas pelo regime de competência.",
+      "content": "<p>Além do enfoque orçamentário, que se concentra na entrada de recursos financeiros (caixa) e é rigidamente estruturado pelas classificações do MTO, a receita pública possui um <strong>enfoque patrimonial</strong>. Sob esta ótica, o que importa é o impacto da receita no patrimônio líquido da entidade.</p><p>As <strong>Variações Patrimoniais Aumentativas (VPA)</strong> representam os ingressos de recursos ou o surgimento de direitos que efetivamente aumentam o patrimônio líquido da entidade, independentemente de sua entrada no caixa no mesmo período. Elas são reconhecidas pelo <strong>regime de competência</strong>, ou seja, no momento em que ocorrem os fatos geradores que dão origem ao direito de receber (ex: emissão da nota fiscal por um serviço prestado, ocorrência do fato gerador de um imposto).</p><p>Exemplos de VPA incluem a receita de impostos (reconhecida quando ocorre o fato gerador), a receita de aluguéis (pelo período de competência do uso do bem), receita de serviços prestados (quando o serviço é concluído), entre outras.</p><p>O detalhamento dos procedimentos contábeis para reconhecimento, mensuração e evidenciação das VPAs, assim como dos ativos relacionados (como Contas a Receber), encontra-se na <strong>Parte II - Procedimentos Contábeis Patrimoniais do MCASP</strong>. Esta parte do manual é crucial para entender como as receitas afetam a composição e o valor do patrimônio público, em linha com os princípios contábeis e as normas internacionais.</p>"
+    }
+  ]
+}

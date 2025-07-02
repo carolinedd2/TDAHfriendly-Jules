@@ -1,0 +1,473 @@
+@import "tailwindcss";
+
+
+
+/* Minimal global styles, Tailwind handles most */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* For dangerouslySetInnerHTML content */
+.prose-custom h1,
+.prose-custom h2,
+.prose-custom h3,
+.prose-custom h4,
+.prose-custom h5,
+.prose-custom h6 {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.prose-custom p {
+  margin-bottom: 1em;
+  line-height: 1.7;
+}
+
+.prose-custom ul {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+  list-style-type: disc;
+}
+
+.prose-custom li {
+  margin-bottom: 0.5em;
+}
+
+.prose-custom strong {
+  font-weight: bold;
+}
+
+.prose-custom h3 {
+  color: #1D4ED8;
+}
+
+.prose-custom h4 {
+  color: #6B21A8;
+}
+
+.prose-custom strong {
+  color: #1D4ED8;
+}
+
+.prose-custom a.internal-topic-link {
+  color: #2563EB;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.prose-custom a.internal-topic-link:hover {
+  color: #1D4ED8;
+  text-decoration: underline;
+}
+
+@keyframes pulse-briefly {
+
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.animate-pulse-briefly {
+  animation: pulse-briefly 0.4s ease-out;
+}
+
+.comprehension-checkbox {
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #cbd5e1;
+  border-radius: 0.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.comprehension-checkbox:checked {
+  background-color: #3b82f6;
+  border-color: #2563eb;
+}
+
+.comprehension-checkbox:checked::after {
+  content: '✓';
+  font-size: 0.875rem;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.comprehension-checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+/* Focus Tab Switch Reminder */
+.focus-tab-reminder {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  /* Start off-screen */
+  background-color: #2563EB;
+  /* Tailwind blue-600 */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1050;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.focus-tab-reminder.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Chat bubbles in AIAssistantModal */
+.chat-bubble-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  /* 12px */
+  padding: 0.5rem;
+  /* 8px */
+}
+
+.chat-bubble {
+  padding: 0.625rem 1rem;
+  /* 10px 16px */
+  border-radius: 0.75rem;
+  /* 12px */
+  max-width: 85%;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  /* 14px */
+  line-height: 1.6;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.chat-bubble.user {
+  background-color: #3b82f6;
+  /* blue-500 */
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 0.25rem;
+  /* Small tail */
+}
+
+.chat-bubble.ai {
+  background-color: #f3f4f6;
+  /* gray-100 */
+  color: #1f2937;
+  /* gray-800 */
+  align-self: flex-start;
+  border-bottom-left-radius: 0.25rem;
+  /* Small tail */
+}
+
+.chat-bubble.error {
+  background-color: #fee2e2;
+  /* red-100 */
+  color: #b91c1c;
+  /* red-700 */
+  align-self: flex-start;
+  border: 1px solid #fecaca;
+  /* red-300 */
+  border-bottom-left-radius: 0.25rem;
+  /* Small tail */
+}
+
+/* Flashcard Styles */
+.flashcard-view-container {
+  /* Renamed to avoid conflict if .flashcard-container is too generic */
+  background-color: white;
+  border-radius: 0.75rem;
+  /* 12px */
+  padding: 1rem;
+  /* 16px */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  /* gray-200 */
+  min-height: 150px;
+  /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* For delete button positioning */
+}
+
+.flashcard-perspective-container {
+  /* This will have the perspective */
+  perspective: 1000px;
+  flex-grow: 1;
+  /* Allow content to take space */
+  cursor: pointer;
+}
+
+.flashcard-content-flipper {
+  /* This is the part that actually flips */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flashcard-content-flipper.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Vertically center content */
+  align-items: center;
+  /* Horizontally center content */
+  padding: 0.75rem;
+  /* 12px */
+  text-align: center;
+  border-radius: 0.5rem;
+  /* 8px, if individual faces need rounding */
+}
+
+.flashcard-front {
+  background-color: #f9fafb;
+  /* gray-50 */
+  color: #374151;
+  /* gray-700 */
+  border: 1px dashed #d1d5db;
+  /* gray-300 */
+}
+
+.flashcard-back {
+  background-color: #eff6ff;
+  /* blue-50 */
+  color: #1d4ed8;
+  /* blue-700 */
+  transform: rotateY(180deg);
+  border: 1px dashed #93c5fd;
+  /* blue-300 */
+}
+
+.flashcard-question-text,
+.flashcard-answer-text {
+  font-size: 0.875rem;
+  /* 14px */
+  line-height: 1.6;
+}
+
+.flashcard-question-text strong {
+  color: #111827;
+}
+
+/* gray-900 */
+.flashcard-answer-text strong {
+  color: #1e3a8a;
+}
+
+/* blue-800 */
+
+
+/* QuizModal Styles */
+.quiz-option-label.correct span {
+  color: #166534;
+  /* green-800 */
+  font-weight: 600;
+}
+
+.quiz-option-label.incorrect span {
+  color: #b91c1c;
+  /* red-700 */
+  text-decoration: line-through;
+}
+
+.quiz-justification {
+  color: #4b5563;
+  /* gray-600 */
+  margin-top: 0.25rem;
+  font-style: italic;
+}
+
+.quiz-justification.correct {
+  color: #047857;
+  /* emerald-700 */
+}
+
+.quiz-justification.incorrect {
+  color: #991b1b;
+  /* red-800 */
+}
+
+.quiz-questions-area {
+  min-height: 250px;
+}
+
+.quiz-questions-area::-webkit-scrollbar {
+  width: 8px;
+}
+
+.quiz-questions-area::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.quiz-questions-area::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.quiz-questions-area::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.quiz-option-feedback-correct {
+  border-color: #10B981 !important;
+  background-color: #ECFDF5 !important;
+}
+
+.quiz-option-feedback-incorrect-selected {
+  border-color: #F87171 !important;
+  background-color: #FEF2F2 !important;
+}
+
+.quiz-option-feedback-other-incorrect {
+  background-color: #f9fafb !important;
+  opacity: 0.7;
+}
+
+/* Generated Question Styles (QuestionGenerationMode) */
+.generated-question-option-correct {
+  background-color: #dcfce7;
+  /* Tailwind green-100 */
+  border-color: #22c55e;
+  /* Tailwind green-500 */
+  color: #15803d;
+  /* Tailwind green-700 */
+  font-weight: 500;
+}
+
+.generated-question-option-incorrect {
+  background-color: #f3f4f6;
+  /* Tailwind gray-100, for unselected incorrect options */
+  border-color: #e5e7eb;
+  /* Tailwind gray-200 */
+  color: #4b5563;
+  /* Tailwind gray-600 */
+  opacity: 0.8;
+}
+
+/* Mind Map Modal Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f9fafb;
+  /* Tailwind gray-50 */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  /* Tailwind gray-300 */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+  /* Tailwind gray-400 */
+}
+
+/* Basic styling for predefined mind map (MindMapModal.tsx) */
+.mind-map-static .node-text {
+  display: inline-block;
+  border: 1px solid #e5e7eb;
+  /* Tailwind gray-200 for consistency */
+}
+
+.mind-map-static .root-node .node-text {
+  font-size: 1.05rem;
+  /* Slightly adjusted */
+  font-weight: 600;
+}
+
+.mind-map-static .parent-node .node-text {
+  font-size: 0.9rem;
+  /* Slightly adjusted */
+  font-weight: 500;
+}
+
+.mind-map-static .child-node .node-text {
+  font-size: 0.8rem;
+  /* Slightly adjusted */
+}
+
+/* Styling for AI generated mind map list (MindMapModal.tsx) */
+.mind-map-ai ul {
+  padding-left: 0;
+  list-style-type: none;
+  /* Ensure no bullets */
+}
+
+.mind-map-ai li {
+  list-style-type: none;
+  /* Ensure no bullets */
+  position: relative;
+  /* For potential future line drawing with pseudo-elements */
+}
+
+.mind-map-ai .node-text {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  /* spacing between nodes */
+}
+
+/* Simple connecting lines (optional, can be improved) */
+.mind-map-ai ul>li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  /* Adjust as needed based on padding */
+  top: 0.7em;
+  /* Center vertically with the node text */
+  width: 10px;
+  height: 1px;
+  background-color: #fb923c;
+  /* orange-400 */
+}
+
+.mind-map-ai ul>li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 0.7em;
+  bottom: -0.25rem;
+  /* to connect to the next li's ::before, depends on li margin */
+  width: 1px;
+  background-color: #fb923c;
+  /* orange-400 */
+}

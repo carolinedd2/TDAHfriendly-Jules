@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome against localhost",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:5173/",
+      "webRoot": "${workspaceFolder}/src",
+      "sourceMaps": true,
+      "enableContentValidation": false,
+      "pathMapping": {
+        "/src/": "${workspaceFolder}/src/"
+      }
+    }
+  ]
+}

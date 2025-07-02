@@ -1,0 +1,83 @@
+
+{
+  "id": "4",
+  "title": "4. Programação e Execução Orçamentária",
+  "subtitle": "Do planejamento à realidade: Elaboração, Execução e Alterações",
+  "icon": "📈",
+  "color": "bg-purple",
+  "trail": "PLANEJAMENTO_EXECUCAO",
+  "resumo": "Este tópico detalha as fases de elaboração da proposta orçamentária no âmbito federal (conforme MTO e Capítulo 12 do livro de Giacomoni), o exercício financeiro, o regime contábil, a descentralização, a execução da receita e da despesa (Capítulo 14 do livro) e as alterações orçamentárias.",
+  "content": "<p>A programação orçamentária define como os recursos públicos serão aplicados para atingir os objetivos do governo. A execução orçamentária é a concretização desse plano, transformando as dotações autorizadas em bens e serviços para a sociedade. O Manual Técnico de Orçamento (MTO) e o Capítulo 14 do livro de Giacomoni são fundamentais para guiar essas fases no âmbito federal.</p>",
+  "subtopics": [
+    {
+      "id": "4.1",
+      "title": "4.1 Elaboração da Proposta Orçamentária no Âmbito Federal (Baseado no MTO e Cap. 12 do livro)",
+      "resumo": "Detalha a sistemática de elaboração do PLOA pelo Poder Executivo Federal, o papel da SOF, o uso do SIOP, e os prazos e conteúdos definidos.",
+      "content": "<h4>Elaboração da Proposta Orçamentária no Âmbito Federal</h4><p>Conforme detalhado no Capítulo 12 do livro de Giacomoni (e operacionalizado pelo MTO), a elaboração da Proposta de Lei Orçamentária Anual (PLOA) no Poder Executivo Federal é um processo complexo, coordenado pela Secretaria de Orçamento Federal (SOF). Envolve a participação de todos os ministérios e órgãos, utilizando o Sistema Integrado de Planejamento e Orçamento (SIOP).</p><ul><li><strong>Papel da SOF:</strong> Define diretrizes, limites de gastos, consolida as propostas setoriais e elabora a mensagem presidencial.</li><li><strong>Uso do SIOP:</strong> Plataforma para inserção e consolidação das propostas qualitativas (programas, ações) e quantitativas (valores).</li><li><strong>Conteúdo da PLOA (conforme Lei 4.320/64 e MTO):</strong> Mensagem presidencial, projeto de lei, quadros demonstrativos de receita e despesa por diversas classificações.</li><li><strong>Prazos:</strong> A PLOA deve ser enviada ao Congresso Nacional até 31 de agosto.</li></ul><p><em>Este processo foi anteriormente abordado de forma mais geral no <a href='#' data-internal-link-id='3.5' class='internal-topic-link'>Tópico 3.5</a>.</em></p>"
+    },
+    {
+      "id": "4.2",
+      "title": "4.2 Exercício Financeiro e Regime Contábil na Prática da Execução (Cap. 14 do livro)",
+      "resumo": "O exercício financeiro coincide com o ano civil. O Brasil adota regime contábil misto: caixa para receitas e competência (empenho) para despesas. Discute-se a extensão do exercício e restos a pagar.",
+      "content": "<h4>Exercício Financeiro e Regime Contábil (Cap. 14 do livro)</h4><ul><li><strong>Exercício Financeiro (Lei 4.320/64, Art. 34):</strong> Coincide com o ano civil (1º de janeiro a 31 de dezembro).</li><li><strong>Regime Contábil (Lei 4.320/64, Art. 35):</strong> O Brasil adota um regime misto:<ul><li><strong>Receitas:</strong> Regime de Caixa (pertencem ao exercício as receitas nele arrecadadas).</li><li><strong>Despesas:</strong> Regime de Competência ou do Exercício (pertencem ao exercício as despesas nele legalmente empenhadas).</li></ul></li><li><strong>Extensão do Exercício e Restos a Pagar:</strong> Historicamente, houve práticas de estender o exercício para finalizar operações. Atualmente, despesas empenhadas e não pagas até 31 de dezembro são inscritas em <strong>Restos a Pagar</strong>. O Capítulo 14 do livro de Giacomoni detalha a gestão dos Restos a Pagar, incluindo a distinção entre processados e não processados e as regras para sua inscrição e cancelamento, especialmente no âmbito federal.</li></ul>"
+    },
+    {
+      "id": "4.3",
+      "title": "4.3 Descentralização Orçamentária e Financeira na Prática Federal (Cap. 14 do livro)",
+      "resumo": "Mecanismos de distribuição de créditos (destaque, provisão) e recursos financeiros (repasse, sub-repasse) para agilizar a gestão, conforme prática no SIAFI.",
+      "content": "<h4>Descentralização Orçamentária e Financeira (Cap. 14 do livro)</h4><p>O princípio da Descentralização, consagrado no Art. 6º do Decreto-Lei nº 200/1967 como uma das diretrizes para a reforma administrativa, é fundamental para entender os mecanismos de distribuição de responsabilidades e recursos na execução orçamentária. A descentralização orçamentária e financeira é o processo pelo qual o poder de realizar gastos é distribuído da unidade central para unidades setoriais ou executoras. No âmbito federal, e conforme detalhado no Capítulo 14 do livro de Giacomoni, isso ocorre através de:</p><ul><li><strong>Descentralização de Créditos (Orçamentária):</strong><ul><li><strong>Destaque de Crédito:</strong> Transferência de créditos orçamentários entre Unidades Orçamentárias (UOs) de órgãos diferentes.</li><li><strong>Provisão de Crédito:</strong> Transferência de créditos entre UOs do mesmo órgão.</li></ul></li><li><strong>Descentralização Financeira (Liberação de Recursos):</strong><ul><li><strong>Cota:</strong> Montante de recursos financeiros que a STN coloca à disposição dos Órgãos Setoriais de Programação Financeira (OSPF).</li><li><strong>Repasse Financeiro:</strong> Transferência de recursos financeiros do OSPF para entidades da administração indireta ou entre estas.</li><li><strong>Sub-Repasse Financeiro:</strong> Transferência de recursos financeiros do OSPF para Unidades Gestoras (UGs) de sua jurisdição ou entre UGs do mesmo órgão/ministério.</li></ul></li></ul><p>O Sistema Integrado de Administração Financeira (SIAFI) é a ferramenta que operacionaliza esses movimentos no governo federal.</p>"
+    },
+    {
+      "id": "4.4",
+      "title": "4.4 Acompanhamento da Execução",
+      "resumo": "Monitoramento da aplicação dos recursos públicos e cumprimento de metas, com base em relatórios e sistemas.",
+      "content": "<p>É o monitoramento e fiscalização do uso do dinheiro público. A Lei de Responsabilidade Fiscal (LRF) exige a publicação de relatórios como o <strong>Relatório Resumido da Execução Orçamentária (RREO)</strong>, bimestralmente, e o <strong>Relatório de Gestão Fiscal (RGF)</strong>, quadrimestralmente. O <strong>Art. 165, § 3º da CF</strong> também exige a publicação do RREO. Sistemas como o SIAFI (Sistema Integrado de Administração Financeira) são cruciais para registrar e acompanhar a execução. O <strong>MTO 2025 (Capítulo 8.4)</strong> detalha o <strong>acompanhamento físico-financeiro</strong> das ações orçamentárias, que envolve verificar se as metas físicas e financeiras dos programas estão sendo atingidas.</p>"
+    },
+    {
+      "id": "4.5",
+      "title": "4.5 Alterações Orçamentárias (Detalhado)",
+      "resumo": "Mecanismos para ajustar a LOA durante sua execução, como os Créditos Adicionais e outras formas de modificação. O Capítulo 14 do livro de Giacomoni explora a prática federal.",
+      "content": "<p>A Lei Orçamentária Anual (LOA) é uma previsão. Durante sua execução, podem surgir necessidades de ajustes. As alterações orçamentárias são os instrumentos legais para modificar a LOA. O MTO 2025, no Capítulo 8.3, e o Capítulo 14 do livro de Giacomoni, abordam as principais formas de alteração na prática federal.</p>",
+      "subtopics": [
+        {
+          "id": "4.5.1",
+          "title": "4.5.1 Créditos Adicionais (Lei 4.320/64, MTO Cap. 8.3.2 e Cap. 14 do livro)",
+          "resumo": "Autorizações de despesa não computadas ou insuficientemente dotadas na LOA (Suplementares, Especiais, Extraordinários). Detalhamento de fontes e vigência.",
+          "content": "<p>Conforme a Lei nº 4.320/64 (Art. 41) e detalhado no MTO (Cap. 8.3.2) e Capítulo 14 do livro de Giacomoni:</p><ul><li><strong>Suplementares:</strong> Reforço de dotação existente. Autorizados por lei (LOA pode prever limite) e abertos por decreto.</li><li><strong>Especiais:</strong> Para despesas sem dotação específica. Dependem de lei específica e abertos por decreto.</li><li><strong>Extraordinários:</strong> Para despesas urgentes e imprevisíveis (guerra, calamidade). Abertos por Medida Provisória (União) ou decreto, com comunicação ao Legislativo.</li></ul><p><strong>Fontes de Recursos (Art. 43 da Lei 4.320/64):</strong> Superávit financeiro, excesso de arrecadação, anulação de dotações, operações de crédito. A Reserva de Contingência (LRF) também é fonte. O Capítulo 14 do livro detalha a operacionalização dessas fontes.</p><p><strong>Vigência (Art. 167, §2º CF e Art. 45 da Lei 4.320/64):</strong> Em regra, vigem no exercício em que são abertos. Especiais e extraordinários autorizados nos últimos 4 meses podem ser reabertos no ano seguinte.</p>"
+        },
+        {
+          "id": "4.5.2",
+          "title": "4.5.2 Outras Alterações Orçamentárias na Prática Federal (MTO Cap. 8.3.3 e Cap. 14 do livro)",
+          "resumo": "Transposição, remanejamento, transferência de recursos, e alterações de atributos da programação (GND, Fontes, IDUSO, etc.) conforme prática no SIAFI e MTO.",
+          "content": "<h4>Outras Alterações Orçamentárias na Prática Federal (MTO Cap. 8.3.3 e Cap. 14 do livro)</h4><p>Conforme o Capítulo 14 do livro de Giacomoni e detalhado no MTO:</p><ul><li><strong>Transposição, Remanejamento e Transferência (Art. 167, VI CF):</strong> A CF veda essas movimentações sem prévia autorização legislativa. O MTO (Cap. 8.3.3.1) e a LDO anual detalham as exceções e os procedimentos, como para reestruturação de órgãos ou para ciência e tecnologia.</li><li><strong>Alteração de Grupo de Natureza de Despesa (GND):</strong> A LDO pode autorizar a alteração de GND entre programações (MTO Cap. 8.3.3.2).</li><li><strong>Alteração de Atributos da Programação:</strong> O MTO (Cap. 8.3.3.3) e a prática federal no SIAFI permitem alterações em fontes de recursos, IDUSO, Resultado Primário (RP), Esfera Orçamentária, Modalidade de Aplicação (MA) e IDOC. Essas alterações são realizadas por portaria da SOF ou diretamente no sistema, dependendo do atributo, e visam dar flexibilidade à execução sem alterar o valor global do crédito. O Capítulo 14 do livro de Giacomoni aborda a importância dessas flexibilizações na gestão moderna.</li></ul>"
+        },
+        {
+          "id": "4.5.3",
+          "title": "4.5.3 Contingenciamento (LRF Art. 9º)",
+          "resumo": "Limitação de empenho e movimentação financeira quando a receita não comporta o cumprimento das metas de resultado primário ou nominal.",
+          "content": "<p>O contingenciamento, previsto no <strong>Art. 9º da LRF</strong>, é a limitação de empenho e movimentação financeira que ocorre quando, ao final de um bimestre, verifica-se que a realização da receita poderá não comportar o cumprimento das metas de resultado primário ou nominal estabelecidas no Anexo de Metas Fiscais da LDO. Os Poderes Executivo, Legislativo e Judiciário e o Ministério Público devem promover essa limitação nos montantes necessários. Não são objeto de limitação as despesas que constituam obrigações constitucionais e legais do ente (ex: serviço da dívida, despesas com pessoal e algumas transferências).</p>"
+        }
+      ]
+    },
+    {
+      "id": "4.6",
+      "title": "4.6 Execução da Receita Orçamentária Federal (Estágios e Prática - Cap. 14 do livro)",
+      "resumo": "Detalha os estágios da receita (previsão, lançamento, arrecadação, recolhimento) e a gestão da Dívida Ativa, conforme prática federal.",
+      "content": "<h4>Execução da Receita Orçamentária Federal (Cap. 14 do livro)</h4><p>O Capítulo 14 do livro de Giacomoni detalha os estágios da receita, em linha com a Lei 4.320/64, e a prática federal:</p><ul><li><strong>Previsão:</strong> Estimativa na LOA.</li><li><strong>Lançamento:</strong> Para receitas tributárias e algumas não tributárias.</li><li><strong>Arrecadação:</strong> Entrada dos recursos nos cofres públicos, geralmente via rede bancária.</li><li><strong>Recolhimento:</strong> Transferência para a Conta Única do Tesouro.</li></ul><p><strong>Dívida Ativa:</strong> Créditos não recebidos nos prazos, inscritos para cobrança administrativa ou judicial. O livro aborda sua gestão e impacto na arrecadação.</p>"
+    },
+    {
+      "id": "4.7",
+      "title": "4.7 Execução da Despesa Orçamentária Federal (Estágios e Prática - Cap. 14 do livro)",
+      "resumo": "Detalha os estágios da despesa (empenho, liquidação, pagamento), o QDD, o SIAFI e o suprimento de fundos na prática federal.",
+      "content": "<h4>Execução da Despesa Orçamentária Federal (Cap. 14 do livro)</h4><p>O Capítulo 14 do livro de Giacomoni explora em profundidade os estágios da despesa e sua operacionalização no âmbito federal:</p><ul><li><strong>Detalhamento do Orçamento (QDD):</strong> Embora o Quadro de Detalhamento da Despesa (QDD) em sua forma tradicional tenha sido superado, o conceito de detalhar as dotações em níveis analíticos persiste, hoje realizado diretamente no SIAFI.</li><li><strong>Empenho:</strong> Ato que reserva dotação orçamentária. Modalidades: ordinário, global, por estimativa.</li><li><strong>Liquidação:</strong> Verificação do direito do credor.</li><li><strong>Pagamento:</strong> Extinção da obrigação.</li></ul><p><strong>SIAFI:</strong> O Sistema Integrado de Administração Financeira do Governo Federal é a ferramenta central para registro e controle de toda a execução orçamentária e financeira da União.</p><p><strong>Suprimento de Fundos (Regime de Adiantamento):</strong> Para despesas que não podem seguir o rito normal (ex: pequenas compras urgentes, despesas em viagem).</p>"
+    },
+    {
+      "id": "4.8",
+      "title": "4.8 Repasse de Duodécimos aos Poderes (Art. 168 CF)",
+      "icon": "🗓️",
+      "color": "bg-cyan",
+      "resumo": "Detalha a sistemática de entrega mensal de recursos orçamentários (duodécimos) aos Poderes Legislativo, Judiciário, MP e Defensoria, e as regras para saldos não utilizados.",
+      "content": "<h4>Art. 168 - Entrega dos Recursos aos Poderes</h4><p>O <strong>Artigo 168 da Constituição Federal</strong> estabelece que os recursos correspondentes às dotações orçamentárias (incluindo créditos suplementares e especiais) destinados aos órgãos dos Poderes Legislativo e Judiciário, do Ministério Público e da Defensoria Pública, ser-lhes-ão entregues até o <strong>dia 20 de cada mês</strong>, em duodécimos (parcelas mensais correspondentes a 1/12 do total anual).</p><p>A forma dessa entrega é definida pela lei complementar referida no art. 165, § 9º (atualmente, a Lei de Responsabilidade Fiscal - LRF e a Lei nº 4.320/64 no que foi recepcionado).</p><ul><li><strong>§ 1º (EC 109/2021):</strong> É <strong>vedada a transferência a fundos</strong> de recursos financeiros oriundos de repasses duodecimais. Isso significa que o dinheiro repassado como duodécimo não pode ser simplesmente alocado em fundos especiais, devendo ser utilizado conforme a programação orçamentária do Poder/órgão.</li><li><strong>§ 2º (EC 109/2021):</strong> O <strong>saldo financeiro não utilizado</strong> decorrente dos recursos entregues na forma de duodécimos deve ser <strong>restituído ao caixa único do Tesouro</strong> do ente federativo, ou terá seu valor deduzido das primeiras parcelas duodecimais do exercício seguinte. Essa medida visa evitar o acúmulo de recursos não utilizados pelos Poderes e órgãos autônomos, promovendo maior eficiência na gestão dos saldos financeiros.</li></ul>"
+    }
+  ]
+}

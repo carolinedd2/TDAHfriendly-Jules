@@ -1,0 +1,48 @@
+{
+  "name": "estudos-tdah-friendly",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,json,css}'",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@google/genai": "^1.7.0",
+    "@google/generative-ai": "^0.24.1",
+    "@tailwindcss/cli": "^4.1.11",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.1",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "autoprefixer": "^10.x.x",
+    "eslint": "^8.0.0",
+    "postcss": "^8.x.x",
+    "prettier": "^2.8.0",
+    "rimraf": "^5.0.0",
+    "tailwindcss": "^4.1.11",
+    "typescript": "~5.7.2",
+    "vite": "^6.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolinedd2/TDAHFriendly.git"
+  },
+  "author": "Caroline D.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carolinedd2/TDAHFriendly/issues"
+  },
+  "homepage": "https://github.com/carolinedd2/TDAHFriendly#readme"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "11",
+  "title": "11. Contrato Administrativo (Lei 14.133/2021)",
+  "subtitle": "Formalização e Gestão dos Acordos Públicos",
+  "icon": "📝",
+  "color": "bg-cyan",
+  "trail": "LEGISLACAO_ESPECIFICA",
+  "resumo": "A Lei 14.133/2021 rege a formalização, execução, alteração e extinção dos contratos administrativos.",
+  "subtopics": [
+    {
+      "id": "11.1",
+      "title": "11.1 Formalização e Cláusulas (Art. 89, 92)",
+      "resumo": "Regras para a elaboração dos contratos e suas cláusulas essenciais.",
+      "content": "<h3>Art. 89 - Regime Jurídico</h3><p>Os contratos regulam-se por suas cláusulas e preceitos de direito público, aplicando-se supletivamente os princípios da teoria geral dos contratos e disposições de direito privado.</p><h3>Art. 92 - Cláusulas Necessárias</h3><p>Todo contrato deve ter cláusulas que estabeleçam: I - objeto; II - vinculação ao edital e proposta; III - legislação aplicável; IV - regime de execução; V - preço, condições de pagamento, reajuste; VI - critérios de medição; VII - prazos; VIII - crédito orçamentário; IX - matriz de risco (quando houver); X-XI - prazos para resposta a pedidos de repactuação/reequilíbrio; XII - garantias; XIII - prazo de garantia do objeto; XIV - direitos e responsabilidades, penalidades; XV - condições de importação; XVI - obrigação de manter habilitação; XVII - reserva de cargos; XVIII - modelo de gestão; XIX - casos de extinção.</p>"
+    },
+    {
+      "id": "11.2",
+      "title": "11.2 Prerrogativas da Administração (Art. 104)",
+      "resumo": "Poderes especiais da Administração sobre os contratos.",
+      "content": "<h3>Art. 104 - Prerrogativas</h3><p>A Administração Pública pode: I - modificá-los unilateralmente para melhor adequação ao interesse público; II - extingui-los unilateralmente nos casos especificados; III - fiscalizar sua execução; IV - aplicar sanções motivadas pela inexecução; V - ocupar provisoriamente bens e utilizar pessoal/serviços em caso de risco ou necessidade de apuração.</p><p><strong>§ 1º</strong> Cláusulas econômico-financeiras e monetárias não podem ser alteradas sem prévia concordância do contratado.</p>"
+    },
+    {
+      "id": "11.3",
+      "title": "11.3 Alteração dos Contratos (Art. 124-136)",
+      "resumo": "Regras para modificação dos contratos e manutenção do equilíbrio econômico-financeiro.",
+      "content": "<h3>Art. 124 - Hipóteses de Alteração</h3><p>Unilateralmente pela Administração: a) modificação do projeto/especificações; b) modificação do valor por acréscimo/diminuição quantitativa. Por acordo: a) substituição da garantia; b) modificação do regime de execução; c) modificação da forma de pagamento; d) restabelecimento do equilíbrio econômico-financeiro (força maior, caso fortuito, fato do príncipe, fatos imprevisíveis).</p><p><strong>Art. 125</strong> - Limites para acréscimos e supressões (geralmente 25% do valor inicial atualizado; 50% para acréscimos em reforma de edifício/equipamento).</p>"
+    },
+    {
+      "id": "11.4",
+      "title": "11.4 Extinção dos Contratos (Art. 137-139)",
+      "resumo": "Motivos e consequências da extinção dos contratos.",
+      "content": "<h3>Art. 137 - Motivos para Extinção</h3><p>Ex: I - não cumprimento de normas/cláusulas; II - desatendimento de determinações; III - alteração social/finalidade da empresa; IV - falência/insolvência; V - caso fortuito/força maior; VIII - razões de interesse público; IX - não cumprimento de reserva de cargos.</p><p><strong>§ 2º</strong> O contratado terá direito à extinção por: I - supressão além dos limites; II - suspensão da execução por mais de 3 meses; III - repetidas suspensões (total 90 dias úteis); IV - atraso de pagamentos superior a 2 meses; V - não liberação de área/local.</p><h3>Art. 139 - Consequências da Extinção Unilateral</h3><p>Pode acarretar: I - assunção imediata do objeto; II - ocupação e utilização do local/instalações; III - execução da garantia; IV - retenção de créditos.</p>"
+    }
+  ]
+}

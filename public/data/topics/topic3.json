@@ -1,0 +1,552 @@
+{
+  "id": "3",
+  "title": "3. O Orçamento no Brasil: A Tríade Orçamentária e seus Princípios",
+  "subtitle": "PPA, LDO, LOA, Ciclo Orçamentário e os Princípios Fundamentais",
+  "icon": "📄",
+  "color": "bg-yellow",
+  "trail": "PLANEJAMENTO_EXECUCAO",
+  "summary_bullets": [
+    "Compreender o papel do PPA, LDO e LOA no planejamento público",
+    "Identificar as etapas do ciclo orçamentário brasileiro",
+    "Reconhecer os princípios fundamentais que regem o orçamento",
+    "Entender o processo legislativo orçamentário e o orçamento impositivo"
+  ],
+  "resumo": "A Constituição de 1988 estabelece a base para o planejamento e o orçamento no Brasil através da tríade PPA, LDO e LOA. Este tópico explora esses instrumentos, o ciclo orçamentário (elaboração, discussão, execução e controle), os princípios orçamentários fundamentais que regem sua elaboração e execução, e o processo legislativo orçamentário no Congresso Nacional, incluindo a discussão sobre o orçamento impositivo e as emendas parlamentares. Os capítulos 11 e 13 do livro de Giacomoni detalham a integração e o processo legislativo.",
+  "internal_links": [
+    {
+      "label": "Voltar ao início",
+      "target_id": "inicio"
+    },
+    {
+      "label": "Veja também: 2.2.2 Princípios Orçamentários",
+      "target_id": "2.2.2"
+    }
+  ],
+  "summary_box": {
+    "title": "Quadro-Resumo",
+    "bullets": [
+      "O orçamento brasileiro é estruturado em três leis: PPA, LDO e LOA.",
+      "O ciclo orçamentário envolve elaboração, discussão, execução e controle.",
+      "Princípios orçamentários garantem transparência e legalidade.",
+      "O Congresso Nacional tem papel central no processo orçamentário."
+    ]
+  },
+  "subtopics": [
+    {
+      "id": "3.1",
+      "title": "3.1 A Tríade Orçamentária: PPA, LDO e LOA",
+      "summary_bullets": [
+        "Compreender o papel do PPA, LDO e LOA no planejamento público",
+        "Diferenciar as funções de cada instrumento orçamentário",
+        "Reconhecer como esses instrumentos se integram no ciclo orçamentário"
+      ],
+      "resumo": "O Art. 165 da Constituição Federal estabelece as três leis do planejamento orçamentário no Brasil: PPA (médio prazo), LDO (anual, diretrizes) e LOA (anual, orçamento propriamente dito). Esses instrumentos formam um sistema integrado e são detalhados no Capítulo 11 de Giacomoni.",
+      "content": "O <strong>Artigo 165 da Constituição Federal de 1988</strong> institui a base do sistema de planejamento e orçamento no Brasil, determinando que leis de iniciativa do Poder Executivo estabeleçam o <strong>Plano Plurianual (PPA)</strong>, a <strong>Lei de Diretrizes Orçamentárias (LDO)</strong> e a <strong>Lei Orçamentária Anual (LOA)</strong>. Esses instrumentos são integrados: o PPA define metas e objetivos de médio prazo, a LDO faz a ponte anual e orienta a LOA, e a LOA materializa o orçamento para o ano. A <strong>Lei de Responsabilidade Fiscal (LRF)</strong> detalha regras e controles para garantir responsabilidade na gestão fiscal.",
+      "highlights": [
+        {
+          "type": "tip",
+          "title": "Dica rápida",
+          "content": "Lembre: PPA = planejamento de médio prazo; LDO = diretrizes e prioridades anuais; LOA = orçamento anual detalhado."
+        }
+      ],
+      "internal_links": [
+        {
+          "label": "Veja também: Princípios Orçamentários",
+          "target_id": "2.2.2"
+        }
+      ],
+      "summary_box": {
+        "title": "Quadro-Resumo",
+        "bullets": [
+          "O PPA define diretrizes e metas para 4 anos.",
+          "A LDO orienta e prioriza o orçamento anual.",
+          "A LOA estima receitas e fixa despesas para o ano.",
+          "A LRF reforça controles e transparência."
+        ]
+      },
+      "subtopics": [
+        {
+          "id": "3.1.1",
+          "title": "3.1.1 Plano Plurianual (PPA)",
+          "summary_bullets": [
+            "Entender o que é o PPA e sua duração",
+            "Identificar os tipos de despesas abrangidos",
+            "Relacionar o PPA ao orçamento-programa"
+          ],
+          "resumo": "Planejamento de médio prazo (4 anos) que define diretrizes, objetivos e metas, estruturado em programas.",
+          "content": "O <strong>PPA</strong> é o instrumento de planejamento de médio prazo do governo, com vigência de 4 anos (<strong>Art. 165, § 1º da CF</strong>). Ele estabelece diretrizes, objetivos e metas para despesas de capital, programas continuados e grandes investimentos. O PPA é estruturado em <strong>programas</strong> e serve de referência para os planos nacionais, regionais e setoriais. Sua lógica segue o modelo do orçamento-programa, focando em resultados mensuráveis. O PPA começa no segundo ano de mandato do Executivo e termina no primeiro ano do mandato seguinte.",
+          "internal_links": [
+            {
+              "label": "Veja fundamentos do orçamento-programa",
+              "target_id": "1.4.2.3"
+            },
+            {
+              "label": "Mais sobre programas: Tópico 15.1",
+              "target_id": "15.1"
+            }
+          ],
+          "summary_box": {
+            "title": "Quadro-Resumo PPA",
+            "bullets": [
+              "Duração: 4 anos",
+              "Foco em programas e resultados",
+              "Abrange investimentos e ações continuadas"
+            ]
+          }
+        },
+        {
+          "id": "3.1.2",
+          "title": "3.1.2 Lei de Diretrizes Orçamentárias (LDO)",
+          "summary_bullets": [
+            "Compreender o papel da LDO no ciclo orçamentário",
+            "Conhecer os anexos obrigatórios (AMF e ARF)",
+            "Saber como a LDO orienta a LOA"
+          ],
+          "resumo": "Lei anual que define metas e prioridades, orienta a LOA e inclui anexos fiscais obrigatórios.",
+          "content": "A <strong>LDO</strong> é elaborada anualmente (<strong>Art. 165, § 2º da CF</strong>) e orienta a elaboração da LOA, estabelecendo metas e prioridades para o próximo exercício. Ela trata de alterações tributárias e da política de aplicação das agências financeiras oficiais. Pela <strong>Lei de Responsabilidade Fiscal</strong>, a LDO deve conter o <strong>Anexo de Metas Fiscais (AMF)</strong> e o <strong>Anexo de Riscos Fiscais (ARF)</strong>, essenciais para o controle das contas públicas.",
+          "summary_box": {
+            "title": "Quadro-Resumo LDO",
+            "bullets": [
+              "Lei anual",
+              "Define metas e prioridades",
+              "Inclui AMF e ARF"
+            ]
+          }
+        },
+        {
+          "id": "3.1.3",
+          "title": "3.1.3 Lei Orçamentária Anual (LOA)",
+          "summary_bullets": [
+            "Saber o que compõe a LOA",
+            "Diferenciar os três orçamentos da LOA",
+            "Reconhecer o princípio da exclusividade"
+          ],
+          "resumo": "Orçamento anual que estima receitas e fixa despesas para a União, abrangendo três orçamentos.",
+          "content": "A <strong>LOA</strong> estima receitas e fixa despesas para o ano (<strong>Art. 165, § 5º da CF</strong>). Ela compreende três orçamentos: <strong>Fiscal</strong> (administração direta e indireta), <strong>Investimento das Estatais</strong> e <strong>Seguridade Social</strong>. O princípio da exclusividade (<strong>§ 8º</strong>) impede a inclusão de matérias estranhas ao orçamento, exceto autorizações para créditos suplementares e operações de crédito (ARO).",
+          "summary_box": {
+            "title": "Quadro-Resumo LOA",
+            "bullets": [
+              "Orçamento anual",
+              "Três orçamentos: Fiscal, Estatais, Seguridade",
+              "Princípio da exclusividade"
+            ]
+          }
+        }
+      ]
+    },
+{
+  "id": "3.2",
+  "title": "3.2 Ciclo Orçamentário",
+  "summary_bullets": [
+    "Entender as quatro fases do ciclo orçamentário",
+    "Reconhecer a função de cada etapa no processo",
+    "Relacionar o ciclo ao sistema de planejamento público"
+  ],
+  "resumo": "O ciclo orçamentário é composto por quatro etapas sequenciais e integradas: Elaboração da Proposta, Discussão e Aprovação Legislativa, Execução Orçamentária e Financeira, e Controle e Avaliação. Cada fase é fundamental para garantir a legalidade, eficiência e transparência no uso dos recursos públicos.",
+  "content": "O ciclo orçamentário representa o caminho completo do orçamento público, desde a sua criação até a avaliação dos resultados. Esse processo é contínuo e interdependente, formando a base da gestão das finanças públicas. O Capítulo 11 do livro de Giacomoni destaca a importância de enxergar o ciclo como parte de um sistema integrado de planejamento.",
+  "highlights": [
+    {
+      "type": "alert",
+      "title": "Atenção!",
+      "content": "O ciclo orçamentário se repete todos os anos, mas está sempre conectado ao planejamento de médio e longo prazo (PPA e LDO)."
+    }
+  ],
+  "charts": [
+    {
+      "id": "fluxo-3-2-1",
+      "title": "Fluxograma do Ciclo Orçamentário",
+      "type": "flowchart",
+      "data": {
+        "steps": [
+          "Elaboração da Proposta",
+          "Discussão e Aprovação Legislativa",
+          "Execução Orçamentária e Financeira",
+          "Controle e Avaliação"
+        ]
+      },
+      "hidden": true
+    }
+  ],
+  "internal_links": [
+    {
+      "label": "Veja também: Princípios Orçamentários",
+      "target_id": "3.3"
+    },
+    {
+      "label": "Detalhes sobre Execução: Tópico 4",
+      "target_id": "4"
+    },
+    {
+      "label": "Controle e Avaliação: Tópico 2",
+      "target_id": "2"
+    }
+  ],
+  "summary_box": {
+    "title": "Quadro-Resumo: Ciclo Orçamentário",
+    "bullets": [
+      "O ciclo orçamentário tem quatro fases: elaboração, aprovação, execução e controle.",
+      "Cada etapa envolve diferentes atores e procedimentos.",
+      "O acompanhamento do ciclo é essencial para a boa gestão dos recursos públicos."
+    ]
+  },
+  "subtopics": [
+    {
+      "id": "3.2.1",
+      "title": "3.2.1 Elaboração da Proposta Orçamentária",
+      "summary_bullets": [
+        "Entender o papel do Executivo na elaboração da proposta",
+        "Saber como são estimadas receitas e programadas despesas",
+        "Conhecer o prazo de envio ao Legislativo"
+      ],
+      "resumo": "O Executivo prepara a proposta da LOA, estimando receitas e programando despesas, com base no PPA e na LDO.",
+      "content": "A elaboração da proposta orçamentária é a primeira fase do ciclo. O Poder Executivo reúne informações dos órgãos, projeta receitas e define despesas, consolidando tudo em um documento único: o Projeto de Lei Orçamentária Anual (PLOA). Esse projeto deve ser enviado ao Legislativo até 31 de agosto (União)."
+    },
+    {
+      "id": "3.2.2",
+      "title": "3.2.2 Discussão e Aprovação Legislativa",
+      "summary_bullets": [
+        "Compreender o papel do Legislativo na análise do orçamento",
+        "Saber como funcionam as emendas e a votação",
+        "Entender o processo de sanção e veto"
+      ],
+      "resumo": "O Legislativo discute, emenda e aprova a proposta orçamentária, transformando-a em lei.",
+      "content": "Após receber o PLOA, o Legislativo analisa, debate e pode propor emendas. O texto é votado, e, se aprovado, segue para sanção do Executivo. O Capítulo 13 de Giacomoni detalha o papel das comissões, emendas e o processo de votação."
+    },
+    {
+      "id": "3.2.3",
+      "title": "3.2.3 Execução Orçamentária e Financeira",
+      "summary_bullets": [
+        "Saber como ocorre a arrecadação das receitas",
+        "Entender os estágios da despesa pública",
+        "Conhecer a programação financeira e os ajustes na LOA"
+      ],
+      "resumo": "Com a LOA aprovada, inicia-se a arrecadação das receitas e a realização das despesas, seguindo regras e estágios definidos.",
+      "content": "Na execução, o governo arrecada receitas e realiza despesas autorizadas. Os gastos seguem etapas: empenho, liquidação e pagamento. Se necessário, a LOA pode ser ajustada por créditos adicionais. Detalhes sobre execução estão no Tópico 4."
+    },
+    {
+      "id": "3.2.4",
+      "title": "3.2.4 Controle e Avaliação",
+      "summary_bullets": [
+        "Diferenciar controle interno, externo e social",
+        "Saber quem são os principais órgãos de controle",
+        "Entender a importância da avaliação dos resultados"
+      ],
+      "resumo": "A fiscalização da execução orçamentária é feita por órgãos internos, externos (Tribunais de Contas) e pela sociedade.",
+      "content": "O controle ocorre durante e após a execução. O Executivo faz o controle interno; o Legislativo, com apoio dos Tribunais de Contas, realiza o controle externo; e a sociedade participa via controle social. A avaliação dos resultados contribui para o aperfeiçoamento dos orçamentos futuros. Saiba mais no Tópico 2."
+    }
+  ]
+},
+{
+  "id": "3.3",
+  "title": "3.3 Princípios Orçamentários Fundamentais",
+  "summary_bullets": [
+    "Compreender os princípios que regem o orçamento público",
+    "Identificar como cada princípio contribui para a transparência, controle e eficiência",
+    "Reconhecer exemplos e exceções relevantes"
+  ],
+  "resumo": "Os princípios orçamentários são regras fundamentais que orientam a elaboração, execução e controle do orçamento público, assegurando racionalidade, eficiência e transparência. São aplicados a todos os Poderes e esferas de governo, com base na Constituição, Lei 4.320/64 e Lei de Responsabilidade Fiscal.",
+  "content": "Os <strong>Princípios Orçamentários</strong> estabelecem as diretrizes básicas para garantir que o orçamento público seja transparente, eficiente e sujeito a controle. Eles promovem a integração entre planejamento, execução e avaliação, e são essenciais para a boa gestão dos recursos públicos. Muitos desses princípios refletem valores constitucionais e administrativos, como legalidade, publicidade, clareza e responsabilidade fiscal.",
+  "highlights": [
+    {
+      "type": "alert",
+      "title": "Atenção!",
+      "content": "O descumprimento dos princípios orçamentários pode gerar nulidade de atos, responsabilização dos gestores e comprometer a transparência das contas públicas."
+    }
+  ],
+  "examples": [
+    {
+      "type": "case",
+      "title": "Exemplo prático",
+      "content": "A divulgação online do orçamento, com relatórios simplificados, facilita o controle social e cumpre os princípios da publicidade, transparência e clareza."
+    }
+  ],
+  "internal_links": [
+    {
+      "label": "Veja também: Orçamento-Programa",
+      "target_id": "1.4.2.3"
+    },
+    {
+      "label": "Princípios da Administração Pública",
+      "target_id": "2.1"
+    }
+  ],
+  "summary_box": {
+    "title": "Quadro-Resumo: Princípios Orçamentários",
+    "bullets": [
+      "Unidade: orçamento único por ente federado",
+      "Universalidade: todas as receitas e despesas incluídas",
+      "Anualidade: vigência limitada a um exercício",
+      "Exclusividade: LOA só trata de orçamento, com exceções",
+      "Orçamento Bruto: valores totais, sem deduções",
+      "Especificação: detalhamento das receitas e despesas",
+      "Legalidade: orçamento é lei, só pode ser executado se autorizado",
+      "Publicidade e Transparência: ampla divulgação e acesso público",
+      "Não Vinculação: regra geral de não atrelar impostos a despesas específicas",
+      "Equilíbrio: receitas e despesas compatíveis, foco em resultado primário",
+      "Clareza e Exatidão: linguagem acessível e estimativas realistas",
+      "Programação: orçamento alinhado a programas e metas de governo"
+    ]
+  },
+  "subtopics": [
+    {
+      "id": "3.3.1",
+      "title": "Unidade ou Totalidade",
+      "summary_bullets": [
+        "Um orçamento único por ente federado",
+        "Facilita o controle e a visão global das finanças públicas"
+      ],
+      "resumo": "Exige um orçamento único para cada ente federado, consolidando todas as receitas e despesas. (Art. 2º, Lei 4.320/64)",
+      "content": "O orçamento deve ser uma peça única para cada ente (União, estado, município), abrangendo todos os poderes, órgãos e entidades. Isso evita múltiplos orçamentos paralelos e facilita o controle. A LOA reúne os orçamentos Fiscal, da Seguridade Social e de Investimentos das Estatais em uma só lei."
+    },
+    {
+      "id": "3.3.2",
+      "title": "Universalidade",
+      "summary_bullets": [
+        "Inclui todas as receitas e despesas",
+        "Permite controle efetivo pelo Legislativo"
+      ],
+      "resumo": "A LOA deve conter todas as receitas e despesas dos poderes e entidades. (Art. 2º, Lei 4.320/64; Art. 165, §5º, CF)",
+      "content": "O orçamento deve abranger todas as entradas e saídas de recursos, sem omissões. Isso garante transparência e controle sobre todo o fluxo financeiro do setor público."
+    },
+    {
+      "id": "3.3.3",
+      "title": "Anualidade ou Periodicidade",
+      "summary_bullets": [
+        "Vigência limitada a um exercício financeiro",
+        "Novo orçamento aprovado a cada ano"
+      ],
+      "resumo": "O orçamento vale por um exercício financeiro, geralmente o ano civil. (Art. 2º e 34, Lei 4.320/64)",
+      "content": "As autorizações de despesa e previsões de receita valem apenas para o período de 1º de janeiro a 31 de dezembro, facilitando o controle e a adaptação a mudanças."
+    },
+    {
+      "id": "3.3.4",
+      "title": "Exclusividade",
+      "summary_bullets": [
+        "LOA só trata de orçamento, com exceções previstas",
+        "Evita 'caudas orçamentárias'"
+      ],
+      "resumo": "A LOA não conterá matéria estranha à previsão de receita e fixação de despesa, salvo exceções. (Art. 165, §8º, CF)",
+      "content": "A LOA deve tratar apenas de orçamento, salvo autorizações para créditos suplementares e operações de crédito (ARO). Isso evita o uso da LOA para aprovar temas não relacionados ao orçamento."
+    },
+    {
+      "id": "3.3.5",
+      "title": "Orçamento Bruto",
+      "summary_bullets": [
+        "Valores totais, sem deduções",
+        "Transparência nas receitas e despesas"
+      ],
+      "resumo": "Receitas e despesas devem constar na LOA pelos valores brutos. (Art. 6º, Lei 4.320/64)",
+      "content": "Todas as receitas e despesas devem ser registradas pelo valor total, sem deduzir gastos diretamente da receita. Isso garante clareza e evita manipulações."
+    },
+    {
+      "id": "3.3.6",
+      "title": "Especificação, Discriminação ou Especialização",
+      "summary_bullets": [
+        "Detalhamento das receitas e despesas",
+        "Facilita o controle e a fiscalização"
+      ],
+      "resumo": "A LOA não consignará dotações globais; receitas e despesas devem ser detalhadas. (Arts. 5º, 15, 20, Lei 4.320/64)",
+      "content": "O orçamento deve detalhar a origem dos recursos e sua aplicação, permitindo identificação clara e fiscalização eficiente."
+    },
+    {
+      "id": "3.3.7",
+      "title": "Legalidade",
+      "summary_bullets": [
+        "Orçamento é lei",
+        "Só pode ser executado se autorizado"
+      ],
+      "resumo": "A atividade financeira do Estado, incluindo o orçamento, está subordinada à lei. (Art. 37 e 165, CF)",
+      "content": "Toda arrecadação de receita e realização de despesa depende de autorização legal. O orçamento é a lei que autoriza o Executivo a agir."
+    },
+    {
+      "id": "3.3.8",
+      "title": "Publicidade",
+      "summary_bullets": [
+        "Orçamento e execução amplamente divulgados",
+        "Facilita o controle social"
+      ],
+      "resumo": "O orçamento e sua execução devem ser amplamente divulgados. (Art. 37, CF; Arts. 48, 49, LRF)",
+      "content": "A sociedade deve ter acesso fácil às informações orçamentárias, por meio de publicações oficiais e meios eletrônicos, garantindo transparência e participação social."
+    },
+    {
+      "id": "3.3.9",
+      "title": "Transparência",
+      "summary_bullets": [
+        "Divulgação ampla de relatórios e dados fiscais",
+        "Incentiva participação popular"
+      ],
+      "resumo": "Exige ampla divulgação do orçamento e relatórios fiscais, promovendo o controle social. (Arts. 48, 48-A, 49, LRF)",
+      "content": "A gestão fiscal deve ser transparente, com divulgação de planos, relatórios e contas, inclusive em meios eletrônicos, para facilitar o acompanhamento pela sociedade."
+    },
+    {
+      "id": "3.3.10",
+      "title": "Não Vinculação (Não Afetação) da Receita de Impostos",
+      "summary_bullets": [
+        "Regra geral: não atrelar impostos a despesas específicas",
+        "Exceções previstas na CF"
+      ],
+      "resumo": "Veda vincular receita de impostos a órgão, fundo ou despesa, com exceções. (Art. 167, IV, CF)",
+      "content": "A receita de impostos deve compor o caixa único do Tesouro, permitindo flexibilidade na alocação dos recursos. Exceções: saúde, educação, repartição de receitas, administração tributária e ARO."
+    },
+    {
+      "id": "3.3.11",
+      "title": "Equilíbrio",
+      "summary_bullets": [
+        "Receitas e despesas compatíveis",
+        "Foco moderno: resultado primário"
+      ],
+      "resumo": "Busca o equilíbrio entre receitas e despesas, com foco moderno no resultado primário. (Art. 4º, §1º, LRF)",
+      "content": "O orçamento deve buscar o equilíbrio entre receitas e despesas. Atualmente, o foco é no equilíbrio primário (excluindo juros) e nominal (incluindo juros), conforme metas estabelecidas na LDO."
+    },
+    {
+      "id": "3.3.12",
+      "title": "Clareza",
+      "summary_bullets": [
+        "Linguagem acessível e padronizada",
+        "Facilita o entendimento e o controle social"
+      ],
+      "resumo": "O orçamento deve ser apresentado em linguagem clara e compreensível para a sociedade.",
+      "content": "A clareza é fundamental para que qualquer cidadão possa entender o orçamento. Quadros demonstrativos, classificações padronizadas e versões simplificadas ajudam nesse objetivo."
+    },
+    {
+      "id": "3.3.13",
+      "title": "Exatidão",
+      "summary_bullets": [
+        "Estimativas realistas",
+        "Evita distorções e déficits não planejados"
+      ],
+      "resumo": "As estimativas de receita e fixações de despesa devem ser realistas, evitando distorções.",
+      "content": "As previsões orçamentárias devem ser baseadas em dados confiáveis e realistas, evitando superestimar receitas ou subestimar despesas, o que pode comprometer a execução e a credibilidade fiscal."
+    },
+    {
+      "id": "3.3.14",
+      "title": "Programação",
+      "summary_bullets": [
+        "Orçamento alinhado a programas e metas",
+        "Base do orçamento-programa"
+      ],
+      "resumo": "O orçamento deve refletir os programas de trabalho do governo, vinculando recursos a objetivos e metas.",
+      "content": "O orçamento deve ser um instrumento de planejamento, refletindo os objetivos e metas do governo. A estrutura programática permite acompanhar resultados e avaliar a efetividade das políticas públicas."
+    }
+  ]
+},
+{
+  "id": "3.4",
+  "title": "3.4 O Processo Legislativo Orçamentário no Congresso",
+  "summary_bullets": [
+    "Compreender as etapas do processo legislativo das leis orçamentárias",
+    "Reconhecer o papel da Comissão Mista de Orçamento (CMO)",
+    "Entender o funcionamento das emendas parlamentares e o orçamento impositivo"
+  ],
+  "resumo": [
+    "O processo legislativo orçamentário segue regras constitucionais (Art. 166, CF) para a apreciação dos projetos de PPA, LDO e LOA.",
+    "Envolve análise da Comissão Mista de Orçamento (CMO), apresentação de emendas, elaboração de pareceres, votação, sanção e veto.",
+    "O orçamento impositivo garante a execução obrigatória de certas emendas parlamentares."
+  ],
+  "content": [
+    "O Artigo 166 da Constituição Federal rege o processo legislativo das leis orçamentárias (PPA, LDO e LOA) no Congresso Nacional.",
+    "O Capítulo 13 do livro de Giacomoni detalha esse processo, incluindo o papel da Comissão Mista de Orçamento (CMO), o sistema de emendas, relatórios, pareceres, e os trâmites de aprovação, sanção e veto.",
+    "O orçamento impositivo, introduzido por emendas constitucionais recentes, garante a execução obrigatória de emendas parlamentares individuais e de bancada."
+  ],
+  "summary_box": {
+    "title": "Quadro-Resumo: Processo Legislativo Orçamentário",
+    "bullets": [
+      "Projetos enviados pelo Executivo ao Congresso",
+      "Análise e pareceres da CMO",
+      "Apresentação e avaliação de emendas",
+      "Votação em sessão conjunta",
+      "Sanção ou veto presidencial",
+      "Orçamento impositivo: execução obrigatória de emendas"
+    ]
+  },
+  "subtopics": [
+    {
+      "id": "3.4.1",
+      "title": "3.4.1 Etapas do Processo Legislativo Orçamentário",
+      "summary_bullets": [
+        "Identificar as fases do processo legislativo das leis orçamentárias",
+        "Entender o papel da CMO e dos parlamentares",
+        "Conhecer os trâmites de aprovação, sanção e veto"
+      ],
+      "resumo": [
+        "O processo envolve análise dos projetos de PPA, LDO e LOA pela CMO, apresentação de emendas, votação em sessão conjunta do Congresso, e sanção ou veto pelo Presidente da República."
+      ],
+      "content": [
+        "O Executivo envia os projetos de PPA, LDO e LOA ao Congresso.",
+        "A Comissão Mista de Orçamento (CMO) examina as propostas e as emendas apresentadas pelos parlamentares, elabora pareceres e orienta a votação.",
+        "Emendas parlamentares podem ser apresentadas, desde que respeitem critérios constitucionais, como compatibilidade com o PPA e a LDO, indicação de fonte de recursos e não afetação de despesas obrigatórias.",
+        "O texto aprovado na CMO é votado em sessão conjunta. Após aprovação, segue para sanção ou veto presidencial. O Congresso pode derrubar o veto.",
+        "A CF e o ADCT estabelecem prazos para garantir a aprovação antes do início do exercício financeiro."
+      ],
+      "summary_box": {
+        "title": "Quadro-Resumo: Processo Legislativo Orçamentário",
+        "bullets": [
+          "Análise pela CMO",
+          "Emendas parlamentares",
+          "Votação em sessão conjunta",
+          "Sanção ou veto presidencial"
+        ]
+      }
+    },
+    {
+      "id": "3.4.2",
+      "title": "3.4.2 Orçamento Impositivo e Emendas Parlamentares",
+      "summary_bullets": [
+        "Compreender o conceito de orçamento impositivo",
+        "Diferenciar emendas individuais e de bancada",
+        "Conhecer as regras de execução obrigatória"
+      ],
+      "resumo": [
+        "O orçamento impositivo garante a execução obrigatória de emendas parlamentares individuais e de bancada, limitadas a percentuais da Receita Corrente Líquida, conforme Arts. 166, §§ 9º-19, e 166-A da CF."
+      ],
+      "content": [
+        "O orçamento impositivo refere-se à obrigação do Executivo de executar despesas previstas em emendas parlamentares, especialmente as individuais e de bancada.",
+        "Emendas individuais são limitadas a 2% da Receita Corrente Líquida (RCL), metade destinada à saúde. Execução obrigatória, salvo impedimento técnico justificado.",
+        "Emendas de bancada são limitadas a 1% da RCL, também de execução obrigatória, com regras específicas de destinação e remanejamento.",
+        "Transferências especiais permitem repasse direto de recursos a estados e municípios, sem necessidade de convênio, com pelo menos 70% para despesas de capital.",
+        "O orçamento impositivo fortalece o Legislativo na alocação de recursos, mas levanta debates sobre transparência, uso eleitoral e equilíbrio entre poderes."
+      ],
+      "summary_box": {
+        "title": "Quadro-Resumo: Orçamento Impositivo",
+        "bullets": [
+          "Execução obrigatória de emendas individuais (2% da RCL) e de bancada (1% da RCL)",
+          "Metade das emendas individuais vai para a saúde",
+          "Transferências especiais dispensam convênio",
+          "Debate sobre transparência e equilíbrio entre Legislativo e Executivo"
+        ]
+      },
+      "subtopics": [
+        {
+          "id": "3.4.2.1",
+          "title": "Desafios da Integração do Orçamento Impositivo ao Planejamento Orçamentário",
+          "summary_bullets": [
+            "Identificar os principais desafios para integrar o orçamento impositivo ao planejamento público",
+            "Compreender os impactos sobre flexibilidade, transparência e equilíbrio fiscal",
+            "Reconhecer as tensões institucionais entre Legislativo e Executivo"
+          ],
+          "resumo": [
+            "A execução obrigatória de emendas parlamentares cria desafios para a integração com o planejamento orçamentário, afetando a flexibilidade, a coordenação estratégica e a sustentabilidade fiscal do orçamento público."
+          ],
+          "content": [
+            "O orçamento impositivo limita a capacidade do Executivo de realocar recursos e responder a imprevistos, tornando o orçamento mais rígido.",
+            "Emendas podem dispersar recursos em projetos locais, dificultando o alinhamento com o planejamento estratégico nacional (PPA, LDO).",
+            "O aumento do número de emendas dificulta o acompanhamento, a fiscalização e o controle social, especialmente se faltar clareza nos critérios de alocação.",
+            "A obrigatoriedade de execução das emendas altera o equilíbrio de poderes, podendo gerar disputas políticas e dificultar a coordenação do orçamento.",
+            "A execução obrigatória pode comprometer o equilíbrio fiscal e dificultar o cumprimento das metas estabelecidas na LDO e no PPA.",
+            "A integração exige regras claras e uniformes, respeitando as diferenças entre entes federativos e garantindo controle efetivo."
+          ],
+          "summary_box": {
+            "title": "Quadro-Resumo: Desafios da Integração",
+            "bullets": [
+              "Mais rigidez e menos flexibilidade para o Executivo",
+              "Risco de fragmentação dos recursos e desalinhamento com o planejamento",
+              "Dificuldade de controle, transparência e fiscalização",
+              "Tensões institucionais entre Legislativo e Executivo",
+              "Possíveis impactos negativos sobre o equilíbrio fiscal"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}]}

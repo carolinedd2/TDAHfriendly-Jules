@@ -1,0 +1,130 @@
+
+{
+  "id": "9",
+  "title": "9. Vedações Orçamentárias (Art. 167 CF)",
+  "subtitle": "As 'Regras de Ouro' do Gasto Público",
+  "icon": "🚫",
+  "color": "bg-gray",
+  "trail": "PLANEJAMENTO_EXECUCAO",
+  "resumo": "O Artigo 167 da Constituição Federal estabelece um conjunto vital de proibições para a gestão orçamentária, como a 'Regra de Ouro', a não afetação de impostos, e vedações a créditos e despesas sem autorização ou recursos, visando a responsabilidade fiscal.",
+  "subtopics": [
+    {
+      "id": "9.1",
+      "title": "9.1 A Regra de Ouro (Inciso III)",
+      "content": "<p><strong>Art. 167, III da CF:</strong> Proíbe a realização de operações de créditos (empréstimos) que excedam o montante das despesas de capital (investimentos, inversões financeiras, amortização da dívida). Ou seja, o governo não pode se endividar para pagar despesas correntes (como salários, custeio), salvo se autorizado mediante créditos suplementares ou especiais com finalidade precisa, aprovados pelo Legislativo por maioria absoluta.</p>"
+    },
+    {
+      "id": "9.2",
+      "title": "9.2 Não Afetação de Impostos (Inciso IV)",
+      "content": "<p><strong>Art. 167, IV da CF:</strong> Veda a vinculação da receita de impostos a órgão, fundo ou despesa. O objetivo é garantir flexibilidade na alocação dos recursos arrecadados com impostos. <strong>Exceções importantes:</strong> repartição constitucional de impostos (arts. 158 e 159), destinação para saúde (EC 29 e LC 141), educação (art. 212), administração tributária, e prestação de garantias a operações de crédito por antecipação de receita (ARO).</p>"
+    },
+    {
+      "id": "9.3",
+      "title": "9.3 Início de Programas Não Incluídos na LOA (Inciso I)",
+      "resumo": "Veda o início de programas ou projetos não incluídos na lei orçamentária anual.",
+      "content": "<p><strong>Art. 167, I da CF:</strong> São vedados o início de programas ou projetos não incluídos na lei orçamentária anual. Isso reforça o princípio da legalidade orçamentária, exigindo que toda ação governamental que gere despesa esteja previamente autorizada na LOA.</p>"
+    },
+    {
+      "id": "9.4",
+      "title": "9.4 Despesas Excedentes aos Créditos (Inciso II)",
+      "resumo": "Proíbe a realização de despesas ou a assunção de obrigações que excedam os créditos orçamentários ou adicionais.",
+      "content": "<p><strong>Art. 167, II da CF:</strong> É vedada a realização de despesas ou a assunção de obrigações diretas que excedam os créditos orçamentários ou adicionais. Impõe um limite quantitativo aos gastos, não permitindo que o gestor ultrapasse o valor autorizado pelo Poder Legislativo para cada dotação.</p>"
+    },
+    {
+      "id": "9.5",
+      "title": "9.5 Créditos Adicionais Sem Autorização/Recursos (Inciso V)",
+      "resumo": "Veda a abertura de crédito suplementar ou especial sem prévia autorização legislativa e sem indicação dos recursos correspondentes.",
+      "content": "<p><strong>Art. 167, V da CF:</strong> Proíbe a abertura de crédito suplementar ou especial sem prévia autorização legislativa e sem indicação dos recursos correspondentes. Qualquer alteração no orçamento via créditos adicionais (suplementares ou especiais) depende de lei e da identificação da fonte de recursos que cobrirá essa nova despesa (ex: superávit financeiro, excesso de arrecadação, anulação de dotações).</p>"
+    },
+    {
+      "id": "9.6",
+      "title": "9.6 Transposição, Remanejamento, Transferência Sem Autorização (Inciso VI)",
+      "resumo": "Proíbe a transposição, o remanejamento ou a transferência de recursos de uma categoria de programação para outra ou de um órgão para outro, sem prévia autorização legislativa.",
+      "content": "<p><strong>Art. 167, VI da CF:</strong> Veda a transposição, o remanejamento ou a transferência de recursos de uma categoria de programação para outra ou de um órgão para outro, sem prévia autorização legislativa. Isso garante a rigidez na aplicação dos recursos conforme aprovado pelo Legislativo, respeitando o princípio da especialização das dotações. A LDO pode trazer algumas flexibilizações limitadas.</p>"
+    },
+    {
+      "id": "9.7",
+      "title": "9.7 Outras Vedações Relevantes do Art. 167 CF",
+      "resumo": "Agrupa vedações como créditos ilimitados, uso indevido de recursos para empresas e fundos, e transferência para pessoal de outros entes.",
+      "subtopics": [
+        {
+          "id": "9.7.1",
+          "title": "9.7.1 Créditos Ilimitados (Inciso VII)",
+          "content": "<p><strong>Art. 167, VII da CF:</strong> É vedada a concessão ou utilização de créditos com vigência ilimitada. Todo crédito orçamentário deve ter sua vigência restrita ao exercício financeiro, salvo os créditos especiais e extraordinários autorizados nos últimos quatro meses do exercício, que podem ser reabertos no exercício seguinte nos limites de seus saldos.</p>"
+        },
+        {
+          "id": "9.7.2",
+          "title": "9.7.2 Uso de Recursos para Cobrir Déficit de Empresas (Inciso VIII)",
+          "content": "<p><strong>Art. 167, VIII da CF:</strong> Proíbe a utilização, sem autorização legislativa específica, de recursos dos orçamentos fiscal e da seguridade social para suprir necessidade ou cobrir déficit de empresas, fundações e fundos, inclusive os de natureza privada. Visa proteger os recursos destinados às funções típicas do Estado.</p>"
+        },
+        {
+          "id": "9.7.3",
+          "title": "9.7.3 Instituição de Fundos Sem Autorização (Inciso IX)",
+          "content": "<p><strong>Art. 167, IX da CF:</strong> Veda a instituição de fundos de qualquer natureza, sem prévia autorização legislativa. A criação de um fundo especial, que vincula receitas a determinadas despesas, deve ser feita por lei.</p>"
+        },
+        {
+          "id": "9.7.4",
+          "title": "9.7.4 Transferência para Pessoal de Outros Entes (Inciso X)",
+          "content": "<p><strong>Art. 167, X da CF:</strong> Proíbe a transferência voluntária de recursos e a concessão de empréstimos, por qualquer ente federativo, para pagamento de despesas com pessoal ativo, inativo e pensionista de outros entes da Federação. Busca evitar o desequilíbrio fiscal entre os entes.</p>"
+        },
+        {
+          "id": "9.7.5",
+          "title": "9.7.5 Uso Indevido de Contribuições Sociais (Inciso XI)",
+          "content": "<p><strong>Art. 167, XI da CF:</strong> Veda a utilização dos recursos provenientes das contribuições sociais de que trata o art. 195, I, 'a' (do empregador, sobre folha de salários e outros) e II (do trabalhador e demais segurados), para a realização de despesas distintas do pagamento de benefícios do Regime Geral de Previdência Social (RGPS).</p>"
+        },
+        {
+          "id": "9.7.6",
+          "title": "9.7.6 Despesa Obrigatória Continuada Sem Custeio (Inciso XII)",
+          "content": "<p><strong>Art. 167, XII da CF (acrescentado pela EC 109/2021):</strong> É vedada a criação de despesa obrigatória de caráter continuado sem que seja demonstrada a origem dos recursos para seu custeio. Reforça um princípio da Lei de Responsabilidade Fiscal.</p>"
+        }
+      ]
+    },
+    {
+      "id": "9.8",
+      "title": "9.8 Regime Extraordinário em Calamidade (Arts. 167-B a 167-G)",
+      "subtitle": "Exceções fiscais, financeiras e de contratação durante calamidade nacional.",
+      "icon": "🌪️",
+      "color": "bg-orange",
+      "resumo": "A EC 109/2021 introduziu os Arts. 167-B a 167-G na CF, estabelecendo um regime extraordinário para a União durante calamidade pública nacional, flexibilizando regras orçamentárias, fiscais e de contratação para o enfrentamento da crise e seus efeitos.",
+      "subtopics": [
+        {
+          "id": "9.8.1",
+          "title": "9.8.1 Instituição do Regime e Propósito (Art. 167-B)",
+          "resumo": "Define a adoção pela União de um regime extraordinário fiscal, financeiro e de contratações durante calamidade pública nacional, aplicável apenas onde a urgência impede o regime regular.",
+          "content": "<p>O <strong>Art. 167-B da CF</strong> (incluído pela EC 109/2021) determina que, durante a vigência de estado de calamidade pública de âmbito nacional decretado pelo Congresso Nacional por iniciativa do Presidente da República, a União deve adotar um <strong>regime extraordinário fiscal, financeiro e de contratações</strong>.</p><p>Este regime especial visa atender às necessidades decorrentes da calamidade, aplicando-se somente naquilo em que a <strong>urgência for incompatível com o regime regular</strong>, conforme detalhado nos arts. 167-C a 167-G.</p>"
+        },
+        {
+          "id": "9.8.2",
+          "title": "9.8.2 Contratações Simplificadas (Art. 167-C)",
+          "resumo": "Permite processos simplificados para contratação de pessoal temporário, obras, serviços e compras, dispensando certas exigências do Art. 169 da CF para pessoal emergencial.",
+          "content": "<p>O <strong>Art. 167-C da CF</strong> autoriza o Poder Executivo federal a adotar <strong>processos simplificados de contratação</strong> de pessoal (temporário e emergencial), obras, serviços e compras, com o propósito exclusivo de enfrentar a calamidade e seus efeitos.</p><p>Esses processos devem assegurar, quando possível, competição e igualdade de condições. É dispensada a observância do § 1º do art. 169 da CF (relativo a autorização específica na LDO e prévia dotação orçamentária para despesas com pessoal) para contratações emergenciais (art. 37, IX), sem prejuízo do controle dos órgãos competentes.</p>"
+        },
+        {
+          "id": "9.8.3",
+          "title": "9.8.3 Dispensa de Limitações para Ações de Enfrentamento (Art. 167-D)",
+          "resumo": "Dispensa atos legislativos e do Executivo (restritos à duração da calamidade e sem despesa continuada) de observar limitações legais sobre aumento de despesa ou renúncia de receita. Também suspende a exigência de fonte de custeio para novos benefícios da seguridade social (art. 195, §3º).",
+          "content": "<p>O <strong>Art. 167-D da CF</strong> estabelece que proposições legislativas e atos do Poder Executivo com o propósito exclusivo de enfrentar a calamidade e suas consequências, com vigência e efeitos restritos à sua duração e que não impliquem despesa obrigatória de caráter continuado, ficam <strong>dispensados de observar as limitações legais</strong> quanto à:</p><ul><li>Criação, expansão ou aperfeiçoamento de ação governamental que acarrete aumento de despesa.</li><li>Concessão ou ampliação de incentivo ou benefício de natureza tributária da qual decorra renúncia de receita.</li></ul><p><strong>Parágrafo único:</strong> Durante a calamidade, não se aplica o § 3º do art. 195 da CF (nenhum benefício ou serviço da seguridade social poderá ser criado, majorado ou estendido sem a correspondente fonte de custeio total).</p>"
+        },
+        {
+          "id": "9.8.4",
+          "title": "9.8.4 Suspensão da Regra de Ouro (Art. 167-E)",
+          "resumo": "Durante o exercício financeiro da calamidade, fica dispensada a observância da 'Regra de Ouro' (art. 167, III da CF), que proíbe endividamento maior que despesas de capital.",
+          "content": "<p>O <strong>Art. 167-E da CF</strong> dispensa, durante a integralidade do exercício financeiro em que vigore a calamidade pública nacional, a observância do <strong>inciso III do caput do art. 167 da CF (Regra de Ouro)</strong>.</p><p>Isso significa que a União fica temporariamente desobrigada da regra que proíbe a realização de operações de crédito (endividamento) em montante superior às despesas de capital.</p>"
+        },
+        {
+          "id": "9.8.5",
+          "title": "9.8.5 Flexibilizações em Operações de Crédito e Uso do Superávit (Art. 167-F)",
+          "resumo": "Dispensa limites para contratação de operações de crédito pela União e permite uso do superávit financeiro do ano anterior para combate à calamidade e pagamento da dívida, com ressalvas sobre fontes vinculadas.",
+          "content": "<p>O <strong>Art. 167-F da CF</strong>, durante a calamidade pública nacional, estabelece que:</p><ul><li><strong>I -</strong> São dispensados os limites, condições e restrições para a União contratar operações de crédito.</li><li><strong>II -</strong> O superávit financeiro apurado em 31 de dezembro do ano anterior pode ser destinado à cobertura de despesas da calamidade e ao pagamento da dívida pública.</li></ul><p><strong>§ 1º</strong> Lei complementar pode definir outras suspensões e dispensas.</p><p><strong>§ 2º</strong> A destinação do superávit financeiro (inciso II) não se aplica a fontes de recursos decorrentes de repartição de receitas a outros entes, vinculações constitucionais (saúde, educação, etc.), e receitas de doações, empréstimos compulsórios ou transferências com finalidades determinadas.</p>"
+        },
+        {
+          "id": "9.8.6",
+          "title": "9.8.6 Vedações do Teto de Gastos e Aplicação a Entes (Art. 167-G)",
+          "resumo": "Aplica à União as vedações do antigo Teto de Gastos (Art. 167-A), mas com exceções para medidas de combate à calamidade. Estados e Municípios podem optar por adotar tais vedações.",
+          "content": "<p>O <strong>Art. 167-G da CF</strong> determina que, durante a calamidade (Art. 167-B), aplicam-se à União as vedações previstas no <strong>Art. 167-A (antigo Teto de Gastos)</strong>.</p><p><strong>§ 1º Exceções:</strong> Para medidas de combate à calamidade cuja vigência não ultrapasse sua duração, não se aplicam algumas vedações do Art. 167-A, como as relativas à criação de cargos, admissão de pessoal, realização de concursos (incisos II, IV), criação de despesa obrigatória (VII), e criação/expansão de programas de financiamento (IX, X).</p><p><strong>§ 2º Repartição IPI-Exportação:</strong> Não se aplica a alínea 'c' do inciso I do art. 159 (entrega de 10% do IPI sobre produtos exportados aos Estados proporcionalmente à exportação), devendo a transferência ser nos mesmos montantes do exercício anterior à calamidade.</p><p><strong>§ 3º Facultativo para Estados e Municípios:</strong> É facultado aos Estados, DF e Municípios aplicarem as vedações do Art. 167-A. Enquanto não o fizerem integralmente, submetem-se a restrições específicas do § 6º do Art. 167-A.</p>"
+        }
+      ]
+    }
+  ]
+}
+    

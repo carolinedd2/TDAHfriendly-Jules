@@ -1,0 +1,747 @@
+{
+  "id": "2",
+  "title": "2. Lei nº 10.180/2001",
+  "subtitle": "Sistemas Federais de Gestão e a Prática do MTO",
+  "icon": "🔍",
+  "color": "bg-indigo-600",
+  "trail": "FUNDAMENTOS",
+  "resumo": "A Lei nº 10.180/2001 estabelece as bases para a organização, integração e funcionamento dos principais sistemas federais de gestão no âmbito do Poder Executivo. Esses sistemas abrangem o planejamento, o orçamento, a administração financeira, a contabilidade e o controle interno, sendo essenciais para a boa governança e a transparência dos recursos públicos.",
+  "content": "",
+  "subtopics": [
+
+    {
+      "id": "2.1",
+      "title": "2.1 Contexto Histórico e Relevância da Lei nº 10.180/2001",
+      "resumo": "Descubra por que a Lei nº 10.180/2001 foi criada, como ela mudou a administração pública federal e sua importância para a integração e modernização dos sistemas de gestão.",
+      "content": "<ul><li>Por que a Lei nº 10.180/2001 foi necessária?</li><li>Quais desafios históricos ela enfrentou?</li><li>Como ela impacta a administração pública hoje?</li></ul><p>Veja os subtópicos para aprofundar cada aspecto e consulte a <a href=\"#grafico-2-1-1\" class=\"toggle-chart-link\">linha do tempo 2.1.1</a> para visualizar os principais marcos legais.</p>",
+      "charts": [
+        {
+          "id": "grafico-2-1-1",
+          "title": "Linha do Tempo 2.1.1 – Marcos da Modernização da Gestão Pública Federal",
+          "type": "timeline",
+          "events": [
+            {"year": 1964, "event": "Lei 4.320/64 – Normas Gerais de Direito Financeiro"},
+            {"year": 1967, "event": "Decreto-Lei 200/67 – Reforma Administrativa"},
+            {"year": 1988, "event": "Constituição Federal – Princípios da Administração Pública"},
+            {"year": 2000, "event": "Lei de Responsabilidade Fiscal"},
+            {"year": 2001, "event": "Lei 10.180/2001 – Organização Sistêmica"}
+          ],
+          "hidden": true
+        }
+      ],
+      "subtopics": [
+        {
+          "id": "2.1.1",
+          "title": "2.1.1 Por que surgiu a Lei nº 10.180/2001?",
+          "content": "<p>Antes da Lei nº 10.180/2001, a administração financeira federal era fragmentada, dificultando a integração entre planejamento, orçamento, finanças, contabilidade e controle. Isso gerava problemas como retrabalho, falta de transparência e dificuldades de controle.</p><div class=\"box-dica\"><strong>Dica:</strong> Sempre que pensar em Lei nº 10.180/2001, lembre-se de integração, transparência e controle.</div>"
+        },
+        {
+          "id": "2.1.2",
+          "title": "2.1.2 Contexto histórico da administração pública no Brasil",
+          "content": "<p>Desde o Decreto-Lei nº 200/1967 e a Lei nº 4.320/64, o Brasil buscava integrar e modernizar sua administração pública. A Constituição de 1988 reforçou princípios como legalidade, impessoalidade e eficiência. Nos anos 1990, a necessidade de combater a corrupção e aumentar a eficiência impulsionou novas reformas.</p>"
+        },
+        {
+          "id": "2.1.3",
+          "title": "2.1.3 Motivação e objetivos da Lei",
+          "content": "<p>A Lei nº 10.180/2001 foi criada para organizar os principais sistemas federais de gestão, promovendo racionalidade, integração, governança e controle dos recursos públicos. Seu objetivo é garantir que todas as etapas do ciclo orçamentário-financeiro estejam conectadas e sejam transparentes.</p>"
+        },
+        {
+          "id": "2.1.4",
+          "title": "2.1.4 Importância atual da Lei",
+          "content": "<ul><li>Facilita o acompanhamento e a avaliação dos gastos públicos.</li><li>Melhora a comunicação entre órgãos e sistemas.</li><li>Fortalece a governança e a transparência.</li><li>Reduz erros e desperdícios na administração pública.</li></ul>"
+        },
+        {
+          "id": "2.1.5",
+          "title": "2.1.5 Exemplo prático da integração dos sistemas",
+          "content": "<div class=\"box-exemplo\"><strong>Exemplo prático:</strong> Ao planejar a construção de uma escola, o governo define metas (Planejamento), reserva recursos (Orçamento), libera o dinheiro (Administração Financeira), registra os gastos (Contabilidade) e é fiscalizado (Controle Interno). Tudo isso acontece de forma articulada graças à Lei nº 10.180/2001.</div>"
+        },
+        {
+          "id": "2.1.6",
+          "title": "2.1.6 Comparativo: Antes e Depois da Lei nº 10.180/2001",
+          "content": "<p>Veja a <a href=\"#tabela-2-1-6-1\" class=\"toggle-table-link\">tabela 2.1.6.1</a> para comparar a administração pública antes e depois da lei.</p>",
+          "tables": [
+            {
+              "id": "tabela-2-1-6-1",
+              "title": "Tabela 2.1.6.1 – Administração Pública Antes e Depois da Lei nº 10.180/2001",
+              "headers": ["Aspecto", "Antes da Lei", "Depois da Lei"],
+              "rows": [
+                ["Integração entre áreas", "Baixa", "Alta"],
+                ["Transparência", "Limitada", "Ampliada"],
+                ["Controle dos recursos", "Fragmentado", "Integrado"],
+                ["Comunicação entre sistemas", "Deficiente", "Obrigatória"],
+                ["Eficiência", "Comprometida", "Aprimorada"]
+              ],
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "2.2",
+      "title": "2.2 Organização Sistêmica dos Sistemas Federais (Lei 10.180/2001)",
+      "resumo": "Descubra como a Lei nº 10.180/2001 estruturou os sistemas federais de gestão e por que a integração entre eles é fundamental para a administração pública.",
+      "content": "<ul><li>Quais são os sistemas federais organizados pela Lei nº 10.180/2001?</li><li>Como eles funcionam juntos?</li><li>O que muda na prática?</li></ul><h4>O que diz a Lei nº 10.180/2001?</h4><p>A lei determina que as atividades de planejamento, orçamento, administração financeira, contabilidade e controle interno no Poder Executivo Federal sejam organizadas sob a forma de sistemas integrados.</p><div class=\"box-dica\"><strong>Dica:</strong> Organização sistêmica = áreas diferentes do governo trabalhando juntas, com regras claras de integração.</div><p>Veja a <a href=\"#tabela-2-2-1\" class=\"toggle-table-link\">tabela 2.2.1</a> para um resumo dos sistemas e o <a href=\"#grafico-2-2-1\" class=\"toggle-chart-link\">fluxograma 2.2.1</a> para visualizar a integração.</p>",
+      "tables": [
+        {
+          "id": "tabela-2-2-1",
+          "title": "Tabela 2.2.1 – Sistemas Federais de Gestão segundo a Lei nº 10.180/2001",
+          "headers": ["Sistema", "Função Principal", "Órgão Central", "Exemplo Prático"],
+          "rows": [
+            ["Planejamento e Orçamento Federal", "Definir metas, objetivos e orçamentos", "Ministério do Planejamento", "Elaboração do PPA e LOA"],
+            ["Administração Financeira Federal", "Movimentação e controle dos recursos financeiros", "Secretaria do Tesouro Nacional", "Pagamentos de despesas públicas"],
+            ["Contabilidade Federal", "Registro e análise dos atos e fatos financeiros", "Secretaria do Tesouro Nacional", "Balanço Orçamentário da União"],
+            ["Controle Interno", "Fiscalização e avaliação da gestão", "Controladoria-Geral da União (CGU)", "Auditorias e relatórios de controle"]
+          ],
+          "hidden": true
+        }
+      ],
+      "charts": [
+        {
+          "id": "grafico-2-2-1",
+          "title": "Fluxograma 2.2.1 – Integração dos Sistemas Federais de Gestão",
+          "type": "flow",
+          "steps": [
+            "Planejamento (PPA)",
+            "Orçamento (LDO, LOA)",
+            "Administração Financeira (Execução)",
+            "Contabilidade (Registro e análise)",
+            "Controle Interno (Avaliação e auditoria)"
+          ],
+          "hidden": true
+        }
+      ],
+      "subtopics": [
+        {
+          "id": "2.2.1",
+          "title": "2.2.1 O que é organização sistêmica?",
+          "content": "<p>Organização sistêmica significa tratar cada área da administração pública como um sistema próprio, mas articulado com os demais. Isso garante que as informações circulem, que as decisões sejam integradas e que o controle seja mais eficiente.</p><div class=\"box-dica\"><strong>Dica:</strong> Pense em sistemas como peças de um quebra-cabeça: cada um tem sua função, mas só juntos formam uma gestão pública eficiente.</div>"
+        },
+        {
+          "id": "2.2.2",
+          "title": "2.2.2 Benefícios da integração dos sistemas",
+          "content": "<ul><li>Reduz erros e retrabalho.</li><li>Facilita o acompanhamento e a avaliação dos gastos públicos.</li><li>Aumenta a transparência e a responsabilidade dos gestores.</li><li>Fortalece o controle interno e externo.</li></ul><div class=\"box-exemplo\"><strong>Exemplo prático:</strong> Se o planejamento prevê a construção de uma escola, o orçamento reserva os recursos, a administração financeira libera o dinheiro, a contabilidade registra cada gasto e o controle interno verifica se tudo foi feito corretamente.</div>"
+        },
+        {
+          "id": "2.2.3",
+          "title": "2.2.3 Como os sistemas se comunicam na prática?",
+          "content": "<p>Os sistemas compartilham informações em tempo real, permitindo que dados do planejamento alimentem o orçamento, que por sua vez orienta a execução financeira. A contabilidade registra tudo e o controle interno monitora cada etapa, promovendo integração e agilidade.</p><div class=\"box-exemplo\"><strong>Exemplo prático:</strong> O lançamento de um novo programa social precisa ser planejado, orçado, executado financeiramente, registrado e controlado. Se houver erro em uma etapa, os demais sistemas conseguem identificar rapidamente e corrigir o problema.</div>"
+        }
+      ]
+    },
+    [
+  {
+    "id": "2.3",
+    "title": "2.3 Sistema de Planejamento e Orçamento Federal: Finalidades, Estrutura e Competências",
+    "resumo": "Entenda o que é, como funciona e por que é fundamental o Sistema de Planejamento e Orçamento Federal para a boa gestão dos recursos públicos.",
+    "content": "<ul><li>O que faz o Sistema de Planejamento e Orçamento Federal?</li><li>Como ele está estruturado?</li><li>Quais são as competências das unidades de planejamento e orçamento?</li></ul><div class=\"box-dica\"><strong>Dica:</strong> O planejamento e o orçamento são o ponto de partida para toda a ação do governo. Sem eles, não há como definir prioridades, prever gastos ou controlar resultados.</div><p>Veja a <a href=\"#tabela-2-3-1\" class=\"toggle-table-link\">tabela 2.3.1</a> para um resumo das funções e a <a href=\"#grafico-2-3-1\" class=\"toggle-chart-link\">linha do tempo 2.3.1</a> para visualizar a evolução dos instrumentos de planejamento e orçamento.</p>",
+    "tables": [
+      {
+        "id": "tabela-2-3-1",
+        "title": "Tabela 2.3.1 – Funções do Sistema de Planejamento e Orçamento Federal",
+        "headers": ["Função", "Descrição", "Exemplo Prático"],
+        "rows": [
+          ["Planejamento Estratégico", "Definir metas e diretrizes de longo prazo para o país", "Plano Plurianual (PPA)"],
+          ["Planos Setoriais/Regionais", "Desenvolver estratégias específicas para áreas ou regiões", "Plano Nacional de Educação"],
+          ["Orçamento Anual", "Prever receitas e autorizar despesas para o ano seguinte", "Lei Orçamentária Anual (LOA)"],
+          ["Gestão Integrada", "Acompanhar, avaliar e ajustar planos e orçamentos", "Relatórios de Avaliação do PPA"],
+          ["Articulação Federativa", "Compatibilizar ações entre União, Estados e Municípios", "Comissões de Orçamento Interfederativas"]
+        ],
+        "hidden": true
+      }
+    ],
+    "charts": [
+      {
+        "id": "grafico-2-3-1",
+        "title": "Linha do Tempo 2.3.1 – Evolução dos Instrumentos de Planejamento e Orçamento",
+        "type": "timeline",
+        "events": [
+          {"year": 1964, "event": "Lei 4.320/64 – Pioneirismo na legislação orçamentária"},
+          {"year": 1988, "event": "CF/88 – Instituição do PPA, LDO e LOA"},
+          {"year": 2001, "event": "Lei 10.180/2001 – Organização Sistêmica"}
+        ],
+        "hidden": true
+      }
+    ],
+    "subtopics": [
+      {
+        "id": "2.3.1",
+        "title": "2.3.1 Finalidades do Sistema",
+        "content": "<h5>O que o Sistema de Planejamento e Orçamento Federal busca?</h5><ul><li>Formular o planejamento estratégico nacional.</li><li>Elaborar planos nacionais, setoriais e regionais de desenvolvimento econômico e social.</li><li>Preparar o plano plurianual (PPA), as diretrizes orçamentárias (LDO) e os orçamentos anuais (LOA).</li><li>Gerenciar o processo de planejamento e orçamento federal.</li><li>Promover a articulação entre União, Estados, DF e Municípios para alinhar normas e tarefas.</li></ul><div class=\"box-exemplo\"><strong>Exemplo prático:</strong> O governo federal define, por meio do PPA, metas para educação, saúde e infraestrutura para os próximos quatro anos. Cada ano, a LOA detalha quanto será investido em cada área.</div>"
+      },
+      {
+        "id": "2.3.2",
+        "title": "2.3.2 Estrutura e Competências do Sistema",
+        "content": "<h5>Como o Sistema está estruturado e quem faz o quê?</h5>",
+        "subtopics": [
+          {
+            "id": "2.3.2.1",
+            "title": "2.3.2.1 Organização do Sistema",
+            "content": "<ul><li><strong>Órgão Central:</strong> Ministério do Planejamento, Orçamento e Gestão (ou atual equivalente), responsável por coordenar e orientar tecnicamente todo o sistema.</li><li><strong>Órgãos Setoriais:</strong> Unidades de planejamento e orçamento dos Ministérios, AGU e Vice-Presidência, que adaptam e executam as diretrizes do órgão central em suas áreas.</li><li><strong>Órgãos Específicos:</strong> Unidades especializadas vinculadas ao órgão central, voltadas para atividades específicas de planejamento e orçamento.</li></ul>"
+          },
+          {
+            "id": "2.3.2.2",
+            "title": "2.3.2.2 Competências das Unidades de Planejamento",
+            "content": "<ul><li>Elaborar e supervisionar planos e programas.<br><em>Exemplo:</em> Coordenar a elaboração do Plano Plurianual (PPA) para definir metas nacionais de saúde, educação e infraestrutura.</li><li>Coordenar a elaboração do PPA e da LDO.<br><em>Exemplo:</em> Liderar reuniões interministeriais para alinhar os objetivos do PPA e da Lei de Diretrizes Orçamentárias.</li><li>Acompanhar e avaliar física e financeiramente os planos e programas.<br><em>Exemplo:</em> Monitorar o andamento das obras do PAC (Programa de Aceleração do Crescimento), verificando se estão dentro do cronograma e do orçamento previsto.</li><li>Manter sistemas de informações e indicadores.<br><em>Exemplo:</em> Alimentar e atualizar o Sistema Integrado de Planejamento e Orçamento (SIOP) com dados de execução dos programas.</li><li>Identificar e avaliar investimentos estratégicos.<br><em>Exemplo:</em> Analisar a viabilidade de construir novas universidades federais em regiões carentes.</li><li>Realizar estudos e pesquisas.<br><em>Exemplo:</em> Publicar estudos sobre os impactos sociais de políticas públicas, como o Bolsa Família.</li><li>Estabelecer políticas para empresas estatais.<br><em>Exemplo:</em> Definir diretrizes para investimentos da Petrobras e do Banco do Brasil em alinhamento com o planejamento nacional.</li></ul>"
+          },
+          {
+            "id": "2.3.2.3",
+            "title": "2.3.2.3 Competências das Unidades de Orçamento",
+            "content": "<ul><li>Coordenar a elaboração da LDO e LOA.<br><em>Exemplo:</em> Consolidar as propostas orçamentárias de todos os ministérios para compor a Lei Orçamentária Anual da União.</li><li>Estabelecer normas para elaboração dos orçamentos.<br><em>Exemplo:</em> Publicar o Manual Técnico de Orçamento (MTO) com regras para a elaboração das propostas orçamentárias.</li><li>Realizar estudos para aperfeiçoamento do processo orçamentário.<br><em>Exemplo:</em> Desenvolver pesquisas sobre novas classificações orçamentárias para melhorar o controle dos gastos públicos.</li><li>Acompanhar e avaliar a execução orçamentária.<br><em>Exemplo:</em> Monitorar a execução dos recursos destinados à saúde e identificar possíveis desvios ou insuficiências.</li><li>Estabelecer classificações orçamentárias.<br><em>Exemplo:</em> Definir códigos e categorias para despesas com pessoal, investimentos, custeio e transferências.</li><li>Propor medidas para consolidação das informações orçamentárias.<br><em>Exemplo:</em> Sugerir ajustes no SIOP para integrar informações de diferentes órgãos e facilitar a análise global do orçamento federal.</li></ul>"
+          }
+        ]
+      }
+    
+  ]
+},
+{
+  "id": "2.4",
+  "title": "2.4 Sistema de Administração Financeira Federal: Finalidades, Estrutura e Competências",
+  "resumo": "Descubra o papel do Sistema de Administração Financeira Federal na gestão dos recursos financeiros da União, sua estrutura e as principais competências de cada unidade.",
+  "content": "<ul><li>O que faz o Sistema de Administração Financeira Federal?</li><li>Como ele está estruturado?</li><li>Quem faz o quê na gestão do dinheiro público?</li></ul><div class=\"box-dica\"><strong>Dica:</strong> Administração financeira é o coração da execução do orçamento: garante que o dinheiro público seja movimentado, controlado e registrado de forma eficiente e segura.</div><p>Veja a <a href=\"#tabela-2-4-1\" class=\"toggle-table-link\">tabela 2.4.1</a> para um resumo das funções e o <a href=\"#grafico-2-4-1\" class=\"toggle-chart-link\">fluxo 2.4.1</a> para visualizar o fluxo do dinheiro público federal.</p>",
+  "tables": [
+    {
+      "id": "tabela-2-4-1",
+      "title": "Tabela 2.4.1 – Funções do Sistema de Administração Financeira Federal",
+      "headers": ["Função", "Descrição", "Exemplo Prático"],
+      "rows": [
+        ["Programação Financeira", "Planejar o fluxo de recursos do Tesouro Nacional", "Definir o cronograma de liberação de verbas para ministérios"],
+        ["Gestão da Conta Única", "Controlar todas as movimentações financeiras da União", "Centralizar receitas e pagamentos no Tesouro Nacional"],
+        ["Gerenciamento da Dívida Pública", "Administrar dívidas internas e externas da União", "Emitir títulos públicos federais"],
+        ["Controle de Operações de Crédito", "Autorizar e monitorar empréstimos e garantias", "Avaliar pedidos de empréstimo de Estados e Municípios"],
+        ["Administração de Haveres", "Gerir ativos financeiros e mobiliários da União", "Investir recursos temporariamente disponíveis"],
+        ["Política de Crédito", "Definir diretrizes para concessão de financiamentos", "Estabelecer regras para empréstimos do BNDES"]
+      ],
+      "hidden": true
+    }
+  ],
+  "charts": [
+    {
+      "id": "grafico-2-4-1",
+      "title": "Fluxograma 2.4.1 – Fluxo da Administração Financeira Federal",
+      "type": "flow",
+      "steps": [
+        "Programação Financeira (Planejamento do fluxo de caixa)",
+        "Liberação de Recursos (Conta Única do Tesouro)",
+        "Execução de Pagamentos e Recebimentos",
+        "Registro Contábil",
+        "Monitoramento e Controle (Relatórios e Auditorias)"
+      ],
+      "hidden": true
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "2.4.1",
+      "title": "2.4.1 Finalidades do Sistema",
+      "content": "<ul><li>Programar, gerenciar e controlar os recursos financeiros do Tesouro Nacional.</li><li>Gerenciar a dívida pública federal (interna e externa).</li><li>Controlar operações de crédito e concessão de garantias pela União.</li><li>Administrar ativos financeiros e mobiliários da União.</li><li>Formular a política de crédito do Governo Federal.</li><li>Promover articulação com Estados, DF e Municípios para alinhar normas e procedimentos.</li></ul><div class=\"box-exemplo\"><strong>Exemplo prático:</strong> O Tesouro Nacional define quando e quanto liberar de recursos para cada ministério, controla o saldo da Conta Única e gerencia o pagamento de dívidas públicas.</div>"
+    },
+    {
+      "id": "2.4.2",
+      "title": "2.4.2 Estrutura do Sistema",
+      "content": "<ul><li><strong>Órgão Central:</strong> Ministério da Fazenda (Secretaria do Tesouro Nacional) – coordena, normatiza e supervisiona toda a administração financeira federal.</li><li><strong>Órgãos Setoriais de Programação Financeira:</strong> Unidades nos Ministérios, AGU e Vice-Presidência – propõem e acompanham o fluxo de recursos em suas áreas.</li><li><strong>Órgãos Setoriais de Execução Orçamentária e Financeira:</strong> Unidades nos Ministérios, AGU, Vice-Presidência, autarquias, fundações e entidades da administração indireta – executam pagamentos, registram atos e elaboram demonstrativos financeiros.</li></ul>"
+    },
+    {
+      "id": "2.4.3",
+      "title": "2.4.3 Competências das Unidades do Sistema",
+      "subtopics": [
+        {
+          "id": "2.4.3.1",
+          "title": "2.4.3.1 Competências do Órgão Central (Tesouro Nacional)",
+          "content": "<ul><li>Editar normas sobre programação financeira e execução orçamentária.<br><em>Exemplo:</em> Publicar o cronograma anual de desembolso de recursos federais.</li><li>Administrar a Conta Única do Tesouro Nacional e definir o cronograma de saques.<br><em>Exemplo:</em> Controlar todos os pagamentos e recebimentos do governo federal em tempo real.</li><li>Gerenciar a dívida pública federal.<br><em>Exemplo:</em> Planejar e executar a emissão de títulos públicos para financiar o déficit do governo.</li><li>Controlar operações de crédito e concessão de garantias.<br><em>Exemplo:</em> Aprovar empréstimos para Estados e Municípios e monitorar o pagamento dessas dívidas.</li><li>Administrar haveres financeiros e mobiliários.<br><em>Exemplo:</em> Investir recursos temporariamente disponíveis em aplicações de baixo risco.</li><li>Formular a política de crédito do Governo Federal.<br><em>Exemplo:</em> Definir regras para concessão de financiamentos pelo BNDES.</li><li>Estabelecer normas para empréstimos e financiamentos.<br><em>Exemplo:</em> Regulamentar os critérios para concessão de crédito subsidiado a empresas.</li></ul>"
+        },
+        {
+          "id": "2.4.3.2",
+          "title": "2.4.3.2 Competências dos Órgãos Setoriais de Programação Financeira",
+          "content": "<ul><li>Propor ao órgão central a programação financeira dos respectivos órgãos.<br><em>Exemplo:</em> O setor financeiro do Ministério da Saúde estima quanto precisará receber do Tesouro a cada mês.</li><li>Acompanhar e avaliar a execução financeira dos respectivos órgãos.<br><em>Exemplo:</em> Monitorar se os pagamentos de contratos e salários estão ocorrendo conforme o planejado.</li><li>Elaborar e encaminhar ao órgão central os demonstrativos da execução financeira.<br><em>Exemplo:</em> Enviar relatórios mensais ao Tesouro Nacional sobre o uso dos recursos recebidos.</li></ul>"
+        },
+        {
+          "id": "2.4.3.3",
+          "title": "2.4.3.3 Competências dos Órgãos Setoriais de Execução Orçamentária e Financeira",
+          "content": "<ul><li>Executar a programação financeira aprovada.<br><em>Exemplo:</em> Realizar pagamentos a fornecedores e servidores conforme o cronograma autorizado.</li><li>Registrar os atos e fatos da gestão orçamentária e financeira.<br><em>Exemplo:</em> Lançar no sistema todos os pagamentos e recebimentos efetuados.</li><li>Elaborar e encaminhar demonstrativos da execução orçamentária e financeira.<br><em>Exemplo:</em> Preparar relatórios detalhados para prestação de contas ao órgão central e aos órgãos de controle.</li></ul>"
+        }
+      ]
+    }
+  ]
+}
+],
+[
+  {
+    "id": "2.5",
+    "title": "2.5 Sistema de Contabilidade Federal: Finalidades, Estrutura e Competências",
+    "resumo": "Entenda o papel do Sistema de Contabilidade Federal na transparência, controle e consolidação das contas públicas da União, sua estrutura e as principais competências de cada unidade.",
+    "content": "<ul><li>O que faz o Sistema de Contabilidade Federal?</li><li>Como ele está estruturado?</li><li>Quem registra, consolida e divulga as contas públicas?</li></ul><div class=\"box-dica\"><strong>Dica:</strong> A contabilidade pública é como o \"raio X\" das finanças do governo: registra tudo, permite o controle e garante transparência para a sociedade.</div><p>Veja a <a href=\"#tabela-2-5-1\" class=\"toggle-table-link\">tabela 2.5.1</a> para um resumo das funções e o <a href=\"#grafico-2-5-1\" class=\"toggle-chart-link\">infográfico 2.5.1</a> para visualizar o fluxo da informação contábil federal.</p>",
+    "tables": [
+      {
+        "id": "tabela-2-5-1",
+        "title": "Tabela 2.5.1 – Funções do Sistema de Contabilidade Federal",
+        "headers": ["Função", "Descrição", "Exemplo Prático"],
+        "rows": [
+          ["Registro Contábil", "Registrar todos os atos e fatos da gestão orçamentária, financeira e patrimonial", "Lançar no SIAFI uma compra de material hospitalar"],
+          ["Demonstrações Contábeis", "Elaborar relatórios que mostram a situação financeira da União", "Balanço Geral da União, Demonstração do Resultado"],
+          ["Consolidação das Contas", "Reunir e padronizar as contas de todos os órgãos e entidades federais", "Unificar dados dos ministérios para enviar ao TCU"],
+          ["Normatização", "Definir regras e padrões para a contabilidade pública", "Atualizar o Plano de Contas da União"],
+          ["Articulação Federativa", "Alinhar normas e práticas com Estados, DF e Municípios", "Promover treinamentos e reuniões técnicas com contadores estaduais"]
+        ],
+        "hidden": true
+      }
+    ],
+    "charts": [
+      {
+        "id": "grafico-2-5-1",
+        "title": "Infográfico 2.5.1 – Fluxo da Informação Contábil Federal",
+        "type": "flow",
+        "steps": [
+          "Registro dos atos e fatos (órgãos e entidades)",
+          "Envio de dados ao SIAFI",
+          "Consolidação pelo Tesouro Nacional",
+          "Elaboração das demonstrações contábeis",
+          "Divulgação para sociedade e órgãos de controle"
+        ],
+        "hidden": true
+      }
+    ],
+    "subtopics": [
+      {
+        "id": "2.5.1",
+        "title": "2.5.1 Finalidades do Sistema",
+        "content": "<ul><li>Registrar todos os atos e fatos contábeis da gestão orçamentária, financeira e patrimonial da União.</li><li>Elaborar as demonstrações contábeis e o Balanço Geral da União.</li><li>Consolidar as contas públicas nacionais.</li><li>Manter e aprimorar o Plano de Contas Único da União.</li><li>Editar normas sobre contabilidade pública federal.</li><li>Promover articulação com Estados, DF e Municípios para alinhar normas e práticas.</li></ul><div class=\"box-exemplo\"><strong>Exemplo prático:</strong> O Tesouro Nacional consolida os dados enviados por todos os ministérios e elabora o Balanço Geral da União, que mostra como o dinheiro público foi usado no ano.</div>"
+      },
+      {
+        "id": "2.5.2",
+        "title": "2.5.2 Estrutura do Sistema",
+        "content": "<ul><li><strong>Órgão Central:</strong> Secretaria do Tesouro Nacional (Ministério da Fazenda) – coordena, normatiza e consolida as informações contábeis federais.</li><li><strong>Órgãos Setoriais:</strong> Unidades de contabilidade dos Ministérios, AGU e Vice-Presidência – registram e enviam informações ao órgão central.</li><li><strong>Unidades de Contabilidade das Entidades:</strong> Autarquias, fundações e demais entidades da administração indireta – registram os atos e fatos contábeis e prestam informações aos órgãos setoriais e ao Tesouro Nacional.</li></ul>"
+      },
+      {
+        "id": "2.5.3",
+        "title": "2.5.3 Competências das Unidades do Sistema",
+        "subtopics": [
+          {
+            "id": "2.5.3.1",
+            "title": "2.5.3.1 Competências do Órgão Central (Tesouro Nacional)",
+            "content": "<ul><li>Estabelecer e uniformizar práticas contábeis na União.<br><em>Exemplo:</em> Publicar o Manual de Contabilidade Aplicada ao Setor Público (MCASP).</li><li>Editar normas gerais para consolidação das contas públicas.<br><em>Exemplo:</em> Definir prazos e padrões para envio de dados contábeis pelos ministérios.</li><li>Manter e gerenciar o SIAFI.<br><em>Exemplo:</em> Atualizar o sistema SIAFI para novas exigências legais.</li><li>Elaborar o Balanço Geral da União e demais demonstrações consolidadas.<br><em>Exemplo:</em> Apresentar o Balanço Geral ao Congresso Nacional e ao TCU.</li><li>Realizar estudos e pesquisas para aperfeiçoamento da contabilidade pública.<br><em>Exemplo:</em> Desenvolver novos indicadores de desempenho contábil para o setor público.</li></ul>"
+          },
+          {
+            "id": "2.5.3.2",
+            "title": "2.5.3.2 Competências dos Órgãos Setoriais e Unidades de Contabilidade",
+            "content": "<ul><li>Registrar os atos e fatos contábeis de seus órgãos e entidades.<br><em>Exemplo:</em> Lançar no SIAFI todas as despesas e receitas do ministério.</li><li>Elaborar as demonstrações contábeis.<br><em>Exemplo:</em> Preparar o balanço patrimonial do órgão para o Tesouro Nacional.</li><li>Fornecer informações contábeis ao órgão central.<br><em>Exemplo:</em> Enviar relatórios mensais de execução orçamentária e financeira.</li><li>Zelar pela observância das normas contábeis.<br><em>Exemplo:</em> Garantir que todos os registros sigam os padrões definidos pelo MCASP.</li></ul>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2.6",
+    "title": "2.6 Sistema de Controle Interno do Poder Executivo Federal: Finalidades, Estrutura e Competências",
+    "resumo": "Veja como o Sistema de Controle Interno, liderado pela CGU, atua para garantir a legalidade, eficiência e transparência na gestão pública federal e apoiar o controle externo.",
+    "content": "<ul><li>O que é o Sistema de Controle Interno do Poder Executivo Federal?</li><li>Como ele está estruturado?</li><li>Quais são as funções e competências da CGU e das unidades setoriais?</li></ul><div class=\"box-dica\"><strong>Dica:</strong> O controle interno é o \"guardião\" da boa gestão pública: fiscaliza, orienta, previne erros e combate irregularidades antes que virem problemas maiores.</div><p>Veja a <a href=\"#tabela-2-6-1\" class=\"toggle-table-link\">tabela 2.6.1</a> para um resumo das funções e o <a href=\"#grafico-2-6-1\" class=\"toggle-chart-link\">infográfico 2.6.1</a> para visualizar o fluxo do controle interno federal.</p>",
+    "tables": [
+      {
+        "id": "tabela-2-6-1",
+        "title": "Tabela 2.6.1 – Funções do Sistema de Controle Interno Federal",
+        "headers": ["Função", "Descrição", "Exemplo Prático"],
+        "rows": [
+          ["Avaliação de Metas", "Verificar se as metas do PPA e dos programas de governo estão sendo cumpridas", "Auditoria do cumprimento de metas do SUS"],
+          ["Fiscalização da Legalidade", "Checar se os atos e gastos públicos seguem a lei", "Auditoria em licitações e contratos"],
+          ["Avaliação de Eficiência/Eficácia", "Analisar resultados e impactos da gestão pública", "Relatório de avaliação do Bolsa Família"],
+          ["Controle de Operações de Crédito", "Monitorar empréstimos, garantias e direitos da União", "Análise de operações de crédito de Estados"],
+          ["Apoio ao Controle Externo", "Fornecer informações e relatórios ao TCU", "Encaminhar denúncias e auditorias relevantes"]
+        ],
+        "hidden": true
+      }
+    ],
+    "charts": [
+      {
+        "id": "grafico-2-6-1",
+        "title": "Infográfico 2.6.1 – Fluxo do Controle Interno Federal",
+        "type": "flow",
+        "steps": [
+          "Definição de normas e procedimentos (CGU)",
+          "Auditorias e fiscalizações (CGU e órgãos setoriais)",
+          "Relatórios e recomendações",
+          "Apoio ao controle externo (TCU)",
+          "Acompanhamento de providências e prevenção de irregularidades"
+        ],
+        "hidden": true
+      }
+    ],
+    "subtopics": [
+      {
+        "id": "2.6.1",
+        "title": "2.6.1 Finalidades do Sistema",
+        "content": "<ul><li>Avaliar o cumprimento das metas do PPA, execução de programas e orçamentos.</li><li>Comprovar a legalidade e avaliar resultados quanto à eficácia e eficiência da gestão pública.</li><li>Controlar operações de crédito, avais, garantias, direitos e haveres da União.</li><li>Apoiar o controle externo (TCU) com informações e relatórios.</li></ul><div class=\"box-exemplo\"><strong>Exemplo prático:</strong> Uma auditoria da CGU identifica falhas em contratos de obras públicas e recomenda correções antes que o TCU seja acionado.</div>"
+      },
+      {
+        "id": "2.6.2",
+        "title": "2.6.2 Estrutura do Sistema",
+        "content": "<ul><li><strong>Órgão Central:</strong> Controladoria-Geral da União (CGU) – coordena, normatiza e supervisiona as atividades de controle interno federal.</li><li><strong>Órgãos Setoriais:</strong> Secretarias de Controle Interno dos Ministérios, AGU e Vice-Presidência – realizam auditorias e controles em suas áreas.</li><li><strong>Unidades de Controle Interno das Entidades:</strong> Autarquias, fundações e demais entidades da administração indireta – fiscalizam e reportam à CGU e aos órgãos setoriais.</li></ul>"
+      },
+      {
+        "id": "2.6.3",
+        "title": "2.6.3 Competências das Unidades do Sistema",
+        "subtopics": [
+          {
+            "id": "2.6.3.1",
+            "title": "2.6.3.1 Competências da CGU (Órgão Central)",
+            "content": "<ul><li>Orientar e supervisionar tecnicamente as atividades de controle interno.<br><em>Exemplo:</em> Publicar manuais e guias de auditoria para os órgãos federais.</li><li>Editar normas e estabelecer procedimentos.<br><em>Exemplo:</em> Definir regras para prestação de contas e relatórios de auditoria.</li><li>Realizar auditorias e fiscalizações.<br><em>Exemplo:</em> Auditar a execução de grandes programas federais, como o Minha Casa Minha Vida.</li><li>Apurar denúncias e irregularidades.<br><em>Exemplo:</em> Investigar denúncias de corrupção recebidas pela Ouvidoria-Geral da União.</li><li>Avaliar a gestão dos administradores.<br><em>Exemplo:</em> Produzir relatórios de avaliação de desempenho dos gestores públicos.</li></ul>"
+          },
+          {
+            "id": "2.6.3.2",
+            "title": "2.6.3.2 Competências dos Órgãos Setoriais e Unidades de Controle Interno",
+            "content": "<ul><li>Executar auditorias e controles em suas áreas.<br><em>Exemplo:</em> Secretaria de Controle Interno do Ministério da Saúde fiscaliza contratos de compra de medicamentos.</li><li>Elaborar relatórios e encaminhar informações à CGU.<br><em>Exemplo:</em> Enviar relatório anual de auditoria ao órgão central.</li><li>Dar ciência ao TCU sobre ilegalidades ou irregularidades.<br><em>Exemplo:</em> Comunicar ao TCU desvios identificados em licitações.</li><li>Zelar pela observância das normas de controle interno.<br><em>Exemplo:</em> Garantir que todos os processos sigam as regras da CGU.</li></ul>"
+          }
+        ]
+      }
+    ]
+  }
+],
+[
+  {
+    "id": "2.5",
+    "title": "2.5 Sistema de Contabilidade Federal: Finalidades, Estrutura e Competências",
+    "resumo": "Entenda o papel do Sistema de Contabilidade Federal na transparência, controle e consolidação das contas públicas da União, sua estrutura e as principais competências de cada unidade.",
+    "content": "<ul><li>O que faz o Sistema de Contabilidade Federal?</li><li>Como ele está estruturado?</li><li>Quem registra, consolida e divulga as contas públicas?</li></ul><div class=\"box-dica\"><strong>Dica:</strong> A contabilidade pública é como o \"raio X\" das finanças do governo: registra tudo, permite o controle e garante transparência para a sociedade.</div><p>Veja a <a href=\"#tabela-2-5-1\" class=\"toggle-table-link\">tabela 2.5.1</a> para um resumo das funções e o <a href=\"#grafico-2-5-1\" class=\"toggle-chart-link\">infográfico 2.5.1</a> para visualizar o fluxo da informação contábil federal.</p>",
+    "tables": [
+      {
+        "id": "tabela-2-5-1",
+        "title": "Tabela 2.5.1 – Funções do Sistema de Contabilidade Federal",
+        "headers": ["Função", "Descrição", "Exemplo Prático"],
+        "rows": [
+          ["Registro Contábil", "Registrar todos os atos e fatos da gestão orçamentária, financeira e patrimonial", "Lançar no SIAFI uma compra de material hospitalar"],
+          ["Demonstrações Contábeis", "Elaborar relatórios que mostram a situação financeira da União", "Balanço Geral da União, Demonstração do Resultado"],
+          ["Consolidação das Contas", "Reunir e padronizar as contas de todos os órgãos e entidades federais", "Unificar dados dos ministérios para enviar ao TCU"],
+          ["Normatização", "Definir regras e padrões para a contabilidade pública", "Atualizar o Plano de Contas da União"],
+          ["Articulação Federativa", "Alinhar normas e práticas com Estados, DF e Municípios", "Promover treinamentos e reuniões técnicas com contadores estaduais"]
+        ],
+        "hidden": true
+      }
+    ],
+    "charts": [
+      {
+        "id": "grafico-2-5-1",
+        "title": "Infográfico 2.5.1 – Fluxo da Informação Contábil Federal",
+        "type": "flow",
+        "steps": [
+          "Registro dos atos e fatos (órgãos e entidades)",
+          "Envio de dados ao SIAFI",
+          "Consolidação pelo Tesouro Nacional",
+          "Elaboração das demonstrações contábeis",
+          "Divulgação para sociedade e órgãos de controle"
+        ],
+        "hidden": true
+      }
+    ],
+    "subtopics": [
+      {
+        "id": "2.5.1",
+        "title": "2.5.1 Finalidades do Sistema",
+        "content": "<ul><li>Registrar todos os atos e fatos contábeis da gestão orçamentária, financeira e patrimonial da União.</li><li>Elaborar as demonstrações contábeis e o Balanço Geral da União.</li><li>Consolidar as contas públicas nacionais.</li><li>Manter e aprimorar o Plano de Contas Único da União.</li><li>Editar normas sobre contabilidade pública federal.</li><li>Promover articulação com Estados, DF e Municípios para alinhar normas e práticas.</li></ul><div class=\"box-exemplo\"><strong>Exemplo prático:</strong> O Tesouro Nacional consolida os dados enviados por todos os ministérios e elabora o Balanço Geral da União, que mostra como o dinheiro público foi usado no ano.</div>"
+      },
+      {
+        "id": "2.5.2",
+        "title": "2.5.2 Estrutura do Sistema",
+        "content": "<ul><li><strong>Órgão Central:</strong> Secretaria do Tesouro Nacional (Ministério da Fazenda) – coordena, normatiza e consolida as informações contábeis federais.</li><li><strong>Órgãos Setoriais:</strong> Unidades de contabilidade dos Ministérios, AGU e Vice-Presidência – registram e enviam informações ao órgão central.</li><li><strong>Unidades de Contabilidade das Entidades:</strong> Autarquias, fundações e demais entidades da administração indireta – registram os atos e fatos contábeis e prestam informações aos órgãos setoriais e ao Tesouro Nacional.</li></ul>"
+      },
+      {
+        "id": "2.5.3",
+        "title": "2.5.3 Competências das Unidades do Sistema",
+        "subtopics": [
+          {
+            "id": "2.5.3.1",
+            "title": "2.5.3.1 Competências do Órgão Central (Tesouro Nacional)",
+            "content": "<ul><li>Estabelecer e uniformizar práticas contábeis na União.<br><em>Exemplo:</em> Publicar o Manual de Contabilidade Aplicada ao Setor Público (MCASP).</li><li>Editar normas gerais para consolidação das contas públicas.<br><em>Exemplo:</em> Definir prazos e padrões para envio de dados contábeis pelos ministérios.</li><li>Manter e gerenciar o SIAFI.<br><em>Exemplo:</em> Atualizar o sistema SIAFI para novas exigências legais.</li><li>Elaborar o Balanço Geral da União e demais demonstrações consolidadas.<br><em>Exemplo:</em> Apresentar o Balanço Geral ao Congresso Nacional e ao TCU.</li><li>Realizar estudos e pesquisas para aperfeiçoamento da contabilidade pública.<br><em>Exemplo:</em> Desenvolver novos indicadores de desempenho contábil para o setor público.</li></ul>"
+          },
+          {
+            "id": "2.5.3.2",
+            "title": "2.5.3.2 Competências dos Órgãos Setoriais e Unidades de Contabilidade",
+            "content": "<ul><li>Registrar os atos e fatos contábeis de seus órgãos e entidades.<br><em>Exemplo:</em> Lançar no SIAFI todas as despesas e receitas do ministério.</li><li>Elaborar as demonstrações contábeis.<br><em>Exemplo:</em> Preparar o balanço patrimonial do órgão para o Tesouro Nacional.</li><li>Fornecer informações contábeis ao órgão central.<br><em>Exemplo:</em> Enviar relatórios mensais de execução orçamentária e financeira.</li><li>Zelar pela observância das normas contábeis.<br><em>Exemplo:</em> Garantir que todos os registros sigam os padrões definidos pelo MCASP.</li></ul>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2.6",
+    "title": "2.6 Sistema de Controle Interno do Poder Executivo Federal: Finalidades, Estrutura e Competências",
+    "resumo": "Veja como o Sistema de Controle Interno, liderado pela CGU, atua para garantir a legalidade, eficiência e transparência na gestão pública federal e apoiar o controle externo.",
+    "content": "<ul><li>O que é o Sistema de Controle Interno do Poder Executivo Federal?</li><li>Como ele está estruturado?</li><li>Quais são as funções e competências da CGU e das unidades setoriais?</li></ul><div class=\"box-dica\"><strong>Dica:</strong> O controle interno é o \"guardião\" da boa gestão pública: fiscaliza, orienta, previne erros e combate irregularidades antes que virem problemas maiores.</div><p>Veja a <a href=\"#tabela-2-6-1\" class=\"toggle-table-link\">tabela 2.6.1</a> para um resumo das funções e o <a href=\"#grafico-2-6-1\" class=\"toggle-chart-link\">infográfico 2.6.1</a> para visualizar o fluxo do controle interno federal.</p>",
+    "tables": [
+      {
+        "id": "tabela-2-6-1",
+        "title": "Tabela 2.6.1 – Funções do Sistema de Controle Interno Federal",
+        "headers": ["Função", "Descrição", "Exemplo Prático"],
+        "rows": [
+          ["Avaliação de Metas", "Verificar se as metas do PPA e dos programas de governo estão sendo cumpridas", "Auditoria do cumprimento de metas do SUS"],
+          ["Fiscalização da Legalidade", "Checar se os atos e gastos públicos seguem a lei", "Auditoria em licitações e contratos"],
+          ["Avaliação de Eficiência/Eficácia", "Analisar resultados e impactos da gestão pública", "Relatório de avaliação do Bolsa Família"],
+          ["Controle de Operações de Crédito", "Monitorar empréstimos, garantias e direitos da União", "Análise de operações de crédito de Estados"],
+          ["Apoio ao Controle Externo", "Fornecer informações e relatórios ao TCU", "Encaminhar denúncias e auditorias relevantes"]
+        ],
+        "hidden": true
+      }
+    ],
+    "charts": [
+      {
+        "id": "grafico-2-6-1",
+        "title": "Infográfico 2.6.1 – Fluxo do Controle Interno Federal",
+        "type": "flow",
+        "steps": [
+          "Definição de normas e procedimentos (CGU)",
+          "Auditorias e fiscalizações (CGU e órgãos setoriais)",
+          "Relatórios e recomendações",
+          "Apoio ao controle externo (TCU)",
+          "Acompanhamento de providências e prevenção de irregularidades"
+        ],
+        "hidden": true
+      }
+    ],
+    "subtopics": [
+      {
+        "id": "2.6.1",
+        "title": "2.6.1 Finalidades do Sistema",
+        "content": "<ul><li>Avaliar o cumprimento das metas do PPA, execução de programas e orçamentos.</li><li>Comprovar a legalidade e avaliar resultados quanto à eficácia e eficiência da gestão pública.</li><li>Controlar operações de crédito, avais, garantias, direitos e haveres da União.</li><li>Apoiar o controle externo (TCU) com informações e relatórios.</li></ul><div class=\"box-exemplo\"><strong>Exemplo prático:</strong> Uma auditoria da CGU identifica falhas em contratos de obras públicas e recomenda correções antes que o TCU seja acionado.</div>"
+      },
+      {
+        "id": "2.6.2",
+        "title": "2.6.2 Estrutura do Sistema",
+        "content": "<ul><li><strong>Órgão Central:</strong> Controladoria-Geral da União (CGU) – coordena, normatiza e supervisiona as atividades de controle interno federal.</li><li><strong>Órgãos Setoriais:</strong> Secretarias de Controle Interno dos Ministérios, AGU e Vice-Presidência – realizam auditorias e controles em suas áreas.</li><li><strong>Unidades de Controle Interno das Entidades:</strong> Autarquias, fundações e demais entidades da administração indireta – fiscalizam e reportam à CGU e aos órgãos setoriais.</li></ul>"
+      },
+      {
+        "id": "2.6.3",
+        "title": "2.6.3 Competências das Unidades do Sistema",
+        "subtopics": [
+          {
+            "id": "2.6.3.1",
+            "title": "2.6.3.1 Competências da CGU (Órgão Central)",
+            "content": "<ul><li>Orientar e supervisionar tecnicamente as atividades de controle interno.<br><em>Exemplo:</em> Publicar manuais e guias de auditoria para os órgãos federais.</li><li>Editar normas e estabelecer procedimentos.<br><em>Exemplo:</em> Definir regras para prestação de contas e relatórios de auditoria.</li><li>Realizar auditorias e fiscalizações.<br><em>Exemplo:</em> Auditar a execução de grandes programas federais, como o Minha Casa Minha Vida.</li><li>Apurar denúncias e irregularidades.<br><em>Exemplo:</em> Investigar denúncias de corrupção recebidas pela Ouvidoria-Geral da União.</li><li>Avaliar a gestão dos administradores.<br><em>Exemplo:</em> Produzir relatórios de avaliação de desempenho dos gestores públicos.</li></ul>"
+          },
+          {
+            "id": "2.6.3.2",
+            "title": "2.6.3.2 Competências dos Órgãos Setoriais e Unidades de Controle Interno",
+            "content": "<ul><li>Executar auditorias e controles em suas áreas.<br><em>Exemplo:</em> Secretaria de Controle Interno do Ministério da Saúde fiscaliza contratos de compra de medicamentos.</li><li>Elaborar relatórios e encaminhar informações à CGU.<br><em>Exemplo:</em> Enviar relatório anual de auditoria ao órgão central.</li><li>Dar ciência ao TCU sobre ilegalidades ou irregularidades.<br><em>Exemplo:</em> Comunicar ao TCU desvios identificados em licitações.</li><li>Zelar pela observância das normas de controle interno.<br><em>Exemplo:</em> Garantir que todos os processos sigam as regras da CGU.</li></ul>"
+          }
+        ]
+      }
+    ]
+  }
+],
+
+[
+  {
+    "id": "2.7",
+    "title": "2.7 Controle Externo da Execução Orçamentária: Congresso Nacional e TCU",
+    "resumo": "Entenda como o Congresso Nacional e o Tribunal de Contas da União (TCU) fiscalizam a execução orçamentária, financeira e patrimonial da União, garantindo legalidade, eficiência e transparência no uso dos recursos públicos.",
+    "content": "O que é controle externo da execução orçamentária?Qual o papel do Congresso Nacional e do TCU?Como isso impacta a gestão pública?Dica: O controle externo é o \"olho do cidadão\" sobre o uso do dinheiro público: fiscaliza, julga e orienta para garantir que tudo seja feito conforme a lei e com responsabilidade.Veja a tabela 2.7.1 para um resumo das atribuições do TCU e o fluxograma 2.7.1 para visualizar o processo de controle externo.",
+    "tables": [
+      {
+        "id": "tabela-2-7-1",
+        "title": "Tabela 2.7.1 – Principais Atribuições do TCU (Art. 71 CF)",
+        "headers": ["Atribuição", "Descrição", "Exemplo Prático"],
+        "rows": [
+          ["Apreciar contas do Presidente", "Emitir parecer prévio sobre as contas anuais do Presidente da República", "Análise das contas do governo federal ao final de cada exercício"],
+          ["Julgar contas de administradores", "Julgar contas de gestores públicos federais", "Verificação de gastos de ministérios e autarquias"],
+          ["Registrar atos de pessoal", "Apreciar legalidade de admissões, aposentadorias e pensões", "Controle de concursos e aposentadorias de servidores"],
+          ["Realizar auditorias e inspeções", "Fiscalizar recursos e bens públicos", "Auditoria em obras públicas federais"],
+          ["Fiscalizar repasses e convênios", "Verificar aplicação de recursos transferidos pela União", "Análise de convênios com Estados e Municípios"],
+          ["Aplicar sanções", "Impor multas e outras penalidades em caso de irregularidades", "Multa a gestor que realizou despesa ilegal"],
+          ["Sustar atos ilegais", "Determinar suspensão de atos irregulares", "Suspensão de contrato público com indícios de fraude"]
+        ],
+        "hidden": true
+      }
+    ],
+    "charts": [
+      {
+        "id": "grafico-2-7-1",
+        "title": "Fluxograma 2.7.1 – Processo de Controle Externo pelo TCU",
+        "type": "flow",
+        "steps": [
+          "Recebimento de informações e denúncias",
+          "Auditorias, inspeções e análises técnicas",
+          "Elaboração de relatórios e pareceres",
+          "Julgamento das contas e atos",
+          "Aplicação de sanções ou recomendações",
+          "Acompanhamento das providências e comunicação ao Congresso"
+        ],
+        "hidden": true
+      }
+    ],
+    "subtopics": [
+      {
+        "id": "2.7.1",
+        "title": "2.7.1 O que é controle externo da execução orçamentária?",
+        "content": "O controle externo é a fiscalização realizada pelo Congresso Nacional, com o auxílio do TCU, sobre a gestão orçamentária, financeira, operacional e patrimonial da União e de suas entidades. Garante que o dinheiro público seja usado de forma legal, legítima, eficiente e transparente.Exemplo prático: O Congresso analisa o parecer do TCU sobre as contas do Presidente da República antes de aprovar ou rejeitar a prestação anual de contas do governo."
+      },
+      {
+        "id": "2.7.2",
+        "title": "2.7.2 Estrutura do Controle Externo: Congresso Nacional e TCU",
+        "content": "Congresso Nacional: Órgão máximo de controle externo, responsável pela fiscalização da administração pública federal e pelo julgamento político das contas do governo.Tribunal de Contas da União (TCU): Órgão técnico auxiliar do Congresso, realiza auditorias, inspeções, avaliações e emite relatórios e pareceres que subsidiam as decisões do Legislativo.Como colaboram na prática? O Congresso pode solicitar fiscalizações ao TCU, que responde com relatórios detalhados. A Comissão Mista de Orçamento analisa esses relatórios, realiza audiências públicas e pode instaurar CPIs. O julgamento final das contas do Presidente da República é feito pelo Congresso, com base no parecer prévio do TCU."
+      },
+      {
+        "id": "2.7.3",
+        "title": "2.7.3 Principais atribuições do TCU",
+        "content": "Apreciar as contas do Presidente da República (parecer prévio).Julgar contas de administradores e responsáveis por recursos públicos.Registrar atos de admissão de pessoal e concessão de aposentadorias e pensões.Realizar auditorias, inspeções e fiscalizações em órgãos e entidades federais.Fiscalizar a aplicação de recursos repassados pela União a outros entes e entidades.Aplicar sanções e determinar suspensão de atos ilegais.Exemplo prático: O TCU pode multar um gestor que desviou recursos públicos ou recomendar a suspensão de um contrato irregular."
+      },
+      {
+        "id": "2.7.4",
+        "title": "2.7.4 Como funciona o processo de controle externo?",
+        "content": "O TCU recebe informações, denúncias ou solicitações do Congresso ou da sociedade.Realiza auditorias, inspeções e análises técnicas.Elabora relatórios e pareceres sobre a regularidade dos atos e contas.Julga as contas e pode aplicar sanções ou recomendar correções.Comunica o resultado ao Congresso Nacional, que toma as decisões finais.Exemplo prático: Após identificar irregularidades em uma obra pública, o TCU recomenda a suspensão dos pagamentos e informa o Congresso, que pode determinar providências adicionais."
+      },
+      {
+        "id": "2.7.5",
+        "title": "2.7.5 Quais sanções o TCU pode aplicar em caso de irregularidades?",
+        "content": "Ressarcimento ao Erário: Obrigação de devolver o valor do dano aos cofres públicos, atualizado e com juros de mora.Exemplo: Gestor condenado a devolver recursos desviados de uma obra pública.Multa: Pode ser proporcional ao dano (até 100% do valor atualizado) ou de valor fixo por infração, descumprimento de decisão ou obstrução de auditoria.Exemplo: Multa aplicada a gestor que não cumpriu determinação do TCU.Declaração de Inidoneidade: Impedimento de licitar e contratar com a Administração Pública Federal por até 5 anos.Exemplo: Empresa que fraudou licitação fica proibida de participar de novos certames federais.Inabilitação para Cargo em Comissão ou Função de Confiança: Proibição de exercer cargos de confiança na Administração Federal por 5 a 8 anos.Exemplo: Servidor que praticou irregularidade grave não pode ocupar cargos de chefia.Suspensão Temporária de Participação em Licitação: Até 2 anos sem poder licitar ou contratar com o TCU.Exemplo: Empresa punida por descumprir contrato com o TCU.Bloqueio de Bens: O TCU pode determinar o bloqueio de bens do responsável para garantir ressarcimento ao erário.Exemplo: Bens de gestor bloqueados até a solução do processo.Recomendações, Determinações e Sustação de Atos: O TCU pode suspender contratos ou atos irregulares e recomendar correções.Exemplo: Suspensão de pagamento em obra com suspeita de superfaturamento.Comunicação ao Ministério Público: Para apuração de responsabilidade penal, civil ou administrativa.Exemplo: Encaminhamento de caso de corrupção ao MPF.Importante: Todas as sanções só são aplicadas após processo administrativo regular, com direito à defesa. Elas não excluem outras punições civis, penais ou eleitorais.",
+        "tables": [
+          {
+            "id": "tabela-2-7-5-1",
+            "title": "Tabela 2.7.5.1 – Sanções aplicáveis pelo TCU",
+            "headers": ["Sanção", "Descrição", "Exemplo Prático"],
+            "rows": [
+              ["Ressarcimento ao Erário", "Devolução do valor do dano aos cofres públicos", "Gestor devolve recursos desviados"],
+              ["Multa", "Valor proporcional ao dano ou fixo por infração", "Multa por descumprimento de decisão do TCU"],
+              ["Declaração de Inidoneidade", "Proibição de licitar/contratar com o poder público federal por até 5 anos", "Empresa que fraudou licitação fica impedida de contratar"],
+              ["Inabilitação para Cargo em Comissão", "Proibição de exercer cargos de confiança por 5 a 8 anos", "Servidor afastado de cargos de chefia"],
+              ["Suspensão Temporária", "Até 2 anos sem poder licitar/contratar com o TCU", "Empresa punida por descumprir contrato"],
+              ["Bloqueio de Bens", "Indisponibilidade de bens para garantir ressarcimento", "Gestor tem bens bloqueados durante o processo"],
+              ["Sustação de Atos", "Suspensão de contratos ou atos irregulares", "Suspensão de pagamento em obra superfaturada"],
+              ["Comunicação ao MP", "Encaminhamento para responsabilização penal/civil", "Caso de corrupção enviado ao Ministério Público"]
+            ],
+            "hidden": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2.8",
+    "title": "2.8 Transparência na Gestão e Lei de Acesso à Informação (LAI)",
+    "resumo": "Veja como a Lei de Acesso à Informação (LAI) garante o direito do cidadão de acessar dados públicos, promovendo transparência, controle social e combate à corrupção.",
+    "content": "Por que a transparência é fundamental na gestão pública?O que muda com a Lei de Acesso à Informação?Quais informações todo órgão público precisa divulgar?Dica: Transparência é o melhor antídoto contra corrupção e desperdício: quanto mais fácil é acessar informações, mais difícil é esconder irregularidades.Veja a tabela 2.8.1 para um resumo das obrigações de transparência e o infográfico 2.8.1 para visualizar o ciclo da informação pública.",
+    "tables": [
+      {
+        "id": "tabela-2-8-1",
+        "title": "Tabela 2.8.1 – Obrigações de Transparência segundo a LAI",
+        "headers": ["Obrigação", "Descrição", "Exemplo Prático"],
+        "rows": [
+          ["Transparência Ativa", "Divulgação espontânea de informações de interesse coletivo", "Publicação de salários de servidores no Portal da Transparência"],
+          ["Transparência Passiva", "Atendimento a pedidos de informação feitos por cidadãos", "Resposta a solicitação sobre contratos de obras públicas"],
+          ["Divulgação de Estrutura", "Informar competências, organograma e contatos", "Página institucional com organograma e telefones"],
+          ["Divulgação de Gastos", "Publicar despesas, repasses e contratos", "Lista de pagamentos e contratos no site oficial"],
+          ["Divulgação de Licitações", "Publicar editais, resultados e contratos de licitação", "Editais e atas de licitação disponíveis online"],
+          ["Acompanhamento de Programas", "Divulgar dados de execução de programas e obras", "Painel de acompanhamento do Bolsa Família"],
+          ["Respostas a Perguntas Frequentes", "Publicar FAQ sobre temas recorrentes", "Seção de dúvidas frequentes no site do órgão"]
+        ],
+        "hidden": true
+      }
+    ],
+    "charts": [
+      {
+        "id": "grafico-2-8-1",
+        "title": "Infográfico 2.8.1 – Ciclo da Informação Pública",
+        "type": "flow",
+        "steps": [
+          "Produção da informação pelo órgão público",
+          "Divulgação ativa (site, portal, mural)",
+          "Solicitação do cidadão (transparência passiva)",
+          "Atendimento ao pedido de informação",
+          "Fiscalização e controle social"
+        ],
+        "hidden": true
+      }
+    ],
+    "subtopics": [
+      {
+        "id": "2.8.1",
+        "title": "2.8.1 Por que a transparência é fundamental?",
+        "content": "Permite que o cidadão acompanhe e fiscalize o uso do dinheiro público.Reduz a corrupção e o desperdício de recursos.Fortalece a democracia e a participação social.Exemplo prático: Qualquer pessoa pode acessar o Portal da Transparência e ver quanto cada ministério gastou em determinada área."
+      },
+      {
+        "id": "2.8.2",
+        "title": "2.8.2 O que muda com a Lei de Acesso à Informação?",
+        "content": "Publicidade é a regra, sigilo é a exceção.Órgãos públicos devem divulgar informações mesmo sem solicitação (transparência ativa).Qualquer cidadão pode pedir informações públicas (transparência passiva) e deve receber resposta rápida e clara.Informações devem ser divulgadas em formatos acessíveis e atualizados.Exemplo prático: Um cidadão solicita à prefeitura o contrato de uma obra. O órgão deve responder em até 20 dias, prorrogáveis por mais 10, e justificar caso negue o acesso."
+      },
+      {
+        "id": "2.8.3",
+        "title": "2.8.3 Quais informações devem ser divulgadas?",
+        "content": "Estrutura organizacional, competências e contatos do órgão.Repasses e transferências de recursos financeiros.Despesas, contratos e licitações.Dados de acompanhamento de programas, ações e obras.Respostas a perguntas frequentes da sociedade.Exemplo prático: O Portal da Transparência da União publica a lista de todos os beneficiários do Bolsa Família, valores pagos e datas de pagamento."
+      },
+      {
+        "id": "2.8.4",
+        "title": "2.8.4 Como a LAI fortalece o controle social?",
+        "content": "Facilita o acesso do cidadão a dados públicos.Permite que a sociedade cobre explicações e participe da gestão.Ajuda órgãos de controle, imprensa e ONGs a fiscalizarem o governo.Exemplo prático: Uma ONG usa dados do Portal da Transparência para denunciar desvios em contratos públicos, levando à abertura de investigação pelo Ministério Público."
+      }
+    ]
+  },
+  {
+    "id": "2.9",
+    "title": "2.9 O Sistema de Planejamento e Orçamento Federal na Prática (Visão MTO 2025)",
+    "resumo": "Veja como o Manual Técnico de Orçamento (MTO 2025) detalha a rotina prática do Sistema de Planejamento e Orçamento Federal, mostrando o papel dos agentes, as etapas de elaboração da LDO e da LOA e os fluxos decisórios no Executivo.",
+    "content": "Quem faz o quê no processo orçamentário federal?Como a LDO e a LOA são elaboradas na prática?Como o MTO orienta todo esse processo?Dica: O MTO é o \"manual de instruções\" do orçamento federal: mostra passo a passo como transformar planos e políticas públicas em números e metas concretas.Veja a tabela 2.9.1 para um resumo dos agentes do sistema e o fluxograma 2.9.1 para visualizar o fluxo da elaboração orçamentária.",
+    "tables": [
+      {
+        "id": "tabela-2-9-1",
+        "title": "Tabela 2.9.1 – Agentes do Sistema Orçamentário Federal",
+        "headers": ["Agente", "Função Principal", "Exemplo Prático"],
+        "rows": [
+          ["Secretaria de Orçamento Federal (SOF)", "Órgão central: coordena, consolida e supervisiona todo o processo", "Define limites e consolida a proposta orçamentária final"],
+          ["Órgão Setorial (OS)", "Coordena e valida propostas dentro de cada ministério ou órgão", "Analisa e ajusta propostas das Unidades Orçamentárias"],
+          ["Unidade Orçamentária (UO)", "Elabora propostas detalhadas de programas e ações", "Propõe valores para cada ação orçamentária do órgão"]
+        ],
+        "hidden": true
+      }
+    ],
+    "charts": [
+      {
+        "id": "grafico-2-9-1",
+        "title": "Fluxograma 2.9.1 – Elaboração do Orçamento Federal (MTO 2025)",
+        "type": "flow",
+        "steps": [
+          "Definição de diretrizes pela SOF",
+          "Elaboração das propostas pelas UOs",
+          "Análise e consolidação pelos Órgãos Setoriais",
+          "Validação e ajustes pela SOF",
+          "Envio da proposta final à Presidência",
+          "Encaminhamento ao Congresso Nacional"
+        ],
+        "hidden": true
+      }
+    ],
+    "subtopics": [
+      {
+        "id": "2.9.1",
+        "title": "2.9.1 Quem faz o quê no sistema orçamentário? (MTO Cap. 1.2)",
+        "content": "Conheça os principais agentes do sistema orçamentário federal e suas responsabilidades específicas.",
+        "subtopics": [
+          {
+            "id": "2.9.1.1",
+            "title": "2.9.1.1 Secretaria de Orçamento Federal (SOF)",
+            "content": "Coordena, consolida e supervisiona todo o processo de elaboração da LDO e LOA.Define normas e referenciais para a elaboração orçamentária.Orienta tecnicamente os órgãos setoriais para garantir coerência e qualidade.Exemplo prático: A SOF estabelece os limites orçamentários para os ministérios e consolida as propostas para formar o orçamento federal."
+          },
+          {
+            "id": "2.9.1.2",
+            "title": "2.9.1.2 Órgão Setorial (OS)",
+            "content": "Coordena o processo orçamentário dentro do ministério ou órgão.Define diretrizes internas e normativas para as Unidades Orçamentárias.Avalia e valida as propostas das UOs.Consolida a proposta orçamentária do órgão para envio à SOF.Exemplo prático: O OS do Ministério da Saúde analisa as propostas das UOs, ajusta conforme as diretrizes e consolida a proposta do ministério."
+          },
+          {
+            "id": "2.9.1.3",
+            "title": "2.9.1.3 Unidade Orçamentária (UO)",
+            "content": "Elabora a programação orçamentária detalhada por programas, ações e subtítulos.Propõe valores financeiros e metas físicas para suas atividades.Formaliza e justifica as necessidades orçamentárias da unidade.Exemplo prático: Uma UO, como um hospital federal, propõe orçamento para aquisição de equipamentos e contratação de pessoal."
+          }
+        ]
+      },
+      {
+        "id": "2.9.2",
+        "title": "2.9.2 Como é feita a LDO na prática? (MTO Cap. 5.3)",
+        "content": "Planejamento: A SOF avalia o PLDO anterior, define diretrizes e cronograma.Captação Interna: SOF faz ajustes e capta propostas internas para emendas ao texto e anexos.Captação Externa: OS e técnicos propõem emendas via SIOP; SOF analisa e solicita pareceres técnicos.Consolidação: Emendas aprovadas são incorporadas e o texto é finalizado.Anexos Fiscais: São elaborados paralelamente (Metas, Riscos Fiscais etc.).Envio à Presidência: O texto final é validado e encaminhado para envio ao Congresso.Divulgação: Após o envio, a SOF divulga o PLDO e informa os proponentes sobre suas emendas.Exemplo prático: Uma UO propõe uma nova ação para combate à dengue. O OS avalia, a SOF consolida e, se aprovada, a ação aparece no texto final da LDO enviada ao Congresso."
+      },
+      {
+        "id": "2.9.3",
+        "title": "2.9.3 Como é feita a LOA na prática? (MTO Cap. 6)",
+        "content": "Proposta Qualitativa: UOs e OS revisam a estrutura de ações e programas no SIOP, incluindo, alterando ou excluindo ações conforme as diretrizes da SOF.Proposta Quantitativa: Após a estrutura qualitativa, UOs e OS inserem metas físicas e valores financeiros, respeitando os limites definidos pela SOF.Justificativas: Todas as propostas precisam ser detalhadamente justificadas e compatíveis com o PPA e a LDO.Validação e Consolidação: OS consolida as propostas das UOs, SOF revisa e ajusta a proposta final.Envio e Divulgação: A proposta final é enviada à Presidência e, depois, ao Congresso Nacional para apreciação.Exemplo prático: Para 2025, uma UO propõe ampliar o número de leitos hospitalares. O OS valida a proposta, a SOF ajusta os valores e a ação é incluída na LOA enviada ao Congresso."
+       }
+    ]
+  }
+]
+
+  ]
+  }

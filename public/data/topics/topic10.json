@@ -1,0 +1,93 @@
+{
+  "id": "10",
+  "title": "10. Licitação (Lei 14.133/2021)",
+  "subtitle": "Processo de Contratação Pública",
+  "icon": "⚖️",
+  "color": "bg-navy-blue",
+  "trail": "LEGISLACAO_ESPECIFICA",
+  "resumo": "A Lei 14.133/2021 estabelece as normas gerais para licitações e contratos administrativos. Este tópico explora seus principais aspectos.",
+  "subtopics": [
+    {
+      "id": "10.1",
+      "title": "10.1 Âmbito e Objetivos (Art. 1º e 11)",
+      "resumo": "Aplicação da lei e finalidades do processo licitatório.",
+      "content": "<h3>Art. 1º - Âmbito de Aplicação</h3><p>Esta Lei estabelece normas gerais de licitação e contratação para as Administrações Públicas diretas, autárquicas e fundacionais da União, dos Estados, do Distrito Federal e dos Municípios.</p><h3>Art. 11 - Objetivos do Processo Licitatório</h3><ul><li>Assegurar a seleção da proposta apta a gerar o resultado de contratação mais vantajoso.</li><li>Assegurar tratamento isonômico e justa competição.</li><li>Evitar contratações com sobrepreço ou preços inexequíveis e superfaturamento.</li><li>Incentivar a inovação e o desenvolvimento nacional sustentável.</li></ul>"
+    },
+    {
+      "id": "10.2",
+      "title": "10.2 Princípios (Art. 5º)",
+      "resumo": "Princípios que regem as licitações e contratos.",
+      "content": "<h3>Art. 5º - Princípios</h3><p>A Lei 14.133/2021 elenca diversos princípios, como: legalidade, impessoalidade, moralidade, publicidade, eficiência, interesse público, probidade administrativa, igualdade, planejamento, transparência, eficácia, segregação de funções, motivação, vinculação ao edital, julgamento objetivo, segurança jurídica, razoabilidade, competitividade, proporcionalidade, celeridade, economicidade e desenvolvimento nacional sustentável.</p>"
+    },
+    {
+      "id": "10.3",
+      "title": "10.3 Modalidades (Art. 28)",
+      "resumo": "Pregão, Concorrência, Concurso, Leilão, Diálogo Competitivo.",
+      "content": "<h3>Art. 28. São modalidades de licitação:</h3><ul><li>I - pregão;</li><li>II - concorrência;</li><li>III - concurso;</li><li>IV - leilão;</li><li>V - diálogo competitivo.</li></ul><p><strong>Art. 29</strong> detalha o uso do pregão (preferencial para bens e serviços comuns) e da concorrência.</p><p><strong>Art. 30</strong> define o concurso para escolha de trabalho técnico, científico ou artístico.</p><p><strong>Art. 31</strong> trata do leilão para alienação de bens.</p><p><strong>Art. 32</strong> introduz o diálogo competitivo para soluções inovadoras ou complexas.</p>",
+      "subtopics": [
+        { "id": "10.3.1", "title": "10.3.1 Pregão e Concorrência (Art. 29)", "resumo": "Regras de aplicação do pregão e da concorrência.", "content": "<p><strong>Art. 29.</strong> A concorrência e o pregão seguem o rito procedimental comum do art. 17. O pregão é usado para objetos com padrões de desempenho e qualidade objetivamente definidos. Não se aplica a serviços técnicos especializados de natureza predominantemente intelectual e obras/serviços de engenharia (exceto serviços comuns de engenharia - art. 6º, XXI, 'a').</p>" },
+        { "id": "10.3.2", "title": "10.3.2 Concurso (Art. 30)", "resumo": "Para escolha de trabalho técnico, científico ou artístico, mediante prêmio ou remuneração.", "content": "<p><strong>Art. 30.</strong> O edital de concurso indicará: qualificação exigida, diretrizes e formas de apresentação do trabalho, condições de realização e prêmio/remuneração.</p>" },
+        { "id": "10.3.3", "title": "10.3.3 Leilão (Art. 31)", "resumo": "Para alienação de bens móveis ou imóveis pela maior oferta.", "content": "<p><strong>Art. 31.</strong> Pode ser cometido a leiloeiro oficial ou servidor. Edital deve descrever o bem, valor de avaliação, preço mínimo, condições de pagamento e comissão (se houver).</p>" },
+        { "id": "10.3.4", "title": "10.3.4 Diálogo Competitivo (Art. 32)", "resumo": "Para contratações que envolvam inovação ou soluções não disponíveis no mercado.", "content": "<p><strong>Art. 32.</strong> Utilizado quando a Administração: I - visa contratar objeto que envolva: a) inovação tecnológica/técnica; b) impossibilidade de satisfazer necessidade sem adaptação de soluções; c) impossibilidade de definir especificações com precisão. II - verifica necessidade de definir e identificar meios e alternativas.</p>" }
+      ]
+    },
+    {
+      "id": "10.4",
+      "title": "10.4 Fases do Processo Licitatório (Art. 17)",
+      "resumo": "Sequência de etapas da licitação.",
+      "content": "<h3>Art. 17. O processo de licitação observará as seguintes fases, em sequência:</h3><ul><li>I - preparatória;</li><li>II - de divulgação do edital de licitação;</li><li>III - de apresentação de propostas e lances, quando for o caso;</li><li>IV - de julgamento;</li><li>V - de habilitação;</li><li>VI - recursal;</li><li>VII - de homologação.</li></ul><p><strong>§ 1º</strong> A fase de habilitação (V) poderá, mediante ato motivado e previsto no edital, anteceder as fases de propostas (III) e julgamento (IV).</p>"
+    },
+    {
+      "id": "10.5",
+      "title": "10.5 Contratação Direta (Art. 72-75)",
+      "resumo": "Hipóteses de Inexigibilidade e Dispensa de Licitação.",
+      "content": "<h3>Inexigibilidade (Art. 74)</h3><p>Inviabilidade de competição, em especial para: I - aquisição de materiais/equipamentos/gêneros ou serviços exclusivos; II - contratação de profissional do setor artístico consagrado; III - serviços técnicos especializados de natureza predominantemente intelectual com notória especialização; IV - objetos por credenciamento; V - aquisição/locação de imóvel específico.</p><h3>Dispensa (Art. 75)</h3><p>Casos em que a licitação, embora viável, pode ser dispensada pela Administração. Exemplos: I - baixo valor (obras e serviços de engenharia até R$ 100.000; outros serviços e compras até R$ 50.000 - valores atualizáveis); VIII - emergência ou calamidade pública; XIV - contratação de associação de pessoas com deficiência.</p>"
+    },
+    {
+      "id": "10.6",
+      "title": "10.6 Sanções (Art. 155, 156)",
+      "resumo": "Penalidades administrativas por infrações.",
+      "content": "<p><strong>Art. 155</strong> lista as infrações. <strong>Art. 156</strong> prevê as sanções: I - advertência; II - multa; III - impedimento de licitar e contratar; IV - declaração de inidoneidade para licitar ou contratar.</p>"
+    },
+    {
+      "id": "10.7",
+      "title": "10.7 Crimes em Licitações e Contratos (Lei 14.133/2021)",
+      "subtitle": "Aspectos Penais da Nova Lei de Licitações",
+      "icon": "🚨",
+      "color": "bg-rose",
+      "resumo": "A Lei 14.133/2021 inseriu um novo capítulo no Código Penal (Capítulo II-B do Título XI da Parte Especial) para tratar dos crimes em licitações e contratos administrativos.",
+      "subtopics": [
+        {
+          "id": "10.7.1",
+          "title": "10.7.1 Contratação Direta Ilegal (Art. 337-E do CP)",
+          "resumo": "Admitir, possibilitar ou dar causa à contratação direta fora das hipóteses previstas em lei.",
+          "content": "<h3>Art. 337-E. Admitir, possibilitar ou dar causa à contratação direta fora das hipóteses previstas em lei:</h3><p>Pena - reclusão, de 4 (quatro) a 8 (oito) anos, e multa.</p><p>Este crime visa punir a burla às regras de dispensa ou inexigibilidade de licitação, direcionando contratos indevidamente.</p>"
+        },
+        {
+          "id": "10.7.2",
+          "title": "10.7.2 Frustração do Caráter Competitivo de Licitação (Art. 337-F do CP)",
+          "resumo": "Frustrar ou fraudar, com o intuito de obter vantagem, o caráter competitivo do processo licitatório.",
+          "content": "<h3>Art. 337-F. Frustrar ou fraudar, com o intuito de obter para si ou para outrem vantagem decorrente da adjudicação do objeto da licitação, o caráter competitivo do processo licitatório:</h3><p>Pena - reclusão, de 4 (quatro) a 8 (oito) anos, e multa.</p><p>Inclui condutas como combinação de preços entre licitantes (cartel), apresentação de propostas de cobertura, etc.</p>"
+        },
+        {
+          "id": "10.7.3",
+          "title": "10.7.3 Modificação ou Pagamento Irregular em Contrato (Art. 337-H do CP)",
+          "resumo": "Admitir, possibilitar ou dar causa a modificação ou vantagem contratual sem autorização em lei/edital, ou pagar fatura com preterição da ordem cronológica.",
+          "content": "<h3>Art. 337-H. Admitir, possibilitar ou dar causa a qualquer modificação ou vantagem, inclusive prorrogação contratual, em favor do contratado, durante a execução dos contratos celebrados com a Administração Pública, sem autorização em lei, no edital da licitação ou nos respectivos instrumentos contratuais, ou, ainda, pagar fatura com preterição da ordem cronológica de sua exigibilidade:</h3><p>Pena - reclusão, de 4 (quatro) a 8 (oito) anos, e multa.</p>"
+        },
+        {
+          "id": "10.7.4",
+          "title": "10.7.4 Fraude em Licitação ou Contrato (Art. 337-L do CP)",
+          "resumo": "Fraudar licitação ou contrato dela decorrente, mediante diversas condutas.",
+          "content": "<h3>Art. 337-L. Fraudar, em prejuízo da Administração Pública, licitação ou contrato dela decorrente, mediante:</h3><ul><li>I - entrega de mercadoria ou prestação de serviços com qualidade ou em quantidade diversas das previstas;</li><li>II - fornecimento, como verdadeira ou perfeita, de mercadoria falsificada, deteriorada, inservível ou com prazo vencido;</li><li>III - entrega de uma mercadoria por outra;</li><li>IV - alteração da substância, qualidade ou quantidade da mercadoria ou do serviço;</li><li>V - qualquer meio fraudulento que torne injustamente mais onerosa para a Administração Pública a proposta ou a execução do contrato.</li></ul><p>Pena - reclusão, de 4 (quatro) a 8 (oito) anos, e multa.</p>"
+        },
+        {
+          "id": "10.7.5",
+          "title": "10.7.5 Outros Crimes Relevantes",
+          "resumo": "Visão geral de outros tipos penais como Perturbação de Processo Licitatório, Violação de Sigilo, Afastamento de Licitante, Contratação Inidônea.",
+          "content": "<ul><li><strong>Art. 337-I (Perturbação de processo licitatório):</strong> Impedir, perturbar ou fraudar. Pena - detenção, de 6 meses a 3 anos, e multa.</li><li><strong>Art. 337-J (Violação de sigilo em licitação):</strong> Devassar sigilo de proposta. Pena - detenção, de 2 a 3 anos, e multa.</li><li><strong>Art. 337-K (Afastamento de licitante):</strong> Afastar ou tentar afastar por violência, grave ameaça, fraude ou vantagem. Pena - reclusão, de 3 a 5 anos, e multa, além da pena da violência.</li><li><strong>Art. 337-M (Contratação inidônea):</strong> Admitir à licitação ou contratar com empresa/profissional declarado inidôneo. Pena - reclusão, de 1 a 3 anos (admitir) ou 3 a 6 anos (contratar), e multa.</li></ul>"
+        }
+      ]
+    }
+  ]
+}

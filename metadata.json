@@ -1,0 +1,11 @@
+{
+  "name": "Estudos TDAH Friendly",
+  "version": "1.0.0",
+  "description": "Um aplicativo auxiliar de estudos projetado para ser amigável para pessoas com TDAH.",
+  "author": "Caroline D.",
+  "license": "MIT",
+  "homepage": "https://github.com/carolinedd2/TDAHFriendly",
+  "keywords": ["TDAH", "estudos", "educação", "assistente", "produtividade"],
+  "requestFramePermissions": [],
+  "prompt": "Olá! Estou aqui para ajudar você a estudar de forma mais eficiente e amigável para pessoas com TDAH. Como posso ajudar hoje?"
+}
