@@ -1,349 +1,57 @@
-
-  {"id": "1",
-  "title": "1. Papel do Estado nas Finanças",
-  "subtitle": "Estado, economia e o orçamento público",
-  "icon": "🏛️",
-  "color": "bg-blue-600",
-  "trail": "FUNDAMENTOS",
-  "resumo": "O Estado desempenha funções essenciais na economia, intervindo para corrigir falhas de mercado e promover equidade. O orçamento público é sua principal ferramenta. Este tópico explora:\n- As formas de intervenção estatal\n- As funções econômicas clássicas do Estado\n- Teorias sobre o crescimento dos gastos públicos\n- O conceito, tipos e evolução histórica do orçamento\n- Os fundamentos do Direito Financeiro",
-  "content": "",
-  "subtopics":{
+{
   "id": "1",
   "title": "1. Papel do Estado nas Finanças",
   "subtitle": "Estado, economia e o orçamento público",
   "icon": "🏛️",
   "color": "bg-blue-600",
   "trail": "FUNDAMENTOS",
-  "resumo": "O Estado desempenha funções essenciais na economia, intervindo para corrigir falhas de mercado e promover equidade. O orçamento público é sua principal ferramenta. Este tópico explora:\n- As formas de intervenção estatal\n- As funções econômicas clássicas do Estado\n- Teorias sobre o crescimento dos gastos públicos\n- O conceito, tipos e evolução histórica do orçamento\n- Os fundamentos do Direito Financeiro",
-  "content": "",
+  "resumo": "O Estado desempenha funções essenciais na economia, intervindo para corrigir falhas de mercado e promover equidade. O orçamento público é sua principal ferramenta. Este tópico explora as formas de intervenção estatal, as funções econômicas clássicas do Estado, teorias sobre o crescimento dos gastos públicos, o conceito e evolução do orçamento, e os fundamentos do Direito Financeiro.",
   "subtopics": [
     {
       "id": "1.1",
       "title": "1.1 Formas e Dimensões da Intervenção Estatal",
       "resumo": "A intervenção estatal se manifesta de forma direta (como empresário ou regulador) e indireta (usando políticas fiscal, monetária e de renda). Ambas são fundamentais para o equilíbrio econômico e social.",
-      "content": "",
+      "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><h4 class='text-xl font-bold text-gray-800'>Visão Geral</h4><p>A intervenção do Estado na economia é um mecanismo para equilibrar a eficiência do mercado com objetivos sociais e de estabilidade. Ela pode ser classificada em duas grandes formas:</p></div>",
       "subtopics": [
         {
           "id": "1.1.1",
           "title": "1.1.1 Intervenção Direta",
           "resumo": "Quando o mercado não oferece bens essenciais de forma eficiente ou acessível, o Estado pode atuar diretamente para garantir o atendimento da população.",
-          "content": "<p>Na intervenção direta, o Estado atua como um participante ativo no mercado. Isso ocorre principalmente de duas formas:</p><ul><li><strong>Produção de Bens e Serviços:</strong> Através de empresas estatais (como Petrobras, Correios) ou em áreas de monopólios naturais onde a competição não é eficiente (como saneamento básico).</li><li><strong>Regulação:</strong> Por meio de agências reguladoras (ANATEL, ANEEL, etc.), o Estado define regras para garantir a qualidade dos serviços, proteger o consumidor e promover a concorrência leal.</li></ul>"
+          "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><p>Na intervenção direta, o Estado atua como um participante ativo no mercado. Isso ocorre principalmente de duas formas:</p><ul class='list-disc list-inside space-y-2 pl-4'><li><strong class='font-semibold'>Produção de Bens e Serviços:</strong> Através de <span class='bg-blue-100 text-blue-800 px-2 py-1 rounded'>empresas estatais</span> (como Petrobras, Correios) ou em áreas de monopólios naturais onde a competição não é eficiente (como saneamento básico).</li><li><strong class='font-semibold'>Regulação:</strong> Por meio de <span class='bg-blue-100 text-blue-800 px-2 py-1 rounded'>agências reguladoras</span> (ANATEL, ANEEL, etc.), o Estado define regras para garantir a qualidade dos serviços, proteger o consumidor e promover a concorrência leal.</li></ul></div>"
         },
         {
           "id": "1.1.2",
           "title": "1.1.2 Intervenção Indireta",
           "resumo": "O Estado utiliza suas principais ferramentas macroeconômicas para influenciar o comportamento da economia sem atuar diretamente na produção.",
-          "content": "<p>Na intervenção indireta, o Estado não produz, mas usa suas ferramentas para influenciar o comportamento da economia. As principais são:</p><ul><li><strong>Política Fiscal:</strong> Uso de impostos e gastos públicos para aquecer ou esfriar a economia.</li><li><strong>Política Monetária:</strong> Controle da taxa de juros e da oferta de moeda pelo Banco Central para controlar a inflação.</li><li><strong>Política de Renda:</strong> Ações como a definição do salário mínimo e programas de transferência de renda (Bolsa Família) para melhorar a distribuição da riqueza.</li></ul>"
+          "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><p>Na intervenção indireta, o Estado não produz, mas usa suas ferramentas para influenciar o comportamento da economia. As principais são:</p><ul class='list-disc list-inside space-y-2 pl-4'><li><strong class='font-semibold'>Política Fiscal:</strong> Uso de impostos e gastos públicos para aquecer ou esfriar a economia.</li><li><strong class='font-semibold'>Política Monetária:</strong> Controle da taxa de juros e da oferta de moeda pelo Banco Central para controlar a inflação.</li><li><strong class='font-semibold'>Política de Renda:</strong> Ações como a definição do salário mínimo e programas de transferência de renda (Bolsa Família) para melhorar a distribuição da riqueza.</li></ul></div>"
         }
       ]
     },
     {
       "id": "1.2",
-      "title": "1.2 Atribuições Econômicas Fundamentais do Estado (Funções de Musgrave)",
-      "resumo": "Detalha as três funções clássicas do Estado na economia segundo Richard Musgrave: Alocativa, Distributiva e Estabilizadora. O Estado exerce essas funções para corrigir falhas de mercado, promover o bem-estar social e garantir a estabilidade econômica.",
-      "content": "<p>Richard Musgrave propôs uma classificação clássica das funções econômicas do Estado, que se tornaram referência no estudo das finanças públicas. Essas funções, também chamadas de 'funções fiscais' ou 'funções do orçamento', são instrumentos de ação estatal na economia e orientam a formulação das políticas públicas.</p>",
+      "title": "1.2 Atribuições Econômicas Fundamentais do Estado",
+      "resumo": "Detalha as três funções clássicas do Estado na economia segundo Richard Musgrave: Alocativa, Distributiva e Estabilizadora.",
+      "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><p>Richard Musgrave propôs uma classificação clássica das funções econômicas do Estado, que se tornaram referência no estudo das finanças públicas. Essas funções orientam a formulação das políticas públicas.</p></div>",
       "subtopics": [
         {
           "id": "1.2.1",
           "title": "1.2.1 Função Alocativa",
           "resumo": "O Estado aloca recursos para corrigir falhas de mercado, fornecendo bens públicos, bens meritórios e infraestrutura essencial ao desenvolvimento.",
-          "content": "<h3>Função Alocativa</h3><p>A função alocativa justifica-se quando o mercado (mecanismo de ação privada) não consegue alocar recursos de forma eficiente. O Estado intervém para:</p><ul><li><strong>Corrigir Falhas de Mercado:</strong> Como externalidades (poluição, onde o poluidor não arca com todos os custos sociais) ou informação assimétrica.<p>Na prática, o Estado combate externalidades negativas (como poluição) por meio de regulamentação ambiental, fiscalização, aplicação de multas, cobrança de impostos específicos (como taxas sobre emissão de carbono) e exigência de padrões mínimos de qualidade. Para estimular externalidades positivas, o Estado pode investir em saúde pública, educação, saneamento, conceder subsídios para tecnologias limpas ou promover campanhas de vacinação. Essas ações garantem que o bem-estar coletivo seja protegido e promovido, mesmo quando o mercado não tem incentivos para isso.</p></li><li><strong>Prover Bens Públicos:</strong> São bens ou serviços que o mercado não forneceria adequadamente devido às suas características de <strong>não rivalidade</strong> (o consumo de um não impede o de outro, ex: iluminação pública) e <strong>não exclusão</strong> (é difícil ou impossível impedir que alguém consuma, mesmo sem pagar, ex: defesa nacional). O \"par de sapatos\" é um bem privado típico (rival e excludente), enquanto \"medidas do governo contra a poluição\" são um bem público típico.</li><li><strong>Fornecer Bens Meritórios (ou Semipúblicos):</strong> São bens que, embora possam ser providos pelo mercado, o Estado incentiva o consumo por considerar que geram benefícios sociais além dos individuais (ex: educação, saúde, cultura). O Estado pode fornecer diretamente ou subsidiar. Exemplos incluem merenda escolar e cupons de alimentação.</li><li><strong>Investir em Infraestrutura:</strong> Transportes, energia, comunicações são essenciais para o desenvolvimento e muitas vezes exigem altos investimentos e longos prazos de retorno, desestimulando o setor privado.</li></ul><p>É importante distinguir <strong>produção</strong> (quem efetivamente fabrica o bem ou presta o serviço, podendo ser estatal ou privado) de <strong>provisão</strong> (quem financia, sendo o Estado no caso dos bens públicos e meritórios, geralmente via orçamento).</p><p>Veja o <a href=\"#tabela-1-2-1-1\" class=\"toggle-table-link\">quadro comparativo 1.2.1.1</a> para entender as diferenças entre bens públicos, privados e meritórios.</p>",
-          "tables": [
-            {
-              "id": "tabela-1-2-1-1",
-              "title": "Quadro Comparativo 1.2.1.1 – Tipos de Bens",
-              "headers": ["Tipo", "Rivalidade", "Exclusão", "Exemplo"],
-              "rows": [
-                ["Bem Público", "Não", "Não", "Iluminação pública, defesa nacional"],
-                ["Bem Privado", "Sim", "Sim", "Alimento, roupa, carro"],
-                ["Bem Meritório", "Depende", "Depende", "Educação, saúde, cultura"]
-              ],
-              "hidden": true
-            }
-          ]
+          "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><h4 class='text-xl font-bold text-gray-800'>Função Alocativa</h4><p>A função alocativa justifica-se quando o mercado não consegue alocar recursos de forma eficiente. O Estado intervém para:</p><ul class='list-disc list-inside space-y-2 pl-4'><li><strong>Corrigir Falhas de Mercado:</strong> Como externalidades (ex: poluição) ou informação assimétrica.</li><li><strong>Prover Bens Públicos:</strong> Bens que o mercado não forneceria, como defesa nacional e iluminação pública, por serem <span class='bg-yellow-100 text-yellow-800 px-2 py-1 rounded'>não rivais</span> e <span class='bg-yellow-100 text-yellow-800 px-2 py-1 rounded'>não excludentes</span>.</li><li><strong>Fornecer Bens Meritórios:</strong> Bens que o Estado incentiva o consumo por gerarem benefícios sociais, como educação e saúde.</li></ul><div class='bg-gray-50 p-3 mt-4 rounded-lg border'><h5 class='font-semibold text-gray-600'>Distinção Importante</h5><p class='text-sm'>É crucial distinguir <strong class='font-semibold'>produção</strong> (quem fabrica o bem) de <strong class='font-semibold'>provisão</strong> (quem financia). O Estado pode prover (financiar) um serviço que é produzido pelo setor privado.</p></div></div>"
         },
         {
           "id": "1.2.2",
           "title": "1.2.2 Função Distributiva",
           "resumo": "O Estado busca reduzir as desigualdades de renda e riqueza através de tributos progressivos, transferências e oferta de serviços públicos gratuitos.",
-          "content": "<h3>Função Distributiva</h3><p>A função distributiva visa corrigir as falhas do mercado na distribuição de renda e riqueza, buscando maior equidade social. A distribuição de renda gerada pelo mercado nem sempre é considerada justa, e o Estado intervém para promover ajustamentos.</p><p>Os principais instrumentos são:</p><ul><li><strong>Tributação Progressiva:</strong> Impostos que incidem proporcionalmente mais sobre quem tem maior capacidade contributiva (ex: imposto de renda progressivo).</li><li><strong>Transferências de Renda:</strong> Programas sociais que transferem recursos para as camadas mais necessitadas da população (ex: Bolsa Família, benefícios previdenciários e assistenciais).</li><li><strong>Subsídios a Bens e Serviços Essenciais:</strong> Para tornar acessíveis itens como alimentos, transporte e moradia popular.</li><li><strong>Oferta de Serviços Públicos Gratuitos:</strong> Como educação e saúde públicas, que, ao serem universais, beneficiam proporcionalmente mais os mais pobres.</li></ul><p>A implementação da função distributiva envolve decisões políticas sobre o nível de justiça social desejado e os custos de financiamento dessas políticas, frequentemente retirando de uns para melhorar a situação de outros.</p>"
+          "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><h4 class='text-xl font-bold text-gray-800'>Função Distributiva</h4><p>Visa corrigir as falhas do mercado na distribuição de renda, buscando maior equidade social. Os principais instrumentos são:</p><ul class='list-disc list-inside space-y-2 pl-4'><li><strong>Tributação Progressiva:</strong> Impostos que incidem mais sobre quem tem maior renda.</li><li><strong>Transferências de Renda:</strong> Programas como o Bolsa Família e benefícios previdenciários.</li><li><strong>Oferta de Serviços Públicos Gratuitos:</strong> Como educação e saúde, que beneficiam proporcionalmente mais os mais pobres.</li></ul></div>"
         },
         {
           "id": "1.2.3",
           "title": "1.2.3 Função Estabilizadora",
           "resumo": "O Estado utiliza políticas fiscal e monetária para manter o pleno emprego, a estabilidade de preços e o crescimento econômico sustentado.",
-          "content": "<h3>Função Estabilizadora</h3><p>A função estabilizadora visa assegurar a estabilidade macroeconômica, promovendo o pleno emprego, a estabilidade dos níveis de preços (controle da inflação), o equilíbrio no balanço de pagamentos e uma taxa razoável de crescimento econômico. Esta função ganhou destaque após a Grande Depressão de 1930 e as contribuições de Keynes.</p><p>O mecanismo básico é a <strong>atuação estatal sobre a demanda agregada</strong> (consumo, investimento, gastos do governo, exportações líquidas):</p><ul><li>Em períodos de recessão (demanda agregada inferior à capacidade produtiva), o Estado pode aumentar seus gastos ou reduzir tributos para estimular a economia.</li><li>Em períodos de inflação alta (demanda agregada superior à capacidade produtiva), o Estado pode reduzir seus gastos ou aumentar tributos para conter a demanda.</li></ul><p>O <strong>orçamento público</strong> é um instrumento crucial da função estabilizadora, através das compras do governo, dos gastos com funcionalismo e do impacto dos tributos na renda disponível.</p><p>Além da política fiscal (gerenciada pelo orçamento), a política monetária (controle da oferta de moeda e taxas de juros pelo Banco Central) também é fundamental para a estabilização.</p><p>Os chamados <strong>estabilizadores automáticos</strong> (como o imposto de renda progressivo e o seguro-desemprego) são mecanismos que, uma vez implantados, reagem automaticamente às flutuações econômicas, suavizando os ciclos.</p><p>Veja o <a href=\"#grafico-1-2-3-1\" class=\"toggle-chart-link\">gráfico 1.2.3.1</a> para entender o tripé macroeconômico brasileiro.</p>",
-          "charts": [
-            {
-              "id": "grafico-1-2-3-1",
-              "title": "Gráfico 1.2.3.1 – Tripé Macroeconômico Brasileiro",
-              "type": "pie",
-              "data": {
-                "labels": ["Metas de Inflação", "Responsabilidade Fiscal", "Câmbio Flutuante"],
-                "datasets": [
-                  {
-                    "data": [33, 33, 34]
-                  }
-                ]
-              },
-              "hidden": true
-            }
-          ]
+          "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><h4 class='text-xl font-bold text-gray-800'>Função Estabilizadora</h4><p>Visa assegurar a estabilidade macroeconômica, atuando sobre a <strong class='font-semibold'>demanda agregada</strong>. Esta função ganhou destaque com as ideias de Keynes.</p><ul class='list-disc list-inside space-y-2 pl-4'><li><strong>Em recessões:</strong> O Estado pode <span class='bg-green-100 text-green-800 px-2 py-1 rounded'>aumentar gastos ou reduzir tributos</span> para estimular a economia.</li><li><strong>Em períodos de inflação:</strong> O Estado pode <span class='bg-red-100 text-red-800 px-2 py-1 rounded'>reduzir gastos ou aumentar tributos</span> para conter a demanda.</li></ul><div class='bg-gray-50 p-3 mt-4 rounded-lg border'><h5 class='font-semibold text-gray-600'>Tripé Macroeconômico Brasileiro</h5><p class='text-sm'>A estabilização no Brasil se apoia em: Metas de Inflação, Responsabilidade Fiscal e Câmbio Flutuante.</p></div></div>"
         }
       ]
-    },
-    [
-  {
-    "id": "1.3",
-    "title": "1.3 O Crescimento das Despesas Públicas: Teorias e Fatores",
-    "resumo": "Análise das principais teorias e fatores que explicam o aumento contínuo das despesas governamentais ao longo do tempo.",
-    "content": "<p>Uma das características mais marcantes da economia do século XX e XXI é o aumento das despesas públicas, tanto em países desenvolvidos quanto em economias emergentes. Diversas teorias e fatores ajudam a explicar esse fenômeno, que também se faz presente no Brasil atual. Veja a <a href=\"#tabela-1-3-1-1\" class=\"toggle-table-link\">tabela 1.3.1.1</a> para dados comparativos internacionais e o <a href=\"#grafico-1-3-1-1\" class=\"toggle-chart-link\">gráfico 1.3.1.1</a> para visualizar a evolução no Brasil.</p>",
-    "tables": [
-      {
-        "id": "tabela-1-3-1-1",
-        "title": "Tabela 1.3.1.1 – Participação dos Gastos Públicos no PIB (%)",
-        "headers": ["País", "1890", "1970", "2020"],
-        "rows": [
-          ["Estados Unidos", "6,5", "30", "38"],
-          ["Brasil", "—", "18", "41"],
-          ["Alemanha", "10", "35", "45"]
-        ],
-        "hidden": true
-      }
-    ],
-    "charts": [
-      {
-        "id": "grafico-1-3-1-1",
-        "title": "Gráfico 1.3.1.1 – Evolução dos Gastos Públicos como % do PIB (Brasil, 1950–2020)",
-        "type": "line",
-        "data": {
-          "labels": ["1950", "1970", "1990", "2010", "2020"],
-          "datasets": [
-            {
-              "label": "Brasil",
-              "data": [10, 18, 30, 38, 41]
-            }
-          ]
-        },
-        "hidden": true
-      }
-    ],
-    "subtopics": [
-      {
-        "id": "1.3.1",
-        "title": "1.3.1 Evidências do Crescimento",
-        "resumo": "Dados históricos e recentes mostram o aumento da participação do Estado na economia.",
-        "content": "<h4>Evidências do Crescimento das Despesas Públicas</h4><p>Historicamente, observa-se um aumento significativo da participação do Estado na economia. Nos Estados Unidos, por exemplo, os gastos dos três níveis de governo passaram de 6,5% do Produto Nacional Bruto (PNB) em 1890 para mais de 30% em 1970, estabilizando-se próximos a 40% nas décadas seguintes. No Brasil, o crescimento acelerado das despesas públicas teve início mais tarde, especialmente após a Segunda Guerra Mundial, com expansão significativa da administração descentralizada. Nos últimos anos, temas como Previdência, Saúde e Assistência Social têm impulsionado o aumento dos gastos públicos, refletindo mudanças demográficas e demandas sociais crescentes.</p>"
-      },
-      {
-        "id": "1.3.2",
-        "title": "1.3.2 Teorias Explicativas do Crescimento",
-        "resumo": "Principais teorias econômicas que buscam explicar o aumento das despesas públicas.",
-        "content": "<p>Compare as principais teorias na <a href=\"#tabela-1-3-2-1\" class=\"toggle-table-link\">tabela 1.3.2.1</a>.</p>",
-        "tables": [
-          {
-            "id": "tabela-1-3-2-1",
-            "title": "Tabela 1.3.2.1 – Teorias sobre o Crescimento das Despesas Públicas",
-            "headers": ["Teoria", "Autor", "Ideia Central", "Exemplo"],
-            "rows": [
-              ["Lei de Wagner", "Adolf Wagner", "O setor público cresce mais rápido que o privado com o desenvolvimento econômico.", "Expansão do Estado de Bem-Estar Social na Europa."],
-              ["Peacock & Wiseman", "Peacock & Wiseman", "Crises elevam gastos e criam novos patamares após a crise.", "Gastos públicos no Brasil após a pandemia de COVID-19."],
-              ["Public Choice", "James Buchanan", "Grupos de interesse e burocratas ampliam despesas para benefício próprio.", "Aumento de cargos públicos por pressão sindical."]
-            ],
-            "hidden": true
-          }
-        ],
-        "subtopics": [
-          {
-            "id": "1.3.2.1",
-            "title": "1.3.2.1 Lei de Wagner (Adolf Wagner)",
-            "resumo": "Com o desenvolvimento econômico, a participação do setor público na economia tende a crescer mais rápido que a do setor privado.",
-            "content": "<h4>Lei de Wagner</h4><p>Formulada pelo economista alemão Adolf Wagner no final do século XIX, a \"Lei do Crescimento Incessante das Atividades Estatais\" postula que, à medida que os países se industrializam e a renda per capita aumenta, o setor público tende a crescer a taxas mais elevadas que o setor privado. Isso significa que a participação relativa do governo na economia aumenta com o desenvolvimento econômico.</p><p>Richard Bird, ao estudar essa lei, verificou que a elasticidade das despesas públicas em relação à Renda Nacional foi consistentemente superior à unidade em países como Reino Unido, Alemanha e Suécia. Bird aponta três causas principais para essa evidência:</p><ol><li>O crescimento das funções administrativas e de segurança do Estado.</li><li>As crescentes demandas por maior bem-estar social, especialmente em educação e saúde.</li><li>A maior intervenção direta e indireta do governo no processo produtivo, fornecendo infraestrutura e regulando atividades econômicas.</li></ol>"
-          },
-          {
-            "id": "1.3.2.2",
-            "title": "1.3.2.2 Hipótese de Peacock & Wiseman (Efeito Deslocamento)",
-            "resumo": "Grandes crises elevam os gastos públicos, que raramente retornam aos níveis anteriores após o fim da crise.",
-            "content": "<h4>Hipótese de Peacock & Wiseman</h4><p>Alan Peacock e Jack Wiseman, analisando o comportamento das despesas públicas no Reino Unido, propuseram que o crescimento dos gastos governamentais é mais uma função da capacidade de obtenção de recursos do que da demanda por serviços públicos. Em situações de normalidade, há um equilíbrio entre a demanda por serviços públicos e a disposição da sociedade em pagar impostos. No entanto, em períodos de <strong>grande perturbação social ou econômica</strong> (como guerras, pandemias ou crises financeiras), a população aceita uma carga tributária maior para financiar esforços extraordinários. Esse fenômeno é chamado de <strong>efeito deslocamento (ou translação)</strong>.</p><p>Após o fim da crise, os níveis de tributação e, consequentemente, de despesa pública, não retornam completamente aos patamares anteriores, estabelecendo um novo <strong>efeito limite (ou patamar)</strong> mais elevado. No Brasil, por exemplo, a pandemia de COVID-19 levou a um aumento significativo dos gastos públicos, especialmente com saúde e assistência social, e parte desses gastos se mantém elevada após o fim da crise.</p>"
-          }
-        ]
-      },
-      {
-        "id": "1.3.3",
-        "title": "1.3.3 Fatores Adicionais para o Crescimento das Despesas",
-        "resumo": "Diversos fatores estruturais, sociais, políticos e tecnológicos explicam o crescimento contínuo das despesas públicas.",
-        "subtopics": [
-          {
-            "id": "1.3.3.1",
-            "title": "1.3.3.1 Mudanças Demográficas e Sociais",
-            "content": "<p>O crescimento populacional, o envelhecimento da população e o aumento da urbanização elevam as demandas por educação, saúde, previdência e infraestrutura urbana.</p><p><strong>Exemplo:</strong> O envelhecimento da população brasileira pressiona os gastos públicos com saúde e previdência. Segundo projeções do IBGE, a razão de dependência de idosos deve subir de 20,6% em 2020 para 29,1% em 2030, aumentando a demanda por benefícios previdenciários e serviços de saúde especializados. Ao mesmo tempo, a urbanização crescente exige mais investimentos em transporte público, saneamento e habitação nas cidades.</p>"
-          },
-          {
-            "id": "1.3.3.2",
-            "title": "1.3.3.2 Avanços Tecnológicos",
-            "content": "<p>Novas tecnologias geram demandas por investimentos em áreas como transporte, energia, comunicação, defesa e até programas espaciais.</p><p><strong>Exemplo:</strong> O aumento dos investimentos públicos em tecnologia da informação (TIC) tem impacto direto na eficiência do Estado e nos custos. Por exemplo, o governo brasileiro aumentou gastos com digitalização de serviços, sistemas de saúde eletrônicos e educação à distância, o que exige recursos constantes para atualização e manutenção dessas tecnologias.</p>"
-          },
-          {
-            "id": "1.3.3.3",
-            "title": "1.3.3.3 Custos Relativos dos Serviços Públicos",
-            "content": "<p>Serviços públicos são, em geral, intensivos em mão de obra (como saúde e educação), tornando-os menos suscetíveis a ganhos de produtividade e mais sensíveis à inflação de custos.</p><p><strong>Exemplo:</strong> No Brasil, a maior parte dos gastos federais em educação está concentrada em salários de professores e funcionários, o que eleva o custo relativo ao longo do tempo, pois esses setores não acompanham os mesmos ganhos de produtividade da indústria.</p>"
-          },
-          {
-            "id": "1.3.3.4",
-            "title": "1.3.3.4 Expansão das Transferências e Programas Sociais",
-            "content": "<p>Programas de previdência social, assistência e benefícios sociais têm sido ampliados, especialmente em países em desenvolvimento, como resposta às demandas por maior proteção social.</p><p><strong>Exemplo:</strong> A ampliação de programas como o Bolsa Família, Auxílio Brasil e Benefício de Prestação Continuada (BPC) aumentou significativamente as transferências de renda para famílias de baixa renda, elevando a participação desses gastos no orçamento público e respondendo a demandas sociais por maior proteção.</p>"
-          },
-          {
-            "id": "1.3.3.5",
-            "title": "1.3.3.5 Fatores Políticos e Institucionais",
-            "content": "<p>Mudanças na filosofia social, surgimento de novos grupos com poder político e o processo democrático levam à criação de novos programas e serviços públicos.</p><p><strong>Exemplo:</strong> Mudanças na legislação, como a criação de pisos salariais para professores, ou a descentralização de recursos para estados e municípios, são decisões políticas que elevam o gasto público. Além disso, a fragmentação partidária no Congresso pode dificultar cortes de despesas, pois diferentes grupos pressionam por mais recursos para suas bases eleitorais.</p>"
-          },
-          {
-            "id": "1.3.3.6",
-            "title": "1.3.3.6 Teorias Neoinstitucionalistas e Public Choice",
-            "content": "<p>Teorias como a Public Choice argumentam que grupos de interesse e burocratas buscam ampliar seus benefícios e orçamentos, contribuindo para o crescimento das despesas públicas.</p><p><strong>Exemplo:</strong> A teoria Public Choice sugere que grupos de interesse, como sindicatos do funcionalismo público, pressionam por aumentos salariais e benefícios, contribuindo para o crescimento das despesas. No Brasil, reajustes salariais acima da inflação para determinadas categorias e a criação de novos cargos públicos são exemplos desse fenômeno.</p>"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "1.4",
-    "title": "1.4 O Orçamento Público: Conceito, Tipos e Evolução Histórica",
-    "resumo": "Define o orçamento público, explora seus diferentes tipos (tradicional, de desempenho, programa, etc.), traça sua evolução histórica desde as origens até o contexto brasileiro (Lei 4.320/64, CF/88), e discute sua natureza multifacetada.",
-    "content": "<p>O orçamento público é um instrumento central da administração financeira e da governança democrática. Este subtópico explora sua definição, os diferentes modelos ou tipos que evoluíram ao longo do tempo, e sua trajetória histórica, tanto internacionalmente quanto no Brasil, culminando na estrutura atual definida pela Constituição de 1988 e pela Lei 4.320/64. Compare os principais modelos na <a href=\"#tabela-1-4-2-1\" class=\"toggle-table-link\">tabela 1.4.2.1</a> e veja a <a href=\"#grafico-1-4-3-1\" class=\"toggle-chart-link\">linha do tempo 1.4.3.1</a> dos principais marcos históricos.</p>",
-    "tables": [
-      {
-        "id": "tabela-1-4-2-1",
-        "title": "Tabela 1.4.2.1 – Tipos de Orçamento Público",
-        "headers": ["Tipo", "Foco", "Pergunta Central", "Vantagens", "Limitações"],
-        "rows": [
-          ["Tradicional", "Objeto do gasto", "O que comprar?", "Controle legal", "Pouco foco em resultados"],
-          ["Desempenho", "Eficiência", "O que faz? Qual custo?", "Mede desempenho", "Pouca ligação com planejamento"],
-          ["Programa", "Objetivos/resultados", "Por que gastar? Que resultado?", "Integra planejamento e orçamento", "Exige bons indicadores"]
-        ],
-        "hidden": true
-      }
-    ],
-    "charts": [
-      {
-        "id": "grafico-1-4-3-1",
-        "title": "Linha do Tempo 1.4.3.1 – Evolução do Orçamento Público",
-        "type": "timeline",
-        "events": [
-          {"year": 1215, "event": "Magna Carta (Inglaterra)"},
-          {"year": 1689, "event": "Revolução Gloriosa"},
-          {"year": 1921, "event": "Budget and Accounting Act (EUA)"},
-          {"year": 1964, "event": "Lei 4.320/64 (Brasil)"},
-          {"year": 1988, "event": "Constituição Federal de 1988"}
-        ],
-        "hidden": true
-      }
-    ],
-    "subtopics": [
-      {
-        "id": "1.4.1",
-        "title": "1.4.1 Essência, Importância Democrática e Definição",
-        "resumo": "O orçamento como lei de iniciativa do Executivo, aprovada pelo Legislativo, que estima receitas e fixa despesas, fundamental para o controle e planejamento.",
-        "content": "<h3>Essência, Importância Democrática e Definição de Orçamento Público</h3><p>O orçamento público é um documento basilar de uma democracia, garantindo aos representantes do povo e aos cidadãos a fiscalização das receitas e despesas governamentais. Ele reflete o custo dos direitos, as metas fiscais e a participação democrática nas decisões alocativas.</p><p>Pode ser definido como a <strong>lei de iniciativa do Poder Executivo, aprovada pelo Poder Legislativo para um determinado período (geralmente um ano), que estima as receitas e fixa as despesas</strong>, distribuídas por diversas classificações e alinhadas com diretrizes, objetivos e programas. Cumpre funções de controle político e legislativo, planejamento da gestão pública e da política fiscal, e formulação democrática de programas.</p>"
-      },
-      {
-        "id": "1.4.2",
-        "title": "1.4.2 Tipos de Orçamento e Evolução Conceitual",
-        "resumo": "Evolução dos modelos orçamentários: Tradicional (foco no objeto do gasto e controle), de Desempenho (foco na eficiência e o que se faz), Programa (foco nos objetivos e resultados) e outras abordagens modernas.",
-        "content": "<p>A forma de elaborar o orçamento evoluiu ao longo do tempo, refletindo diferentes ênfases e necessidades de gestão. Cada tipo busca responder a perguntas específicas sobre a atuação governamental. Este tópico detalha os principais modelos: Orçamento Tradicional, Orçamento de Desempenho, Orçamento-Programa, e outras abordagens modernas como o PPBS e o Orçamento Base-Zero. Para uma discussão mais aprofundada sobre técnicas modernas e o futuro do orçamento, consulte o <a href='#' data-internal-link-id='15' class='internal-topic-link'>Tópico 15</a>. Veja a <a href=\"#tabela-1-4-2-1\" class=\"toggle-table-link\">tabela 1.4.2.1</a> para comparação.</p>"
-      },
-      {
-        "id": "1.4.3",
-        "title": "1.4.3 Evolução Histórica do Orçamento Público",
-        "resumo": "Marcos históricos da evolução do orçamento desde a Magna Carta, passando pelo desenvolvimento na França e EUA, até a estrutura atual no Brasil com a CF/88 e Lei 4.320/64.",
-        "content": "<h3>Evolução Histórica do Orçamento Público</h3><p>O conceito e a prática do orçamento público evoluíram significativamente ao longo dos séculos, acompanhando as transformações do Estado e das demandas sociais. Veja a <a href=\"#grafico-1-4-3-1\" class=\"toggle-chart-link\">linha do tempo 1.4.3.1</a> dos principais marcos históricos do orçamento público.</p>"
-      }
-    ]
-  }
-],
-[
-  {
-    "id": "1.5",
-    "title": "1.5 O Direito Financeiro e a Ciência das Finanças",
-    "resumo": "Distinção e inter-relação entre o Direito Financeiro (normas jurídicas da atividade financeira estatal) e a Ciência das Finanças (análise econômica e social dessa atividade).",
-    "content": "<p>A atividade financeira do Estado pode ser analisada por diferentes óticas, destacando-se o Direito Financeiro e a Ciência das Finanças. Ambas são fundamentais para compreender como o Estado arrecada, gerencia e aplica recursos públicos, cada uma com seu foco e método.</p>",
-    "subtopics": [
-      {
-        "id": "1.5.1",
-        "title": "1.5.1 Direito Financeiro",
-        "resumo": "Ramo do direito público que regula juridicamente a atividade financeira do Estado.",
-        "content": "<p>O Direito Financeiro é o ramo do direito público interno que estuda as normas jurídicas que regem a atividade financeira do Estado. Seu objeto é a obtenção, gestão e aplicação dos recursos públicos, tendo o orçamento como categoria central. Ele instrumentaliza juridicamente as decisões e políticas financeiras do Estado.</p>"
-      },
-      {
-        "id": "1.5.2",
-        "title": "1.5.2 Fontes Jurídicas do Direito Financeiro",
-        "resumo": "Principais normas e atos que fundamentam e disciplinam a atividade financeira estatal.",
-        "content": "<ul><li><strong>Constituição Federal:</strong> Fonte primária e fundamental, estabelece princípios, competências, limitações e regras essenciais para a organização financeira do Estado (ex: arts. 163 a 169 da CF).</li><li><strong>Leis Complementares:</strong> Regulamentam normas gerais sobre finanças públicas, dívida pública, concessão de garantias, fiscalização financeira, entre outros temas (ex: Lei de Responsabilidade Fiscal – LRF).</li><li><strong>Leis Ordinárias:</strong> Incluem as leis orçamentárias (PPA, LDO, LOA) e regras específicas de execução orçamentária, receitas, despesas e créditos públicos (ex: Lei 4.320/64).</li><li><strong>Medidas Provisórias:</strong> Podem disciplinar temas financeiros de relevância e urgência, com força de lei até sua conversão pelo Congresso.</li><li><strong>Decretos e Normas Infralegais:</strong> Detalham a execução das leis financeiras, como decretos de execução orçamentária, portarias do Tesouro Nacional, instruções normativas e outros atos administrativos.</li><li><strong>Resoluções do Senado Federal:</strong> Definem limites para endividamento, operações de crédito e garantias da União, Estados e Municípios.</li><li><strong>Decisões dos Tribunais de Contas e do Judiciário:</strong> Jurisprudências e decisões interpretam e aplicam as normas financeiras, influenciando a execução e o controle das atividades financeiras do Estado.</li></ul><ul><li><strong>Ciência das Finanças (ou Finanças Públicas):</strong> Disciplina que analisa os aspectos econômicos e sociais da atividade financeira do Estado. Investiga os fatos para explicar fenômenos ligados à obtenção e dispêndio do dinheiro público, seus impactos na economia, na distribuição de renda e no bem-estar social. Fornece o embasamento teórico e analítico para decisões de política fiscal e para as normas do Direito Financeiro.<br><strong>Exemplo prático:</strong> A análise de como o aumento de impostos pode impactar o consumo, a produção e a desigualdade social faz parte da Ciência das Finanças.</li></ul><p>Embora distintas, há uma forte inter-relação: a Ciência das Finanças oferece fundamentos e análise crítica para o Direito Financeiro, que, por sua vez, instrumentaliza juridicamente as decisões e políticas financeiras do Estado. Ou seja, a Ciência das Finanças explica o “porquê” das políticas, enquanto o Direito Financeiro define o “como” elas devem ser aplicadas e controladas.</p>"
-      },
-      {
-        "id": "1.5.3",
-        "title": "1.5.3 Ciência das Finanças (ou Finanças Públicas)",
-        "resumo": "Disciplina que analisa os aspectos econômicos e sociais da atividade financeira do Estado.",
-        "content": "<p>A Ciência das Finanças investiga os fatos econômicos e sociais ligados à obtenção e dispêndio do dinheiro público, seus impactos na economia, na distribuição de renda e no bem-estar social. Fornece o embasamento teórico e analítico para as decisões de política fiscal e para as normas do Direito Financeiro.</p><p><strong>Exemplo prático:</strong> A análise de como o aumento de impostos pode impactar o consumo, a produção e a desigualdade social faz parte da Ciência das Finanças.</p>"
-      },
-      {
-        "id": "1.5.4",
-        "title": "1.5.4 Relação entre Direito Financeiro e Ciência das Finanças",
-        "resumo": "A Ciência das Finanças fundamenta e critica; o Direito Financeiro regulamenta e operacionaliza.",
-        "content": "<p>Embora distintas, há uma forte inter-relação: a Ciência das Finanças oferece fundamentos e análise crítica para o Direito Financeiro, que, por sua vez, instrumentaliza juridicamente as decisões e políticas financeiras do Estado. Em resumo, a Ciência das Finanças explica o “porquê” das políticas, enquanto o Direito Financeiro define o “como” elas devem ser aplicadas e controladas.</p>"
-      }
-    ]
-  },
-  {
-    "id": "1.6",
-    "title": "1.6 Estrutura da Administração Pública Federal e o DEL 200/67",
-    "resumo": "O Decreto-Lei nº 200/1967 estabeleceu as bases da organização administrativa federal, dividindo-a em Administração Direta e Indireta, e consagrou princípios fundamentais que impactam a gestão financeira e orçamentária.",
-    "content": "<p>O Decreto-Lei nº 200, de 25 de fevereiro de 1967, dispõe sobre a organização da Administração Federal e estabelece diretrizes para a Reforma Administrativa. É fundamental para entender como o Estado brasileiro se estrutura para cumprir suas funções, com reflexos diretos na Administração Financeira e Orçamentária (AFO).</p>",
-    "subtopics": [
-      {
-        "id": "1.6.1",
-        "title": "1.6.1 Administração Direta e Indireta",
-        "resumo": "Classificação da Administração Federal em Direta (órgãos integrados à estrutura central) e Indireta (entidades com personalidade jurídica própria).",
-        "content": "<h4>Classificação segundo o Art. 4º DEL 200/67</h4><ul><li><strong>Administração Direta:</strong> Serviços integrados na Presidência da República e Ministérios, com atuação centralizada.</li><li><strong>Administração Indireta:</strong> Entidades com personalidade jurídica própria, criadas para descentralizar e especializar funções do Estado.</li></ul>",
-        "subtopics": [
-          {
-            "id": "1.6.1.1",
-            "title": "1.6.1.1 Tipos de Entidades da Administração Indireta",
-            "content": "<ul><li><strong>Autarquias:</strong> Criadas por lei, com autonomia administrativa e financeira (ex: INSS, Universidades Federais).</li><li><strong>Empresas Públicas:</strong> Direito privado, capital exclusivo da União (ex: Caixa Econômica Federal, Correios).</li><li><strong>Sociedades de Economia Mista:</strong> Direito privado, sociedade anônima, controle acionário estatal (ex: Petrobras, Banco do Brasil).</li><li><strong>Fundações Públicas:</strong> Direito público ou privado, sem fins lucrativos, voltadas a atividades sociais, culturais ou científicas (ex: FUNAI, IBGE).</li></ul><p><strong>Exemplo prático:</strong> O INSS (autarquia) gere a previdência social; a Caixa (empresa pública) atua no setor bancário; a Petrobras (sociedade de economia mista) no petróleo; o IBGE (fundação pública) nas estatísticas oficiais.</p><p><strong>Relevância para AFO:</strong> Empresas estatais têm regimes orçamentários específicos (como o Orçamento de Investimento das Empresas Estatais, Art. 165, §5º, II da CF/88). Dependendo de sua natureza (dependente ou independente), podem ou não integrar o orçamento fiscal e da seguridade social.</p>"
-          }
-        ]
-      },
-      {
-        "id": "1.6.2",
-        "title": "1.6.2 Princípios Fundamentais da Administração Federal",
-        "resumo": "Princípios do Art. 6º DEL 200/67: Planejamento, Coordenação, Descentralização, Delegação de Competência e Controle.",
-        "content": "<h4>Princípios Fundamentais</h4><ul><li><strong>Planejamento:</strong> Base para o orçamento-programa e gestão por resultados.</li><li><strong>Coordenação:</strong> Integração entre órgãos para evitar duplicidade e garantir harmonia (ver Tópico 2).</li><li><strong>Descentralização:</strong> Preferência por execução descentralizada, inclusive para entes subnacionais e setor privado (ver Tópico 4.3). Veja a <a href=\"#tabela-1-6-2-1\" class=\"toggle-table-link\">tabela 1.6.2.1</a> para comparação com delegação.</li><li><strong>Delegação de Competência:</strong> Instrumento para agilizar decisões administrativas.</li><li><strong>Controle:</strong> Exercido em todos os níveis, abrange controle interno e finalístico.</li></ul><p><strong>Exemplo prático:</strong> O Fundeb (educação) e o SUS (saúde) aplicam o princípio da descentralização ao transferir recursos federais para estados e municípios.</p>",
-        "tables": [
-          {
-            "id": "tabela-1-6-2-1",
-            "title": "Tabela 1.6.2.1 – Comparativo entre Descentralização e Delegação",
-            "headers": ["Aspecto", "Descentralização", "Delegação"],
-            "rows": [
-              ["Definição", "Transferência de execução de atividades para outra pessoa jurídica (entidade)", "Transferência de execução de atividades para subordinado dentro da mesma pessoa jurídica"],
-              ["Titularidade", "Transferida (na outorga); permanece com o Estado (na delegação)", "Não transferida, apenas a execução"],
-              ["Personalidade Jurídica", "Nova entidade com personalidade própria (autarquia, fundação, empresa pública, sociedade de economia mista)", "Não há criação de nova personalidade jurídica"],
-              ["Hierarquia", "Não há hierarquia entre a Administração Direta e a Indireta", "Há hierarquia entre delegante e delegado"],
-              ["Exemplo", "Criação do INSS (autarquia) para gerir a previdência", "Chefe de departamento delega tarefas a um servidor"]
-            ],
-            "hidden": true
-          }
-        ]
-      },
-      {
-        "id": "1.6.3",
-        "title": "1.6.3 Supervisão Ministerial",
-        "resumo": "Vinculação das entidades da Administração Indireta a Ministérios, que exercem supervisão para garantir alinhamento com políticas públicas e eficiência.",
-        "content": "<h4>Supervisão Ministerial (Arts. 19-26 DEL 200/67)</h4><p>Entidades da Administração Indireta são vinculadas a Ministérios conforme sua área de atuação. Essa vinculação não é subordinação hierárquica, mas controle finalístico (supervisão ministerial ou tutela administrativa).</p><ul><li>Assegura eficiência administrativa e alinhamento com políticas públicas.</li><li>Inclui nomeação de dirigentes, recebimento de relatórios, acompanhamento de programas e aprovação de contas/orçamentos.</li></ul><p><strong>Exemplo prático:</strong> O Ministério da Saúde supervisiona a Fiocruz, acompanhando orçamento, projetos e contas, para garantir alinhamento com as políticas de saúde.</p><p><strong>Relevância para AFO:</strong> Influencia diretamente a aprovação, execução e avaliação orçamentária e financeira das entidades vinculadas.</p>"
-      }
-    ]
-  }
-]
-
+    }
   ]
-  }}
+}
