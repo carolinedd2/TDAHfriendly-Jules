@@ -1,10 +1,11 @@
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
-*/
+ */
 import { FC } from 'react';
+
 import { StudyItem, StudyItemMeta } from '../types/types';
-import { getTrailOrderAndRootId, formatDisplayTitle } from '../utils/utils';
+import { formatDisplayTitle, getTrailOrderAndRootId } from '../utils/utils';
 
 interface BreadcrumbsProps {
   stack: StudyItem[];
@@ -34,18 +35,15 @@ export const Breadcrumbs: FC<BreadcrumbsProps> = ({
         </li>
 
         {stack.map((item, index) => {
-          const { trailOrderNumberStr, isTrailRelative, actualRootGlobalId } = getTrailOrderAndRootId(
-            item.id,
-            currentStudyTrailId,
-            allTopicsMeta
-          );
+          const { trailOrderNumberStr, isTrailRelative, actualRootGlobalId } =
+            getTrailOrderAndRootId(item.id, currentStudyTrailId, allTopicsMeta);
 
           const displayItemTitle = formatDisplayTitle(
             item.title,
             trailOrderNumberStr,
             isTrailRelative,
             actualRootGlobalId,
-            item.id
+            item.id,
           );
 
           const firstSpace = displayItemTitle.indexOf(' ');
@@ -58,7 +56,10 @@ export const Breadcrumbs: FC<BreadcrumbsProps> = ({
             <li key={item.id} className="flex items-center gap-x-3">
               <span className="text-gray-400">→</span>
               {index === stack.length - 1 ? (
-                <span className="font-semibold text-gray-700 truncate max-w-xs block" aria-current="page">
+                <span
+                  className="font-semibold text-gray-700 truncate max-w-xs block"
+                  aria-current="page"
+                >
                   {displayItemTitle}
                 </span>
               ) : (

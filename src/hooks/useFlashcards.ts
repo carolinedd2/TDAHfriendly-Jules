@@ -1,7 +1,8 @@
-import { useState, useCallback } from 'react';
+import type { GenerateContentResponse } from '@google/genai';
+import { useCallback, useState } from 'react';
+
 import { Flashcard, StudyItemMeta, UserFlashcardsData } from '../types/types';
 import { genaiClient } from '../utils/genaiClient';
-import type { GenerateContentResponse } from '@google/genai';
 
 export default function useFlashcards() {
   const [userFlashcards, setUserFlashcards] = useState<UserFlashcardsData>({});
@@ -22,29 +23,40 @@ export default function useFlashcards() {
 
     const prompt = `Gere 5 flashcards com base no seguinte conteúdo: ${text}`;
     try {
-      const response: GenerateContentResponse = await genaiClient.models.generateContent({
-        model: 'gemini-2.5-flash-preview-04-17',
-        contents: prompt,
-        config: { responseMimeType: 'application/json' },
-      });
+      const response: GenerateContentResponse =
+        await genaiClient.models.generateContent({
+          model: 'gemini-2.5-flash-preview-04-17',
+          contents: prompt,
+          config: { responseMimeType: 'application/json' },
+        });
       const parsed: Flashcard[] = JSON.parse(response.text ?? '');
       setUserFlashcards(prev => ({
         ...prev,
         [studyItem.id]: parsed,
       }));
-    } catch (err: any) {
-      setGenerationError(err.message);
+    } catch (err) {
+      if (err instanceof Error) {
+        setGenerationError(err.message);
+      } else {
+        setGenerationError(
+          'An unknown error occurred during flashcard generation.',
+        );
+      }
     } finally {
       setIsGenerating(false);
     }
   }, []);
 
-  const deleteFlashcard = useCallback((studyItemId: string, flashcardId: string) => {
-    setUserFlashcards(prev => ({
-      ...prev,
-      [studyItemId]: prev[studyItemId]?.filter(f => f.id !== flashcardId) ?? [],
-    }));
-  }, []);
+  const deleteFlashcard = useCallback(
+    (studyItemId: string, flashcardId: string) => {
+      setUserFlashcards(prev => ({
+        ...prev,
+        [studyItemId]:
+          prev[studyItemId]?.filter(f => f.id !== flashcardId) ?? [],
+      }));
+    },
+    [],
+  );
 
   const deleteAllFlashcards = useCallback((studyItemId: string) => {
     setUserFlashcards(prev => ({

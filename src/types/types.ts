@@ -26,7 +26,6 @@ export interface StudyItem {
   trail?: string;
   resumo?: string;
   content?: string;
-  body?: any;
   subtopics?: StudyItem[];
   meta: StudyItemMeta;
 }
@@ -58,7 +57,7 @@ export interface Tab {
 /** Tipos de metas gamificadas */
 export type GoalType =
   | 'study'
-  |'study_subtopics'
+  | 'study_subtopics'
   | 'review_content'
   | 'practice_exercises'
   | 'complete_pomodoros'
