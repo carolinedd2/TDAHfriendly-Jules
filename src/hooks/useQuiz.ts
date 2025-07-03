@@ -24,9 +24,18 @@ export default function useQuiz() {
     setCurrentQuizQuestions(null);
     // Don't set setShowQuizModal(true) yet
 
+    // 1) Carrega o StudyItem completo via loader
+    setQuizContextItem(studyItem);
+    setShowQuizModal(true);
+    setIsGeneratingQuiz(true);
+    setQuizGenerationError(null);
+    setCurrentQuizQuestions(null);
+ 
+
     const fullItem = await studyItem.loader();
     const itemContent =
       fullItem.content?.trim() || fullItem.resumo?.trim() || '';
+ fix/lint-errors
 
     if (!itemContent) {
       setQuizGenerationError(
@@ -47,6 +56,23 @@ export default function useQuiz() {
       ? `Tópico principal: gere entre ${numberOfQuestions} perguntas de múltipla escolha.`
       : `Subtópico: gere entre ${numberOfQuestions} perguntas de múltipla escolha.`;
 
+
+    if (!itemContent) {
+      setQuizGenerationError(
+        'Não há conteúdo suficiente neste tópico para gerar um quiz.',
+      );
+      setIsGeneratingQuiz(false);
+      return;
+    }
+
+    // 2) Define contexto do prompt
+    const isMainTopic = !studyItem.id.includes('.');
+    const numberOfQuestions = isMainTopic ? '10 a 15' : '4 a 5';
+    const topicContextMessage = isMainTopic
+      ? `Tópico principal: gere entre ${numberOfQuestions} perguntas de múltipla escolha.`
+      : `Subtópico: gere entre ${numberOfQuestions} perguntas de múltipla escolha.`;
+
+ main
     const prompt = `
 ${topicContextMessage}
 

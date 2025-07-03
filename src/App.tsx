@@ -90,6 +90,7 @@ const App: React.FC = () => {
 
   const handleSelectTopic = useCallback(
     async (topicId: string) => {
+
       setTopicToReview(null); // Clear any review context
 
       if (topicId.includes('.')) {
@@ -107,11 +108,15 @@ const App: React.FC = () => {
 
       // Progress update (optional, consider if it applies to subtopics too)
       // For now, let's assume it does for simplicity.
+
+      await navigation.handleSelectTopic(topicId);
+
       setTopicProgressMap(prev => ({
         ...prev,
         [topicId]: Math.min((prev[topicId] || 0) + 10, 100),
       }));
     },
+
     [navigation, setActiveTab, activeTab],
   );
 
@@ -138,6 +143,8 @@ const App: React.FC = () => {
     navigation.buildNavigationStackForId,
     navigation.setPendingInternalNavTarget,
   ]);
+    [navigation],
+  );
 
   const handleToggleComprehendedItem = useCallback((itemId: string) => {
     setTopicProgressMap(prev => ({
@@ -227,6 +234,26 @@ const App: React.FC = () => {
       {activeTab === 'dashboard-panel' && (
         <Dashboard
           topicsMeta={TOPIC_META_DATA_ARRAY}
+=======
+          onSelectTopic={handleSelectTopic}
+          topicProgressMap={topicProgressMap}
+          activeGoals={goals.activeGoals}
+          onAddDailyGoal={goals.addDailyGoal}
+          onClearGoal={goals.clearGoal}
+          updateGoalByType={goals.updateGoalByType}
+          showInactivityReminder={showTabSwitchReminder}
+          onDismissInactivityReminder={() => setShowTabSwitchReminder(false)}
+          notificationPermission={notificationPermission}
+          onRequestNotificationPermission={requestNotificationPermission}
+          allTopicsMeta={TOPIC_META_DATA_ARRAY}
+          reviewSchedule={reviewScheduleHook.reviewSchedule}
+          onOpenReviewModal={handleOpenReviewModal}
+        />
+      )}
+
+      {activeTab === 'study-panel' && reviewScheduleHook.currentItemMeta && (
+        <StudyMode
+          currentItem={reviewScheduleHook.currentItemMeta}
           onSelectTopic={handleSelectTopic}
           topicProgressMap={topicProgressMap}
           activeGoals={goals.activeGoals}
