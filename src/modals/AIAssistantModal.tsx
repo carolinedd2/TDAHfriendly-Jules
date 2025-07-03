@@ -3,14 +3,15 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React, {
-  useState,
-  useEffect,
-  useRef,
-  useCallback,
   FC,
   Fragment,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
 } from 'react';
-import { StudyItem, ChatMessage } from '../types/types';
+
+import { ChatMessage, StudyItem } from '../types/types';
 
 interface AIAssistantModalProps {
   isOpen: boolean;
@@ -18,7 +19,7 @@ interface AIAssistantModalProps {
   currentItem: StudyItem;
   onAskAI: (
     userQuery: string,
-    predefinedAction?: 'simplify' | 'key_points' | 'example'
+    predefinedAction?: 'simplify' | 'key_points' | 'example',
   ) => Promise<void>;
   isLoading: boolean;
   aiResponse: string;
@@ -42,7 +43,7 @@ const generateId = () =>
 
 const createMessage = (
   text: string,
-  sender: ChatMessage['sender']
+  sender: ChatMessage['sender'],
 ): ChatMessage => ({
   id: generateId(),
   sender,
@@ -101,34 +102,28 @@ const AIAssistantModal: FC<AIAssistantModalProps> = ({
       e.preventDefault();
       const queryText = customQuery.trim();
       if (queryText) {
-        setChatHistory((prev) => [
-          ...prev,
-          createMessage(queryText, 'user'),
-        ]);
+        setChatHistory(prev => [...prev, createMessage(queryText, 'user')]);
         onAskAI(queryText);
         setCustomQuery('');
       }
     },
-    [customQuery, onAskAI]
+    [customQuery, onAskAI],
   );
 
   // Handler para ação predefinida
   const handlePredefinedAction = useCallback(
     (action: 'simplify' | 'key_points' | 'example') => {
       const actionText = `Solicitação: ${predefinedActionLabels[action]}`;
-      setChatHistory((prev) => [
-        ...prev,
-        createMessage(actionText, 'user'),
-      ]);
+      setChatHistory(prev => [...prev, createMessage(actionText, 'user')]);
       onAskAI('', action);
     },
-    [onAskAI]
+    [onAskAI],
   );
 
   // Adiciona resposta da IA ao histórico (evita duplicatas)
   useEffect(() => {
     if (!isLoading && aiResponse && isOpen) {
-      setChatHistory((prev) => {
+      setChatHistory(prev => {
         if (
           prev.length > 0 &&
           prev[prev.length - 1].sender === 'ai' &&
@@ -144,7 +139,7 @@ const AIAssistantModal: FC<AIAssistantModalProps> = ({
   // Adiciona erro ao histórico (evita duplicatas)
   useEffect(() => {
     if (!isLoading && aiError && isOpen) {
-      setChatHistory((prev) => {
+      setChatHistory(prev => {
         if (
           prev.length > 0 &&
           prev[prev.length - 1].sender === 'error' &&
@@ -169,8 +164,7 @@ const AIAssistantModal: FC<AIAssistantModalProps> = ({
   if (!isOpen && !isAnimatingIn) return null;
 
   const itemTitleDisplay =
-    currentItem.title.split('.').slice(1).join('.').trim() ||
-    currentItem.title;
+    currentItem.title.split('.').slice(1).join('.').trim() || currentItem.title;
 
   return (
     <div
@@ -191,7 +185,7 @@ const AIAssistantModal: FC<AIAssistantModalProps> = ({
           transform transition-all duration-300 ease-out
           ${isOpen && isAnimatingIn ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}
         `}
-        onClick={(e) => e.stopPropagation()}
+        onClick={e => e.stopPropagation()}
         role="document"
       >
         <div className="flex justify-between items-center mb-4 pb-3 border-b border-gray-200">
@@ -245,7 +239,7 @@ const AIAssistantModal: FC<AIAssistantModalProps> = ({
           <textarea
             ref={textareaRef}
             value={customQuery}
-            onChange={(e) => setCustomQuery(e.target.value)}
+            onChange={e => setCustomQuery(e.target.value)}
             placeholder="Ou faça uma pergunta específica sobre este tópico..."
             className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow text-sm"
             rows={2}
@@ -266,7 +260,7 @@ const AIAssistantModal: FC<AIAssistantModalProps> = ({
           className="flex-grow overflow-y-auto bg-gray-50 p-3 sm:p-4 rounded-lg border border-gray-200 min-h-[200px] chat-bubble-container custom-scrollbar"
           aria-live="polite"
         >
-          {chatHistory.map((msg) => (
+          {chatHistory.map(msg => (
             <div
               key={msg.id}
               className={`chat-bubble ${msg.sender}`}
@@ -274,16 +268,16 @@ const AIAssistantModal: FC<AIAssistantModalProps> = ({
                 msg.sender === 'user'
                   ? 'você'
                   : msg.sender === 'ai'
-                  ? 'Assistente IA'
-                  : 'Erro'
+                    ? 'Assistente IA'
+                    : 'Erro'
               }: ${msg.text}`}
             >
-{msg.text.split('\n').map((line, index) => (
-  <Fragment key={index}>
-    {line}
-    {index < msg.text.split('\n').length - 1 && <br />}
-  </Fragment>
-))}
+              {msg.text.split('\n').map((line, index) => (
+                <Fragment key={index}>
+                  {line}
+                  {index < msg.text.split('\n').length - 1 && <br />}
+                </Fragment>
+              ))}
             </div>
           ))}
           {isLoading &&

@@ -1,16 +1,22 @@
 // src/hooks/useInactivityDetection.ts
-import { useEffect, useRef, useCallback, Dispatch, SetStateAction } from 'react';
+import {
+  Dispatch,
+  SetStateAction,
+  useCallback,
+  useEffect,
+  useRef,
+} from 'react';
 
 const INACTIVITY_TIMEOUT_DURATION_MS = 5 * 60 * 1000;
 const TAB_SWITCH_THRESHOLD = 3;
 const REMINDER_DURATION_MS = 5000;
 
 const focusReminderMessages = [
-  "Lembre-se do seu foco! Você consegue! 💪",
-  "Mantenha o foco, você está quase lá! 🚀",
-  "Concentre-se na sua tarefa atual. Pequenos passos levam a grandes vitórias! ✨",
-  "Evite distrações! Sua concentração agradece. 😉",
-  "Foco total no Pomodoro! Sua AFO merece atenção exclusiva agora. 📚"
+  'Lembre-se do seu foco! Você consegue! 💪',
+  'Mantenha o foco, você está quase lá! 🚀',
+  'Concentre-se na sua tarefa atual. Pequenos passos levam a grandes vitórias! ✨',
+  'Evite distrações! Sua concentração agradece. 😉',
+  'Foco total no Pomodoro! Sua AFO merece atenção exclusiva agora. 📚',
 ];
 
 interface UseInactivityDetectionProps {
@@ -33,7 +39,9 @@ export default function useInactivityDetection({
   const focusModeTabSwitchCountRef = useRef(0);
 
   const getRandomReminderMessage = () =>
-    focusReminderMessages[Math.floor(Math.random() * focusReminderMessages.length)];
+    focusReminderMessages[
+      Math.floor(Math.random() * focusReminderMessages.length)
+    ];
 
   const resetInactivityDetection = useCallback(() => {
     if (inactivityTimerIdRef.current) {
@@ -48,18 +56,30 @@ export default function useInactivityDetection({
   }, [isTimerRunning, currentTimerMode, autoPauseFocusTimer]);
 
   useEffect(() => {
-    const activityEvents = ['mousemove', 'mousedown', 'keypress', 'scroll', 'touchstart'];
+    const activityEvents = [
+      'mousemove',
+      'mousedown',
+      'keypress',
+      'scroll',
+      'touchstart',
+    ];
 
     if (isTimerRunning && currentTimerMode === 'focus') {
-      activityEvents.forEach(event => document.addEventListener(event, resetInactivityDetection));
+      activityEvents.forEach(event =>
+        document.addEventListener(event, resetInactivityDetection),
+      );
       resetInactivityDetection();
     } else {
-      if (inactivityTimerIdRef.current) clearTimeout(inactivityTimerIdRef.current);
+      if (inactivityTimerIdRef.current)
+        clearTimeout(inactivityTimerIdRef.current);
     }
 
     return () => {
-      activityEvents.forEach(event => document.removeEventListener(event, resetInactivityDetection));
-      if (inactivityTimerIdRef.current) clearTimeout(inactivityTimerIdRef.current);
+      activityEvents.forEach(event =>
+        document.removeEventListener(event, resetInactivityDetection),
+      );
+      if (inactivityTimerIdRef.current)
+        clearTimeout(inactivityTimerIdRef.current);
     };
   }, [isTimerRunning, currentTimerMode, resetInactivityDetection]);
 
@@ -76,7 +96,8 @@ export default function useInactivityDetection({
           setTabSwitchReminderMessage(message);
           setShowTabSwitchReminder(true);
 
-          if (reminderTimeoutRef.current) clearTimeout(reminderTimeoutRef.current);
+          if (reminderTimeoutRef.current)
+            clearTimeout(reminderTimeoutRef.current);
           reminderTimeoutRef.current = window.setTimeout(() => {
             setShowTabSwitchReminder(false);
           }, REMINDER_DURATION_MS);
@@ -90,5 +111,11 @@ export default function useInactivityDetection({
       document.removeEventListener('visibilitychange', handleVisibilityChange);
       if (reminderTimeoutRef.current) clearTimeout(reminderTimeoutRef.current);
     };
-  }, [isTimerRunning, currentTimerMode, autoPauseFocusTimer, setShowTabSwitchReminder, setTabSwitchReminderMessage]);
+  }, [
+    isTimerRunning,
+    currentTimerMode,
+    autoPauseFocusTimer,
+    setShowTabSwitchReminder,
+    setTabSwitchReminderMessage,
+  ]);
 }

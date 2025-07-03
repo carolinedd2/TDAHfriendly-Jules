@@ -1,5 +1,5 @@
 // src/hooks/useTimer.ts
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 export type TimerMode = 'focus' | 'break';
 
@@ -14,9 +14,13 @@ export default function useTimer({
   defaultFocusMinutes = 25,
   defaultBreakMinutes = 5,
 }: UseTimerProps = {}) {
-  const [focusDurationMinutes, setFocusDurationMinutes] = useState(defaultFocusMinutes);
-  const [breakDurationMinutes, setBreakDurationMinutes] = useState(defaultBreakMinutes);
-  const [timerSecondsRemaining, setTimerSecondsRemaining] = useState(defaultFocusMinutes * 60);
+  const [focusDurationMinutes, setFocusDurationMinutes] =
+    useState(defaultFocusMinutes);
+  const [breakDurationMinutes, setBreakDurationMinutes] =
+    useState(defaultBreakMinutes);
+  const [timerSecondsRemaining, setTimerSecondsRemaining] = useState(
+    defaultFocusMinutes * 60,
+  );
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [currentTimerMode, setCurrentTimerMode] = useState<TimerMode>('focus');
 
@@ -26,13 +30,15 @@ export default function useTimer({
   const getInitialTime = useCallback(
     (mode: TimerMode) =>
       (mode === 'focus' ? focusDurationMinutes : breakDurationMinutes) * 60,
-    [focusDurationMinutes, breakDurationMinutes]
+    [focusDurationMinutes, breakDurationMinutes],
   );
 
   const updateDocumentTitle = useCallback(() => {
     let title = 'Estudos TDAH Friendly';
     if (isTimerRunning || timerSecondsRemaining > 0) {
-      const m = Math.floor(timerSecondsRemaining / 60).toString().padStart(2, '0');
+      const m = Math.floor(timerSecondsRemaining / 60)
+        .toString()
+        .padStart(2, '0');
       const s = (timerSecondsRemaining % 60).toString().padStart(2, '0');
       title = `${isTimerRunning ? '' : '(Pausado) '}${m}:${s} - Estudos TDAH Friendly`;
     }
@@ -67,21 +73,24 @@ export default function useTimer({
     updateDocumentTitle();
   }, [getInitialTime, updateDocumentTitle]);
 
-  const startTimer = useCallback((mode: TimerMode) => {
-    if (timerIntervalIdRef.current) {
-      clearInterval(timerIntervalIdRef.current);
-      timerIntervalIdRef.current = null;
-    }
-    if (inactivityTimerIdRef.current) {
-      clearTimeout(inactivityTimerIdRef.current);
-      inactivityTimerIdRef.current = null;
-    }
+  const startTimer = useCallback(
+    (mode: TimerMode) => {
+      if (timerIntervalIdRef.current) {
+        clearInterval(timerIntervalIdRef.current);
+        timerIntervalIdRef.current = null;
+      }
+      if (inactivityTimerIdRef.current) {
+        clearTimeout(inactivityTimerIdRef.current);
+        inactivityTimerIdRef.current = null;
+      }
 
-    setCurrentTimerMode(mode);
-    setTimerSecondsRemaining(getInitialTime(mode));
-    setIsTimerRunning(true);
-    updateDocumentTitle();
-  }, [getInitialTime, updateDocumentTitle]);
+      setCurrentTimerMode(mode);
+      setTimerSecondsRemaining(getInitialTime(mode));
+      setIsTimerRunning(true);
+      updateDocumentTitle();
+    },
+    [getInitialTime, updateDocumentTitle],
+  );
 
   const pauseTimer = useCallback(() => {
     if (timerIntervalIdRef.current) {
@@ -104,12 +113,12 @@ export default function useTimer({
         setTimerSecondsRemaining(
           currentTimerMode === 'focus'
             ? newFocusMinutes * 60
-            : newBreakMinutes * 60
+            : newBreakMinutes * 60,
         );
         updateDocumentTitle();
       }
     },
-    [isTimerRunning, currentTimerMode, updateDocumentTitle]
+    [isTimerRunning, currentTimerMode, updateDocumentTitle],
   );
 
   useEffect(() => {
@@ -138,7 +147,7 @@ export default function useTimer({
     if (isTimerRunning && currentTimerMode === 'focus') {
       inactivityTimerIdRef.current = window.setTimeout(
         autoPauseFocusTimer,
-        INACTIVITY_TIMEOUT_DURATION_MS
+        INACTIVITY_TIMEOUT_DURATION_MS,
       );
 
       return () => {
@@ -154,31 +163,36 @@ export default function useTimer({
   }, [updateDocumentTitle, currentTimerMode]);
 
   const playSound = (soundFile: string) => {
-  const audio = new Audio(soundFile);
-  audio.play();
-};
+    const audio = new Audio(soundFile);
+    audio.play();
+  };
 
-const showNotification = (title: string, message: string) => {
-  if (Notification.permission === 'granted') {
-    new Notification(title, { body: message });
-  } else if (Notification.permission !== 'denied') {
-    Notification.requestPermission().then(permission => {
-      if (permission === 'granted') {
-        new Notification(title, { body: message });
-      }
-    });
-  }
-};
+  const showNotification = (title: string, message: string) => {
+    if (Notification.permission === 'granted') {
+      new Notification(title, { body: message });
+    } else if (Notification.permission !== 'denied') {
+      Notification.requestPermission().then(permission => {
+        if (permission === 'granted') {
+          new Notification(title, { body: message });
+        }
+      });
+    }
+  };
 
-useEffect(() => {
-  if (timerSecondsRemaining === 0) {
-    const soundFile = currentTimerMode === 'focus' ? 'focus-end.mp3' : 'break-end.mp3';
-    playSound(soundFile);
-    const notificationTitle = currentTimerMode === 'focus' ? 'Fim do foco!' : 'Fim da pausa!';
-    const notificationMessage = currentTimerMode === 'focus' ? 'Hora de descansar!' : 'Hora de voltar ao trabalho!';
-    showNotification(notificationTitle, notificationMessage);
-  }
-}, [timerSecondsRemaining, currentTimerMode]);
+  useEffect(() => {
+    if (timerSecondsRemaining === 0) {
+      const soundFile =
+        currentTimerMode === 'focus' ? 'focus-end.mp3' : 'break-end.mp3';
+      playSound(soundFile);
+      const notificationTitle =
+        currentTimerMode === 'focus' ? 'Fim do foco!' : 'Fim da pausa!';
+      const notificationMessage =
+        currentTimerMode === 'focus'
+          ? 'Hora de descansar!'
+          : 'Hora de voltar ao trabalho!';
+      showNotification(notificationTitle, notificationMessage);
+    }
+  }, [timerSecondsRemaining, currentTimerMode]);
 
   return {
     timerSecondsRemaining,
@@ -193,3 +207,5 @@ useEffect(() => {
     autoPauseFocusTimer,
   };
 }
+
+export type ReturnTypeUseTimer = ReturnType<typeof useTimer>;

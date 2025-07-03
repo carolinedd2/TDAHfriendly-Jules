@@ -12,7 +12,7 @@ export function getTodayDateString(): string {
 }
 
 /**
- * Recebe uma string "YYYY-MM-DD" e retorna outra, 
+ * Recebe uma string "YYYY-MM-DD" e retorna outra,
  * já acrescida de `days` dias no mesmo formato.
  */
 export function addDaysToDateString(dateStr: string, days: number): string {

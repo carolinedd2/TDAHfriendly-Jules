@@ -1,7 +1,8 @@
-import { useState, useEffect, useCallback } from 'react';
-import { getTodayDateString, addDaysToDateString } from '../utils/helpers';
-import type { StudyItemMeta } from '../types/types';
+import { useCallback, useEffect, useState } from 'react';
+
 import { TOPIC_META_DATA } from '../config/constants';
+import type { StudyItemMeta } from '../types/types';
+import { addDaysToDateString, getTodayDateString } from '../utils/helpers';
 
 export interface ReviewItem {
   topicId: string;
@@ -20,7 +21,9 @@ const STORAGE_KEY = 'reviewSchedule';
 
 export default function useReviewSchedule() {
   const [reviewSchedule, setReviewSchedule] = useState<ReviewSchedule>({});
-  const [currentItemMeta, setCurrentItemMeta] = useState<StudyItemMeta | null>(null);
+  const [currentItemMeta, setCurrentItemMeta] = useState<StudyItemMeta | null>(
+    null,
+  );
 
   // Carrega e valida agenda do localStorage
   useEffect(() => {
@@ -67,49 +70,58 @@ export default function useReviewSchedule() {
   }, []);
 
   // Inicializa revisão para um novo tópico
-  const initializeReviewForTopic = useCallback((topicId: string) => {
-    setReviewSchedule(prev => {
-      if (prev[topicId]) return prev;
-      const today = getTodayDateString();
-      const firstNext = addDaysToDateString(today, REVIEW_INTERVALS_DAYS[0]);
-      return {
-        ...prev,
-        [topicId]: {
-          topicId,
-          firstStudiedDate: today,
-          lastReviewDate: today,
-          nextReviewDate: firstNext,
-          reviewStage: 0,
-          isDueForReview: false,
-        },
-      };
-    });
-    updateReviewMarkers();
-  }, [updateReviewMarkers]);
+  const initializeReviewForTopic = useCallback(
+    (topicId: string) => {
+      setReviewSchedule(prev => {
+        if (prev[topicId]) return prev;
+        const today = getTodayDateString();
+        const firstNext = addDaysToDateString(today, REVIEW_INTERVALS_DAYS[0]);
+        return {
+          ...prev,
+          [topicId]: {
+            topicId,
+            firstStudiedDate: today,
+            lastReviewDate: today,
+            nextReviewDate: firstNext,
+            reviewStage: 0,
+            isDueForReview: false,
+          },
+        };
+      });
+      updateReviewMarkers();
+    },
+    [updateReviewMarkers],
+  );
 
   // Marca tópico como revisado e avança estágio
-  const markAsReviewed = useCallback((topicId: string) => {
-    setReviewSchedule(prev => {
-      const item = prev[topicId];
-      if (!item) return prev;
+  const markAsReviewed = useCallback(
+    (topicId: string) => {
+      setReviewSchedule(prev => {
+        const item = prev[topicId];
+        if (!item) return prev;
 
-      const nextStage = Math.min(item.reviewStage + 1, MAX_REVIEW_STAGES - 1);
-      const today = getTodayDateString();
-      const nextDate = addDaysToDateString(today, REVIEW_INTERVALS_DAYS[nextStage] || 3650);
+        const nextStage = Math.min(item.reviewStage + 1, MAX_REVIEW_STAGES - 1);
+        const today = getTodayDateString();
+        const nextDate = addDaysToDateString(
+          today,
+          REVIEW_INTERVALS_DAYS[nextStage] || 3650,
+        );
 
-      return {
-        ...prev,
-        [topicId]: {
-          ...item,
-          lastReviewDate: today,
-          nextReviewDate: nextDate,
-          reviewStage: nextStage,
-          isDueForReview: false,
-        },
-      };
-    });
-    updateReviewMarkers();
-  }, [updateReviewMarkers]);
+        return {
+          ...prev,
+          [topicId]: {
+            ...item,
+            lastReviewDate: today,
+            nextReviewDate: nextDate,
+            reviewStage: nextStage,
+            isDueForReview: false,
+          },
+        };
+      });
+      updateReviewMarkers();
+    },
+    [updateReviewMarkers],
+  );
 
   // Define o próximo item a revisar
   useEffect(() => {
@@ -130,8 +142,13 @@ export default function useReviewSchedule() {
   // Estatísticas úteis para UI
   const getReviewStats = useCallback(() => {
     const totalTopics = Object.keys(reviewSchedule).length;
-    const dueTopics = Object.values(reviewSchedule).filter(item => item.isDueForReview).length;
-    const completedStages = Object.values(reviewSchedule).reduce((sum, item) => sum + item.reviewStage, 0);
+    const dueTopics = Object.values(reviewSchedule).filter(
+      item => item.isDueForReview,
+    ).length;
+    const completedStages = Object.values(reviewSchedule).reduce(
+      (sum, item) => sum + item.reviewStage,
+      0,
+    );
 
     return {
       totalTopics,
@@ -151,4 +168,3 @@ export default function useReviewSchedule() {
 }
 
 export type ReturnTypeUseReviewSchedule = ReturnType<typeof useReviewSchedule>;
-

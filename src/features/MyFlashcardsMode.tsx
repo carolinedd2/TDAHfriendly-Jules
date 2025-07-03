@@ -1,6 +1,7 @@
 // src/features/MyFlashcardsMode.tsx
-import { useState, FC } from 'react';
-import { UserFlashcardsData, StudyItemMeta, Flashcard } from '../types/types';
+import { FC, useState } from 'react';
+
+import { Flashcard, StudyItemMeta, UserFlashcardsData } from '../types/types';
 import { getValidatedTailwindColorClasses } from '../utils/getTailwindColorClasses'; // Certifique-se de importar essa função
 
 interface MyFlashcardsModeProps {
@@ -16,14 +17,20 @@ export const MyFlashcardsMode: FC<MyFlashcardsModeProps> = ({
   onDeleteFlashcard,
   onDeleteAllFlashcards,
 }) => {
-  const [selectedStudyItemId, setSelectedStudyItemId] = useState<string | null>(null);
+  const [selectedStudyItemId, setSelectedStudyItemId] = useState<string | null>(
+    null,
+  );
 
   const topicsWithFlashcards = Object.keys(userFlashcards).filter(
-    id => (userFlashcards[id] || []).length > 0
+    id => (userFlashcards[id] || []).length > 0,
   );
 
   if (topicsWithFlashcards.length === 0) {
-    return <p className="text-gray-500 mt-8 text-center">📭 Você ainda não gerou nenhum flashcard.</p>;
+    return (
+      <p className="text-gray-500 mt-8 text-center">
+        📭 Você ainda não gerou nenhum flashcard.
+      </p>
+    );
   }
 
   return (
@@ -39,7 +46,9 @@ export const MyFlashcardsMode: FC<MyFlashcardsModeProps> = ({
               <button
                 onClick={() => setSelectedStudyItemId(topicId)}
                 className={`w-full text-left px-3 py-2 rounded transition-colors ${
-                  isSelected ? 'bg-indigo-100 font-semibold' : 'hover:bg-gray-100'
+                  isSelected
+                    ? 'bg-indigo-100 font-semibold'
+                    : 'hover:bg-gray-100'
                 }`}
               >
                 {meta?.title || topicId}
@@ -60,17 +69,25 @@ export const MyFlashcardsMode: FC<MyFlashcardsModeProps> = ({
         {selectedStudyItemId ? (
           userFlashcards[selectedStudyItemId]?.map((card: Flashcard) => {
             const meta = allTopicsMeta.find(m => m.id === selectedStudyItemId);
-            const color = getValidatedTailwindColorClasses(meta?.baseColor || 'gray');
+            const color = getValidatedTailwindColorClasses(
+              meta?.baseColor || 'gray',
+            );
 
             return (
               <div
                 key={card.id}
                 className={`p-4 border-l-4 rounded shadow-sm ${color.border} bg-white`}
               >
-                <p><strong>P:</strong> {card.question}</p>
-                <p><strong>R:</strong> {card.answer}</p>
+                <p>
+                  <strong>P:</strong> {card.question}
+                </p>
+                <p>
+                  <strong>R:</strong> {card.answer}
+                </p>
                 <button
-                  onClick={() => onDeleteFlashcard(selectedStudyItemId, card.id)}
+                  onClick={() =>
+                    onDeleteFlashcard(selectedStudyItemId, card.id)
+                  }
                   className="mt-2 text-sm text-red-500 hover:underline"
                 >
                   Remover
@@ -79,7 +96,9 @@ export const MyFlashcardsMode: FC<MyFlashcardsModeProps> = ({
             );
           })
         ) : (
-          <p className="text-gray-500">Selecione um tópico à esquerda para ver seus flashcards.</p>
+          <p className="text-gray-500">
+            Selecione um tópico à esquerda para ver seus flashcards.
+          </p>
         )}
       </div>
     </div>

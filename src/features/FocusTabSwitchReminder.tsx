@@ -3,12 +3,13 @@ interface FocusTabSwitchReminderProps {
   message: string;
 }
 
-const FocusTabSwitchReminder: React.FC<FocusTabSwitchReminderProps> = ({ show, message }) => {
+const FocusTabSwitchReminder: React.FC<FocusTabSwitchReminderProps> = ({
+  show,
+  message,
+}) => {
   if (!show) return null;
   return (
-    <div className="focus-tab-switch-reminder animate-pulse">
-      {message}
-    </div>
+    <div className="focus-tab-switch-reminder animate-pulse">{message}</div>
   );
 };
 
