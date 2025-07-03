@@ -35,9 +35,60 @@ export const StudyMode: React.FC<StudyModeProps> = ({
   // Load full StudyItem when currentItem changes
   useEffect(() => {
     let canceled = false;
-    currentItem.loader().then(item => {
-      if (!canceled) setFullItem(item);
-    });
+    setFullItem(null); // Reset fullItem when currentItem changes to show loading state
+
+    const findRecursive = (
+      searchItems: StudyItem[],
+      id: string,
+    ): StudyItem | null => {
+      for (const si of searchItems) {
+        if (si.id === id) return si;
+        if (si.subtopics) {
+          const found = findRecursive(si.subtopics, id);
+          if (found) return found;
+        }
+      }
+      return null;
+    };
+
+    currentItem
+      .loader()
+      .then(loadedParentItem => {
+        if (canceled) return;
+
+        if (currentItem.id === loadedParentItem.id) {
+          // CurrentItem is a main topic
+          setFullItem(loadedParentItem);
+        } else {
+          // CurrentItem is a subtopic, find it within the loaded parent
+          if (loadedParentItem.subtopics) {
+            const foundSubtopic = findRecursive(
+              [loadedParentItem],
+              currentItem.id,
+            ); // Search from root
+            if (foundSubtopic) {
+              setFullItem(foundSubtopic);
+            } else {
+              console.error(
+                `Subtopic ${currentItem.id} not found in loaded parent ${loadedParentItem.id}`,
+              );
+              setFullItem(null); // Or some error state
+            }
+          } else {
+            console.error(
+              `Parent topic ${loadedParentItem.id} has no subtopics to search for ${currentItem.id}`,
+            );
+            setFullItem(null); // Or some error state
+          }
+        }
+      })
+      .catch(error => {
+        if (!canceled) {
+          console.error('Failed to load topic content in StudyMode:', error);
+          setFullItem(null); // Handle loading error
+        }
+      });
+
     return () => {
       canceled = true;
     };
@@ -83,6 +134,13 @@ export const StudyMode: React.FC<StudyModeProps> = ({
           Abrir Mapa Mental
         </button>
       </div>
+
+      {/* Main Content Display */}
+      {content && (
+        <section className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none p-4 my-4 bg-white shadow rounded-lg">
+          <div dangerouslySetInnerHTML={{ __html: content }} />
+        </section>
+      )}
 
       {/* Timer Pomodoro */}
       <section className="space-y-2">
@@ -141,7 +199,20 @@ export const StudyMode: React.FC<StudyModeProps> = ({
                   onChange={() => onToggleComprehendedItem(sub.id)}
                   className="h-4 w-4"
                 />
-                <label htmlFor={`chk-${sub.id}`} className="flex-1">
+                {/* Making the label clickable to navigate to the subtopic */}
+                <label
+                  htmlFor={`chk-${sub.id}`}
+                  className="flex-1 cursor-pointer hover:text-blue-600 hover:underline"
+                  onClick={() => onSelectTopic(sub.id)}
+                  onKeyDown={e => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      onSelectTopic(sub.id);
+                    }
+                  }}
+                  role="button"
+                  tabIndex={0}
+                >
                   {sub.title}
                 </label>
                 <span className="text-sm text-gray-500">

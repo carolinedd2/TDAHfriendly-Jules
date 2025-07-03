@@ -90,26 +90,54 @@ const App: React.FC = () => {
 
   const handleSelectTopic = useCallback(
     async (topicId: string) => {
-      // Clear any pending review item when a new topic is selected directly
-      setTopicToReview(null);
-      // Ensure currentItemMeta from reviewScheduleHook is also cleared or ignored
-      // if we are navigating directly. For now, prioritizing navigationStack.
-      // Consider if reviewScheduleHook.setCurrentItemMeta(null) is needed or if
-      // the rendering logic for StudyMode will correctly prioritize navigationStack.
+      setTopicToReview(null); // Clear any review context
 
-      await navigation.handleSelectTopic(topicId);
-      // navigationStack should now be updated by the hook
-      // Now, switch to the study tab
-      setActiveTab('study-panel');
+      if (topicId.includes('.')) {
+        // This is a subtopic ID
+        await navigation.handleNavigateToInternalLink(topicId);
+        // Ensure study tab is active if not already
+        if (activeTab !== 'study-panel') {
+          setActiveTab('study-panel');
+        }
+      } else {
+        // This is a main topic ID
+        await navigation.handleSelectTopic(topicId);
+        setActiveTab('study-panel');
+      }
 
-      // Progress update can remain
+      // Progress update (optional, consider if it applies to subtopics too)
+      // For now, let's assume it does for simplicity.
       setTopicProgressMap(prev => ({
         ...prev,
         [topicId]: Math.min((prev[topicId] || 0) + 10, 100),
       }));
     },
-    [navigation, setActiveTab], // Added setActiveTab
+    [navigation, setActiveTab, activeTab],
   );
+
+  // Effect to handle pending internal navigation (e.g., after parent topic loads)
+  useEffect(() => {
+    if (
+      navigation.pendingInternalNavTarget &&
+      navigation.navigationStack.length > 0
+    ) {
+      const mainTopicOfTarget =
+        navigation.pendingInternalNavTarget.split('.')[0];
+      if (navigation.navigationStack[0].id === mainTopicOfTarget) {
+        // Parent topic is loaded, now build stack to the actual subtopic
+        navigation.buildNavigationStackForId(
+          navigation.pendingInternalNavTarget,
+          navigation.navigationStack[0],
+        );
+        navigation.setPendingInternalNavTarget(null); // Clear the pending target
+      }
+    }
+  }, [
+    navigation.pendingInternalNavTarget,
+    navigation.navigationStack,
+    navigation.buildNavigationStackForId,
+    navigation.setPendingInternalNavTarget,
+  ]);
 
   const handleToggleComprehendedItem = useCallback((itemId: string) => {
     setTopicProgressMap(prev => ({
@@ -226,12 +254,17 @@ const App: React.FC = () => {
             // We need to ensure the correct type is passed.
             // The loader in constants.ts returns StudyItem, which includes StudyItemMeta as 'meta'.
             // Let's assume navigation.navigationStack[0] is the full StudyItem.
-            // StudyMode's currentItem prop expects StudyItemMeta.
-            // The 'meta' property of the StudyItem should be what StudyMode needs,
-            // or TOPIC_META_DATA[navigation.navigationStack[0].id]
+            // currentItem should be derived from the LAST item in the navigationStack
+            // which represents the currently focused topic or subtopic.
+            // The last item in navigationStack is a StudyItem. We need its meta.
             currentItem={
-              TOPIC_META_DATA[navigation.navigationStack[0].id] ||
-              navigation.navigationStack[0].meta
+              TOPIC_META_DATA[
+                navigation.navigationStack[
+                  navigation.navigationStack.length - 1
+                ].id
+              ] ||
+              navigation.navigationStack[navigation.navigationStack.length - 1]
+                .meta
             }
             onSelectTopic={handleSelectTopic}
             topicProgressMap={topicProgressMap}

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { QuizQuestion } from '../types/types';
 
 interface QuizModalProps {
-  isOpen?: boolean; // ← opcional, usado apenas em contextos que precisam disso
+  isOpen: boolean; // Made non-optional
   isGenerating: boolean;
   studyItemTitle: string;
   questions: QuizQuestion[];
@@ -18,8 +18,19 @@ const QuizModal: React.FC<QuizModalProps> = ({
   questions,
   error,
   onClose,
+  isOpen, // Destructure isOpen
+  isGenerating,
+  studyItemTitle,
+  questions,
+  error,
+  onClose,
   baseColor = '#4F8EF7', // azul padrão se não vier nada
 }) => {
+  // Conditionally render the modal based on isOpen
+  if (!isOpen) {
+    return null;
+  }
+
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [quizScore, setQuizScore] = useState(0);
   const [showResult, setShowResult] = useState(false);

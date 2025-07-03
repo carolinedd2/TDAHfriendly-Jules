@@ -18,23 +18,27 @@ export default function useQuiz() {
   const [showQuizModal, setShowQuizModal] = useState(false);
 
   const handleGenerateQuiz = useCallback(async (studyItem: StudyItemMeta) => {
-    // 1) Carrega o StudyItem completo via loader
     setQuizContextItem(studyItem);
-    setShowQuizModal(true);
     setIsGeneratingQuiz(true);
     setQuizGenerationError(null);
     setCurrentQuizQuestions(null);
+    // Don't set setShowQuizModal(true) yet
 
     const fullItem = await studyItem.loader();
     const itemContent =
       fullItem.content?.trim() || fullItem.resumo?.trim() || '';
+
     if (!itemContent) {
       setQuizGenerationError(
         'Não há conteúdo suficiente neste tópico para gerar um quiz.',
       );
       setIsGeneratingQuiz(false);
+      setShowQuizModal(true); // Show modal to display the error
       return;
     }
+
+    // If content exists, now we decide to show the modal because we will proceed.
+    setShowQuizModal(true);
 
     // 2) Define contexto do prompt
     const isMainTopic = !studyItem.id.includes('.');
