@@ -100,32 +100,40 @@ export default function useNavigationStack() {
           subtopicId,
         );
       }
-      if (!foundSubtopic) return;
+      if (!foundSubtopic) return; // foundSubtopic is raw from JSON
+
+      const parentMetaForSubtopic = TOPIC_META_DATA[currentTopic.id]; // currentTopic is root of current stack
+      const enhancedSubtopicItem: StudyItem = {
+        ...foundSubtopic,
+        meta: constructSubtopicMeta(foundSubtopic, parentMetaForSubtopic),
+      };
 
       setNavigationStack(prev => {
-        const alreadyExists = prev.some(item => item.id === foundSubtopic!.id);
+        const alreadyExists = prev.some(
+          item => item.id === enhancedSubtopicItem.id,
+        );
         if (alreadyExists) return prev;
 
         const currentLastStackItem = prev[prev.length - 1];
         if (
           currentLastStackItem.subtopics?.find(
-            st => st.id === foundSubtopic!.id,
+            st => st.id === enhancedSubtopicItem.id, // Compare with original ID if necessary, but enhanced is what we push
           )
         ) {
-          return [...prev, foundSubtopic!];
+          return [...prev, enhancedSubtopicItem];
         }
 
         const parentIdx = prev.findIndex(item =>
-          item.subtopics?.find(st => st.id === foundSubtopic!.id),
+          item.subtopics?.find(st => st.id === enhancedSubtopicItem.id),
         );
         if (parentIdx !== -1) {
-          return [...prev.slice(0, parentIdx + 1), foundSubtopic!];
+          return [...prev.slice(0, parentIdx + 1), enhancedSubtopicItem];
         }
 
-        return [...prev, foundSubtopic!];
+        return [...prev, enhancedSubtopicItem]; // Should ideally be unreachable if logic is correct
       });
     },
-    [navigationStack, findItemByIdRecursive],
+    [navigationStack, findItemByIdRecursive, constructSubtopicMeta], // Added constructSubtopicMeta
   );
 
   const handleBreadcrumbNavigate = useCallback(
@@ -171,12 +179,17 @@ export default function useNavigationStack() {
 
       for (let i = 1; i < parts.length; i++) {
         const currentPathId = parts.slice(0, i + 1).join('.');
-        const foundItem = currentLevelItems?.find(
+        const foundJsonItem = currentLevelItems?.find(
           item => item.id === currentPathId,
         );
-        if (foundItem) {
-          path.push(foundItem);
-          currentLevelItems = foundItem.subtopics;
+        if (foundJsonItem) {
+          const parentMetaForSubtopic = TOPIC_META_DATA[rootTopicData.id]; // Meta of the actual root
+          const enhancedSubtopicItem: StudyItem = {
+            ...foundJsonItem,
+            meta: constructSubtopicMeta(foundJsonItem, parentMetaForSubtopic),
+          };
+          path.push(enhancedSubtopicItem);
+          currentLevelItems = enhancedSubtopicItem.subtopics;
         } else {
           break;
         }
@@ -185,6 +198,23 @@ export default function useNavigationStack() {
     },
     [handleSelectTopic],
   );
+
+  // Helper to construct meta for subtopics
+  const constructSubtopicMeta = (
+    subItem: StudyItem,
+    parentMeta: StudyItemMeta,
+  ): StudyItemMeta => {
+    return {
+      id: subItem.id,
+      title: subItem.title,
+      resumo: subItem.resumo || parentMeta.resumo, // Fallback to parent's resumo if subtopic's is missing
+      icon: subItem.icon || parentMeta.icon,
+      baseColor: subItem.baseColor || parentMeta.baseColor,
+      trail: parentMeta.trail, // Subtopic belongs to parent's trail
+      subtopics: !!(subItem.subtopics && subItem.subtopics.length > 0),
+      loader: parentMeta.loader, // CRUCIAL: Subtopic uses parent's loader
+    };
+  };
 
   const handleNavigateToInternalLink = useCallback(
     async (targetId: string) => {
