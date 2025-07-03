@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import { QuizQuestion } from '../types/types';
 
 interface QuizModalProps {
@@ -82,7 +83,9 @@ const QuizModal: React.FC<QuizModalProps> = ({
               Pergunta {currentQuestionIndex + 1} de {questions.length}
             </p>
             <div className="mb-4">
-              <p className="font-semibold text-gray-800">{currentQuestion.question}</p>
+              <p className="font-semibold text-gray-800">
+                {currentQuestion.question}
+              </p>
             </div>
             <ul className="space-y-2 mb-6">
               {currentQuestion.options.map(opt => (
@@ -106,7 +109,9 @@ const QuizModal: React.FC<QuizModalProps> = ({
             <p className="text-lg font-semibold text-gray-800">
               Você acertou {quizScore} de {questions.length} pergunta(s)!
             </p>
-            <p className="text-sm italic text-gray-600">{getFeedbackMessage()}</p>
+            <p className="text-sm italic text-gray-600">
+              {getFeedbackMessage()}
+            </p>
             <button
               onClick={onClose}
               className="mt-6 px-4 py-2 rounded text-white font-medium"

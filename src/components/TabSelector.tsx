@@ -1,4 +1,4 @@
-import { Tab } from "../types/types";
+import { Tab } from '../types/types';
 
 interface TabSelectorProps {
   tabs: Tab[];
@@ -15,7 +15,7 @@ export const TabSelector: React.FC<TabSelectorProps> = ({
 }) => {
   return (
     <div className="flex flex-wrap justify-center gap-2 mb-6">
-      {tabs.map((tab) => {
+      {tabs.map(tab => {
         const isActive = tab.id === activeTab;
 
         return (
@@ -24,9 +24,11 @@ export const TabSelector: React.FC<TabSelectorProps> = ({
             onClick={() => onSelectTab(tab.id)}
             disabled={isFocusModeActive}
             className={`px-4 py-2 rounded-full text-sm font-semibold transition-all
-              ${isActive
-                ? 'bg-blue-600 text-white shadow-md'
-                : 'bg-gray-100 text-gray-700 hover:bg-blue-100 hover:text-blue-700'}
+              ${
+                isActive
+                  ? 'bg-blue-600 text-white shadow-md'
+                  : 'bg-gray-100 text-gray-700 hover:bg-blue-100 hover:text-blue-700'
+              }
               ${isFocusModeActive ? 'opacity-50 cursor-not-allowed' : ''}
             `}
           >

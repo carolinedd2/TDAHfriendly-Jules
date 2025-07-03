@@ -1,5 +1,6 @@
 // src/modals/MindMapModal.tsx
 import React, { useEffect, useRef } from 'react';
+
 import type { StudyItem } from '../types/types';
 
 export interface MindMapModalProps {
@@ -8,7 +9,11 @@ export interface MindMapModalProps {
   onClose: () => void;
 }
 
-const MindMapModal: React.FC<MindMapModalProps> = ({ isOpen, item, onClose }) => {
+const MindMapModal: React.FC<MindMapModalProps> = ({
+  isOpen,
+  item,
+  onClose,
+}) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   // Fechar com ESC

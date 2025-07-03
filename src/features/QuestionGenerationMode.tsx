@@ -1,5 +1,6 @@
-import { TrailDetail, StudyItemMeta, StudyItem } from "@/types/types";
-import React from "react";
+import React from 'react';
+
+import { StudyItem, StudyItemMeta, TrailDetail } from '@/types/types';
 
 // Props for QuestionGenerationMode component
 interface QuestionGenerationModeProps {
@@ -36,16 +37,19 @@ export const QuestionGenerationMode: React.FC<QuestionGenerationModeProps> = ({
         topicId: topic.id,
         question: `What is the main idea of ${content.title}?`,
         alternatives: [
-          ...keywords.map((keyword: string): string => `How does ${keyword} relate to ${content.title}?`),
-          `${content.title}` // Correct alternative
-        ]
+          ...keywords.map(
+            (keyword: string): string =>
+              `How does ${keyword} relate to ${content.title}?`,
+          ),
+          `${content.title}`, // Correct alternative
+        ],
       } as GeneratedQuestion);
     }
     return questions;
   };
 
   // Example call to generateQuestions
-  generateQuestions().then((questions) => console.log(questions));
+  generateQuestions().then(questions => console.log(questions));
 
   // Adding interactive UI and customization
   const [difficulty, setDifficulty] = React.useState('easy');
@@ -89,10 +93,13 @@ export const QuestionGenerationMode: React.FC<QuestionGenerationModeProps> = ({
       <h1>Question Generation Mode</h1>
       <label>
         Select Difficulty:
-        <select value={difficulty} onChange={(e) => setDifficulty(e.target.value)}>
-          <option value='easy'>Easy</option>
-          <option value='medium'>Medium</option>
-          <option value='hard'>Hard</option>
+        <select
+          value={difficulty}
+          onChange={e => setDifficulty(e.target.value)}
+        >
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
         </select>
       </label>
       <button onClick={handleGenerateQuestions}>Generate Questions</button>
@@ -103,14 +110,20 @@ export const QuestionGenerationMode: React.FC<QuestionGenerationModeProps> = ({
           <ul>
             {currentQuestion.alternatives.map((alt, index) => (
               <li key={index}>
-                <button onClick={() => handleAnswer(alt === currentQuestion.alternatives[3])}>{alt}</button>
+                <button
+                  onClick={() =>
+                    handleAnswer(alt === currentQuestion.alternatives[3])
+                  }
+                >
+                  {alt}
+                </button>
               </li>
             ))}
           </ul>
           <p>Time left: {timer} seconds</p>
           <p>Score: {score}</p>
           {score > 5 && <p>Great job! Keep it up! 🌟</p>}
-          {score <= 5 && <p>Don't give up! You can do it! 💪</p>}
+          {score <= 5 && <p>Don&apos;t give up! You can do it! 💪</p>}
         </div>
       ) : (
         <p>No more questions. Your score: {score}</p>

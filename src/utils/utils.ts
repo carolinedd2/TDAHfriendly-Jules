@@ -1,7 +1,7 @@
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
-*/
+ */
 import { StudyItem, StudyItemMeta } from '../types/types';
 
 export interface CompletionStatus {
@@ -11,7 +11,7 @@ export interface CompletionStatus {
 
 export const getCompletionStatusRecursive = (
   item: StudyItem,
-  comprehendedSet: Set<string>
+  comprehendedSet: Set<string>,
 ): CompletionStatus => {
   // Se o item não tem subtópicos (ou a lista está vazia), ele é uma folha.
   if (!item.subtopics || item.subtopics.length === 0) {
@@ -36,9 +36,16 @@ export const getCompletionStatusRecursive = (
 export const playSound = (soundUrl: string) => {
   try {
     const audio = new Audio(soundUrl);
-    audio.play().catch(e => console.warn("Audio playback failed. User interaction might be required.", e));
+    audio
+      .play()
+      .catch(e =>
+        console.warn(
+          'Audio playback failed. User interaction might be required.',
+          e,
+        ),
+      );
   } catch (e) {
-    console.warn("Audio element creation failed:", e);
+    console.warn('Audio element creation failed:', e);
   }
 };
 
@@ -50,7 +57,10 @@ export const getTodayDateString = (): string => {
   return `${year}-${month}-${day}`;
 };
 
-export const addDaysToDateString = (dateString: string, days: number): string => {
+export const addDaysToDateString = (
+  dateString: string,
+  days: number,
+): string => {
   const date = new Date(dateString + 'T00:00:00'); // Ensure it's parsed as local date
   date.setDate(date.getDate() + days);
   const year = date.getFullYear();
@@ -59,12 +69,13 @@ export const addDaysToDateString = (dateString: string, days: number): string =>
   return `${year}-${month}-${day}`;
 };
 
-
-export const CHECK_SOUND_URL = 'https://www.soundjay.com/buttons/sounds/button-09.mp3';
-export const UNCHECK_SOUND_URL = 'https://www.soundjay.com/buttons/sounds/button-10.mp3';
-export const GOAL_COMPLETE_SOUND_URL = 'https://www.soundjay.com/buttons/sounds/button-1.mp3'; // A new sound for goal completion
+export const CHECK_SOUND_URL =
+  'https://www.soundjay.com/buttons/sounds/button-09.mp3';
+export const UNCHECK_SOUND_URL =
+  'https://www.soundjay.com/buttons/sounds/button-10.mp3';
+export const GOAL_COMPLETE_SOUND_URL =
+  'https://www.soundjay.com/buttons/sounds/button-1.mp3'; // A new sound for goal completion
 // Pomodoro end sound: https://www.soundjay.com/buttons/sounds/button-16.mp3
-
 
 export interface TrailNumberingDetails {
   trailOrderNumberStr: string; // The "1", "2" if trail-relative, or global root number string otherwise
@@ -75,17 +86,28 @@ export interface TrailNumberingDetails {
 export const getTrailOrderAndRootId = (
   itemGlobalId: string,
   currentTrailId: string | null,
-  allTopicsMeta: StudyItemMeta[]
+  allTopicsMeta: StudyItemMeta[],
 ): TrailNumberingDetails => {
   const actualRootGlobalId = itemGlobalId.split('.')[0];
-  const rootTopicMeta = allTopicsMeta.find(meta => meta.id === actualRootGlobalId);
+  const rootTopicMeta = allTopicsMeta.find(
+    meta => meta.id === actualRootGlobalId,
+  );
 
-  if (currentTrailId && rootTopicMeta && rootTopicMeta.trail === currentTrailId) {
+  if (
+    currentTrailId &&
+    rootTopicMeta &&
+    rootTopicMeta.trail === currentTrailId
+  ) {
     const topicsInCurrentTrail = allTopicsMeta
       .filter(meta => meta.trail === currentTrailId)
-      .sort((a, b) => parseInt(a.id.split('.')[0], 10) - parseInt(b.id.split('.')[0], 10)); // Ensure consistent order
+      .sort(
+        (a, b) =>
+          parseInt(a.id.split('.')[0], 10) - parseInt(b.id.split('.')[0], 10),
+      ); // Ensure consistent order
 
-    const indexInTrail = topicsInCurrentTrail.findIndex(meta => meta.id === actualRootGlobalId);
+    const indexInTrail = topicsInCurrentTrail.findIndex(
+      meta => meta.id === actualRootGlobalId,
+    );
 
     if (indexInTrail !== -1) {
       return {
@@ -109,21 +131,26 @@ export const formatDisplayTitle = (
   trailOrderNumberStr: string, // The "1", "2", etc., for the root within the trail OR the global root number
   isTrailRelative: boolean,
   actualRootGlobalId: string, // Global ID of the root this item belongs to (e.g., "3")
-  fullItemGlobalId: string // Full global ID of the item being formatted (e.g., "3.1.1")
+  fullItemGlobalId: string, // Full global ID of the item being formatted (e.g., "3.1.1")
 ): string => {
   const firstSpaceIndex = originalTitleWithGlobalNum.indexOf(' ');
-  const textualPart = firstSpaceIndex !== -1 ? originalTitleWithGlobalNum.substring(firstSpaceIndex) : ''; // Includes the leading space if present
+  const textualPart =
+    firstSpaceIndex !== -1
+      ? originalTitleWithGlobalNum.substring(firstSpaceIndex)
+      : ''; // Includes the leading space if present
 
   if (isTrailRelative) {
-    if (fullItemGlobalId === actualRootGlobalId) { // It's a root topic
+    if (fullItemGlobalId === actualRootGlobalId) {
+      // It's a root topic
       return `${trailOrderNumberStr}.${textualPart.trimStart()}`;
-    } else { // It's a subtopic
+    } else {
+      // It's a subtopic
       // Extract the sub-numbering part like ".1.1" from "3.1.1" if root is "3"
       const subPart = fullItemGlobalId.substring(actualRootGlobalId.length);
       return `${trailOrderNumberStr}${subPart}${textualPart}`;
     }
   }
-  
+
   // If not trail-relative, return the original title.
   // (Could also re-construct using actualRootGlobalId and subPart if needed, but this is simpler)
   return originalTitleWithGlobalNum;

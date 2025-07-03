@@ -1,4 +1,5 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+
 import { Goal, GoalType } from '../types/types';
 
 const GOALS_STORAGE_KEY = 'dailyGoals';
@@ -22,24 +23,37 @@ export default function useGoals() {
   // 🧠 Carregamento inicial seguro
   useEffect(() => {
     try {
-      const savedGoals = JSON.parse(localStorage.getItem(GOALS_STORAGE_KEY) || '[]');
-      const savedHistory = JSON.parse(localStorage.getItem(GOALS_HISTORY_STORAGE_KEY) || '[]');
-      const savedScore = parseInt(localStorage.getItem(GOALS_SCORE_KEY) || '0', 10);
+      const savedGoals = JSON.parse(
+        localStorage.getItem(GOALS_STORAGE_KEY) || '[]',
+      );
+      const savedHistory = JSON.parse(
+        localStorage.getItem(GOALS_HISTORY_STORAGE_KEY) || '[]',
+      );
+      const savedScore = parseInt(
+        localStorage.getItem(GOALS_SCORE_KEY) || '0',
+        10,
+      );
 
       if (Array.isArray(savedGoals)) {
-        setActiveGoals(savedGoals.map(goal => ({
-          ...goal,
-          createdAt: new Date(goal.createdAt),
-          completedAt: goal.completedAt ? new Date(goal.completedAt) : undefined,
-        })));
+        setActiveGoals(
+          savedGoals.map(goal => ({
+            ...goal,
+            createdAt: new Date(goal.createdAt),
+            completedAt: goal.completedAt
+              ? new Date(goal.completedAt)
+              : undefined,
+          })),
+        );
       }
 
       if (Array.isArray(savedHistory)) {
-        setCompletedGoals(savedHistory.map(goal => ({
-          ...goal,
-          createdAt: new Date(goal.createdAt),
-          completedAt: new Date(goal.completedAt),
-        })));
+        setCompletedGoals(
+          savedHistory.map(goal => ({
+            ...goal,
+            createdAt: new Date(goal.createdAt),
+            completedAt: new Date(goal.completedAt),
+          })),
+        );
       }
 
       setTotalScore(isNaN(savedScore) ? 0 : savedScore);
@@ -54,7 +68,10 @@ export default function useGoals() {
   }, [activeGoals]);
 
   useEffect(() => {
-    localStorage.setItem(GOALS_HISTORY_STORAGE_KEY, JSON.stringify(completedGoals));
+    localStorage.setItem(
+      GOALS_HISTORY_STORAGE_KEY,
+      JSON.stringify(completedGoals),
+    );
   }, [completedGoals]);
 
   useEffect(() => {
@@ -62,69 +79,86 @@ export default function useGoals() {
   }, [totalScore]);
 
   // ➕ Criação de meta diária
-  const addDailyGoal = useCallback((
-    type: GoalType,
-    targetValue: number,
-    rewardPoints: number,
-    description = '',
-    timeframe: 'daily' = 'daily'
-  ) => {
-    const baseColor = GOAL_TYPE_COLORS[type] ?? 'gray';
+  const addDailyGoal = useCallback(
+    (
+      type: GoalType,
+      targetValue: number,
+      rewardPoints: number,
+      description = '',
+      timeframe: 'daily' = 'daily',
+    ) => {
+      const baseColor = GOAL_TYPE_COLORS[type] ?? 'gray';
 
-    const newGoal: Goal = {
-      id: `${type}_${Date.now()}`,
-      type,
-      targetValue,
-      currentValue: 0,
-      rewardPoints,
-      baseColor,
-      createdAt: new Date(),
-      description,
-      timeframe,
-      isCompleted: false,
-    };
+      const newGoal: Goal = {
+        id: `${type}_${Date.now()}`,
+        type,
+        targetValue,
+        currentValue: 0,
+        rewardPoints,
+        baseColor,
+        createdAt: new Date(),
+        description,
+        timeframe,
+        isCompleted: false,
+      };
 
-    setActiveGoals(prev => [...prev, newGoal]);
-  }, []);
+      setActiveGoals(prev => [...prev, newGoal]);
+    },
+    [],
+  );
 
   const updateGoalProgress = useCallback((goalId: string, increment = 1) => {
-    setActiveGoals(prev => prev.map(goal => {
-      if (goal.id !== goalId) return goal;
+    setActiveGoals(prev =>
+      prev.map(goal => {
+        if (goal.id !== goalId) return goal;
 
-      const newCurrentValue = Math.min(goal.currentValue + increment, goal.targetValue);
-      const isCompleted = newCurrentValue >= goal.targetValue;
+        const newCurrentValue = Math.min(
+          goal.currentValue + increment,
+          goal.targetValue,
+        );
+        const isCompleted = newCurrentValue >= goal.targetValue;
 
-      return {
-        ...goal,
-        currentValue: newCurrentValue,
-        isCompleted,
-        completedAt: isCompleted && !goal.completedAt ? new Date() : goal.completedAt,
-      };
-    }));
+        return {
+          ...goal,
+          currentValue: newCurrentValue,
+          isCompleted,
+          completedAt:
+            isCompleted && !goal.completedAt ? new Date() : goal.completedAt,
+        };
+      }),
+    );
   }, []);
 
-  const updateGoalByType = useCallback((type: GoalType, increment = 1) => {
-    const goal = activeGoals.find(g => g.type === type && !g.isCompleted);
-    if (goal) updateGoalProgress(goal.id, increment);
-  }, [activeGoals, updateGoalProgress]);
+  const updateGoalByType = useCallback(
+    (type: GoalType, increment = 1) => {
+      const goal = activeGoals.find(g => g.type === type && !g.isCompleted);
+      if (goal) updateGoalProgress(goal.id, increment);
+    },
+    [activeGoals, updateGoalProgress],
+  );
 
   const removeGoal = useCallback((goalId: string) => {
     setActiveGoals(prev => prev.filter(goal => goal.id !== goalId));
   }, []);
 
-  const completeGoal = useCallback((goalId: string) => {
-    const goal = activeGoals.find(goal => goal.id === goalId && goal.isCompleted);
-    if (!goal) return;
+  const completeGoal = useCallback(
+    (goalId: string) => {
+      const goal = activeGoals.find(
+        goal => goal.id === goalId && goal.isCompleted,
+      );
+      if (!goal) return;
 
-    const completedGoal = {
-      ...goal,
-      completedAt: new Date(),
-    };
+      const completedGoal = {
+        ...goal,
+        completedAt: new Date(),
+      };
 
-    setCompletedGoals(prev => [...prev, completedGoal]);
-    setActiveGoals(prev => prev.filter(goal => goal.id !== goalId));
-    setTotalScore(prev => prev + goal.rewardPoints);
-  }, [activeGoals]);
+      setCompletedGoals(prev => [...prev, completedGoal]);
+      setActiveGoals(prev => prev.filter(goal => goal.id !== goalId));
+      setTotalScore(prev => prev + goal.rewardPoints);
+    },
+    [activeGoals],
+  );
 
   const clearOldGoals = useCallback(() => {
     const today = new Date();
@@ -134,7 +168,7 @@ export default function useGoals() {
         const goalDate = new Date(goal.createdAt);
         goalDate.setHours(0, 0, 0, 0);
         return goalDate.getTime() === today.getTime();
-      })
+      }),
     );
   }, []);
 
@@ -142,13 +176,17 @@ export default function useGoals() {
   const getGoalStats = useCallback(() => {
     const completedToday = activeGoals.filter(goal => goal.isCompleted).length;
     const totalToday = activeGoals.length;
-    const completionRate = totalToday > 0 ? (completedToday / totalToday) * 100 : 0;
+    const completionRate =
+      totalToday > 0 ? (completedToday / totalToday) * 100 : 0;
 
     const pointsEarnedToday = activeGoals
       .filter(goal => goal.isCompleted)
       .reduce((sum, goal) => sum + goal.rewardPoints, 0);
 
-    const totalPoints = completedGoals.reduce((sum, goal) => sum + goal.rewardPoints, 0);
+    const totalPoints = completedGoals.reduce(
+      (sum, goal) => sum + goal.rewardPoints,
+      0,
+    );
 
     return {
       completedToday,
