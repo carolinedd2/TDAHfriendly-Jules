@@ -6,12 +6,13 @@
   "color": "bg-blue-600",
   "trail": "FUNDAMENTOS",
   "resumo": "O Estado desempenha funções essenciais na economia, intervindo para corrigir falhas de mercado e promover equidade. O orçamento público é sua principal ferramenta. Este tópico explora as formas de intervenção estatal, as funções econômicas clássicas do Estado, teorias sobre o crescimento dos gastos públicos, o conceito e evolução do orçamento, e os fundamentos do Direito Financeiro.",
+  "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><p>Bem-vindo(a) ao estudo sobre o <strong class='font-semibold'>Papel do Estado nas Finanças</strong>. Este é um tópico fundamental para compreender como o governo interage com a economia e utiliza o orçamento público como sua principal ferramenta de ação.</p><p>Ao longo deste módulo, vamos explorar os seguintes pontos-chave:</p><ul class='list-disc list-inside space-y-2 pl-4'><li>As diferentes formas de intervenção estatal na economia.</li><li>As três funções econômicas clássicas do Estado.</li><li>As teorias que explicam o crescimento dos gastos públicos.</li><li>O conceito, os tipos e a evolução histórica do orçamento.</li></ul><p>Este conhecimento é a base para todos os outros tópicos de Administração Financeira e Orçamentária (AFO). Vamos começar!</p></div>",
   "subtopics": [
     {
       "id": "1.1",
       "title": "1.1 Formas e Dimensões da Intervenção Estatal",
       "resumo": "A intervenção estatal se manifesta de forma direta (como empresário ou regulador) e indireta (usando políticas fiscal, monetária e de renda). Ambas são fundamentais para o equilíbrio econômico e social.",
-      "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><h4 class='text-xl font-bold text-gray-800'>Visão Geral</h4><p>A intervenção do Estado na economia é um mecanismo para equilibrar a eficiência do mercado com objetivos sociais e de estabilidade. Ela pode ser classificada em duas grandes formas:</p></div>",
+      "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><h4 class='text-xl font-bold text-gray-800'>Visão Geral</h4><p>A intervenção do Estado na economia é um mecanismo para equilibrar a eficiência do mercado com objetivos sociais e de estabilidade. Ela pode ser classificada em duas grandes formas, que exploraremos a seguir:</p></div>",
       "subtopics": [
         {
           "id": "1.1.1",
@@ -31,7 +32,7 @@
       "id": "1.2",
       "title": "1.2 Atribuições Econômicas Fundamentais do Estado",
       "resumo": "Detalha as três funções clássicas do Estado na economia segundo Richard Musgrave: Alocativa, Distributiva e Estabilizadora.",
-      "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><p>Richard Musgrave propôs uma classificação clássica das funções econômicas do Estado, que se tornaram referência no estudo das finanças públicas. Essas funções orientam a formulação das políticas públicas.</p></div>",
+      "content": "<div class='space-y-4 text-gray-700 leading-relaxed'><p>Richard Musgrave propôs uma classificação clássica das funções econômicas do Estado, que se tornaram referência no estudo das finanças públicas. Essas funções orientam a formulação das políticas públicas e são conhecidas como:</p></div>",
       "subtopics": [
         {
           "id": "1.2.1",
