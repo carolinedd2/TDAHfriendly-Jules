@@ -90,14 +90,54 @@ const App: React.FC = () => {
 
   const handleSelectTopic = useCallback(
     async (topicId: string) => {
-      await navigation.handleSelectTopic(topicId);
+      setTopicToReview(null); // Clear any review context
+
+      if (topicId.includes('.')) {
+        // This is a subtopic ID
+        await navigation.handleNavigateToInternalLink(topicId);
+        // Ensure study tab is active if not already
+        if (activeTab !== 'study-panel') {
+          setActiveTab('study-panel');
+        }
+      } else {
+        // This is a main topic ID
+        await navigation.handleSelectTopic(topicId);
+        setActiveTab('study-panel');
+      }
+
+      // Progress update (optional, consider if it applies to subtopics too)
+      // For now, let's assume it does for simplicity.
       setTopicProgressMap(prev => ({
         ...prev,
         [topicId]: Math.min((prev[topicId] || 0) + 10, 100),
       }));
     },
-    [navigation],
+    [navigation, setActiveTab, activeTab],
   );
+
+  // Effect to handle pending internal navigation (e.g., after parent topic loads)
+  useEffect(() => {
+    if (
+      navigation.pendingInternalNavTarget &&
+      navigation.navigationStack.length > 0
+    ) {
+      const mainTopicOfTarget =
+        navigation.pendingInternalNavTarget.split('.')[0];
+      if (navigation.navigationStack[0].id === mainTopicOfTarget) {
+        // Parent topic is loaded, now build stack to the actual subtopic
+        navigation.buildNavigationStackForId(
+          navigation.pendingInternalNavTarget,
+          navigation.navigationStack[0],
+        );
+        navigation.setPendingInternalNavTarget(null); // Clear the pending target
+      }
+    }
+  }, [
+    navigation.pendingInternalNavTarget,
+    navigation.navigationStack,
+    navigation.buildNavigationStackForId,
+    navigation.setPendingInternalNavTarget,
+  ]);
 
   const handleToggleComprehendedItem = useCallback((itemId: string) => {
     setTopicProgressMap(prev => ({
@@ -203,18 +243,38 @@ const App: React.FC = () => {
         />
       )}
 
-      {activeTab === 'study-panel' && reviewScheduleHook.currentItemMeta && (
-        <StudyMode
-          currentItem={reviewScheduleHook.currentItemMeta}
-          onSelectTopic={handleSelectTopic}
-          topicProgressMap={topicProgressMap}
-          onToggleComprehendedItem={handleToggleComprehendedItem}
-          onOpenMindMapModal={handleOpenMindMapModal}
-          timer={timer}
-          quiz={quiz}
-          flashcards={flashcards}
-        />
-      )}
+      {/* StudyMode should render if study-panel is active and there's an item in navigationStack */}
+      {activeTab === 'study-panel' &&
+        navigation.navigationStack.length > 0 &&
+        navigation.navigationStack[0] && (
+          <StudyMode
+            // currentItem should now come from the navigation stack
+            // The navigationStack[0] is the root topic, which has StudyItemMeta structure.
+            // However, StudyMode expects StudyItemMeta, and navigationStack[0] is StudyItem.
+            // We need to ensure the correct type is passed.
+            // The loader in constants.ts returns StudyItem, which includes StudyItemMeta as 'meta'.
+            // Let's assume navigation.navigationStack[0] is the full StudyItem.
+            // currentItem should be derived from the LAST item in the navigationStack
+            // which represents the currently focused topic or subtopic.
+            // The last item in navigationStack is a StudyItem. We need its meta.
+            currentItem={
+              TOPIC_META_DATA[
+                navigation.navigationStack[
+                  navigation.navigationStack.length - 1
+                ].id
+              ] ||
+              navigation.navigationStack[navigation.navigationStack.length - 1]
+                .meta
+            }
+            onSelectTopic={handleSelectTopic}
+            topicProgressMap={topicProgressMap}
+            onToggleComprehendedItem={handleToggleComprehendedItem}
+            onOpenMindMapModal={handleOpenMindMapModal}
+            timer={timer}
+            quiz={quiz}
+            flashcards={flashcards}
+          />
+        )}
 
       {activeTab === 'questions-panel' && (
         <QuestionGenerationMode

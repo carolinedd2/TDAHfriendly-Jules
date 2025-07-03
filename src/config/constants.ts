@@ -269,7 +269,10 @@ export const TOPIC_META_DATA: TopicMetaList = {
     trail: 'TOPICOS_AVANCADOS',
     resumo: '...',
     subtopics: false,
-    loader: () => fetch('/data/topics/topic15.json').then(res => res.json()),
+    loader: () =>
+      fetch('/data/topics/topic15.json').then(
+        res => res.json() as Promise<StudyItem>,
+      ),
   },
   '16': {
     id: '16',
@@ -280,7 +283,10 @@ export const TOPIC_META_DATA: TopicMetaList = {
     trail: 'TOPICOS_AVANCADOS',
     resumo: '...',
     subtopics: false,
-    loader: () => fetch('/data/topics/topic16.json').then(res => res.json()),
+    loader: () =>
+      fetch('/data/topics/topic16.json').then(
+        res => res.json() as Promise<StudyItem>,
+      ),
   },
 };
 
