@@ -207,3 +207,5 @@ export default function useTimer({
     autoPauseFocusTimer,
   };
 }
+
+export type ReturnTypeUseTimer = ReturnType<typeof useTimer>;
