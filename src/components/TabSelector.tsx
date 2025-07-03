@@ -1,4 +1,4 @@
-import { Tab } from "@/types/types";
+import { Tab } from "../types/types";
 
 interface TabSelectorProps {
   tabs: Tab[];

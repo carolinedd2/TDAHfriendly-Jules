@@ -5,7 +5,6 @@
 
 /** Metadados básicos de um item de estudo (sem o conteúdo completo). */
 export interface StudyItemMeta {
-  color: any;
   id: string;
   title: string;
   subtitle?: string;
@@ -58,7 +57,8 @@ export interface Tab {
 
 /** Tipos de metas gamificadas */
 export type GoalType =
-  | 'study_subtopics'
+  | 'study'
+  |'study_subtopics'
   | 'review_content'
   | 'practice_exercises'
   | 'complete_pomodoros'

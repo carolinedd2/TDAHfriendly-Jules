@@ -1,7 +1,7 @@
 // src/hooks/useNavigationStack.ts
 import { useState, useCallback } from 'react';
 import { StudyItem } from '../types/types';
-import { TOPIC_META_DATA } from '../constants';
+import { TOPIC_META_DATA } from '../config/constants';
 
 export default function useNavigationStack() {
   const [navigationStack, setNavigationStack] = useState<StudyItem[]>([]);

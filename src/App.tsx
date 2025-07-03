@@ -20,7 +20,7 @@ import useFlashcards from './hooks/useFlashcards';
 import useQuiz from './hooks/useQuiz';
 import useNavigationStack from './hooks/useNavigationStack';
 
-import { TOPIC_META_DATA_ARRAY, TRAIL_DETAILS, TRAIL_ORDER } from './constants';
+import { TOPIC_META_DATA_ARRAY, TRAIL_DETAILS, TRAIL_ORDER } from './config/constants';
 
 const tabs = [
   { id: 'dashboard-panel', label: '📊 Dashboard', ariaControls: 'dashboard-panel' },
@@ -119,6 +119,11 @@ const App: React.FC = () => {
   // Placeholder notification permission and request function
   const notificationPermission = 'default';
   const requestNotificationPermission = () => {};
+  console.log("🔍 TOPIC_META_DATA_ARRAY enviado pro Dashboard:", TOPIC_META_DATA_ARRAY);
+  console.log("🔍 topicProgressMap:", topicProgressMap)
+  console.log("🔍 reviewScheduleHook.reviewSchedule:", reviewScheduleHook.reviewSchedule);
+
+
 
   return (
     <>
@@ -183,7 +188,14 @@ const App: React.FC = () => {
         trailOrder={TRAIL_ORDER}
         trailDetails={TRAIL_DETAILS}
         topicsMeta={TOPIC_META_DATA_ARRAY}
-        loadTopicContentById={id => TOPIC_META_DATA_ARRAY[id].loader()}
+        loadTopicContentById={id => {
+          const topic = TOPIC_META_DATA_ARRAY.find(t => t.id === id);
+          if (topic) {
+            return topic.loader();
+          } else {
+            return Promise.reject(new Error(`Topic with id ${id} not found`));
+          }
+        }}
         />
 
       )}

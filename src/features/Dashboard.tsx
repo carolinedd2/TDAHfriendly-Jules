@@ -1,5 +1,5 @@
 import React from 'react';
-import { Goal, GoalType, NotificationPermissionStatus, ReviewSchedule, StudyItemMeta } from "../types/types";
+import { Goal, GoalType, NotificationPermissionStatus, ReviewSchedule, StudyItemMeta } from "@/types/types";
 
 interface DashboardProps {
   topicsMeta: StudyItemMeta[];
@@ -32,6 +32,7 @@ const Dashboard: React.FC<DashboardProps> = ({
   reviewSchedule,
   onOpenReviewModal,
 }) => {
+  console.log("📚 Tópicos recebidos no Dashboard:", topicsMeta);
   return (
     <div className="dashboard-container">
       <section className="topics-section">
@@ -55,7 +56,7 @@ const Dashboard: React.FC<DashboardProps> = ({
             </li>
           ))}
         </ul>
-        <button onClick={() => onAddDailyGoal('study_subtopics', 5, 10)}>Add Study Goal</button>
+        <button onClick={() => onAddDailyGoal('study', 5, 10)}>Add Study Goal</button>
       </section>
 
       <section className="review-section">

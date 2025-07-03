@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { getTodayDateString, addDaysToDateString } from '../utils/helpers';
 import type { StudyItemMeta } from '../types/types';
-import { TOPIC_META_DATA_ARRAY } from '../constants';
+import { TOPIC_META_DATA } from '../config/constants';
 
 export interface ReviewItem {
   topicId: string;
@@ -118,7 +118,9 @@ export default function useReviewSchedule() {
       .map(item => item.topicId);
 
     if (dueIds.length > 0) {
-      const nextMeta: StudyItemMeta | null = TOPIC_META_DATA_ARRAY.find((m: StudyItemMeta) => m.id === dueIds[0]) || null;
+      const nextMeta: StudyItemMeta | null = Array.isArray(TOPIC_META_DATA)
+        ? TOPIC_META_DATA.find((m: StudyItemMeta) => m.id === dueIds[0]) || null
+        : null;
       setCurrentItemMeta(nextMeta);
     } else {
       setCurrentItemMeta(null);
