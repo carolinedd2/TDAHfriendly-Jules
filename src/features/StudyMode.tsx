@@ -1,10 +1,11 @@
 // src/features/StudyMode.tsx
-import React, { useState, useEffect } from 'react';
-import { StudyItemMeta, StudyItem, Flashcard } from '../types/types';
-import type { ReturnTypeUseTimer } from '../hooks/useTimer';
-import type { ReturnTypeUseQuiz } from '../hooks/useQuiz';
+import React, { useEffect, useState } from 'react';
+
 import type { ReturnTypeUseFlashcards } from '../hooks/useFlashcards';
+import type { ReturnTypeUseQuiz } from '../hooks/useQuiz';
+import type { ReturnTypeUseTimer } from '../hooks/useTimer';
 import QuizModal from '../modals/QuizModal';
+import { Flashcard, StudyItem, StudyItemMeta } from '../types/types';
 
 export interface StudyModeProps {
   currentItem: StudyItemMeta;
@@ -74,7 +75,7 @@ export const StudyMode: React.FC<StudyModeProps> = ({
               subtopics: fullItem.subtopics,
               meta: currentItem,
               baseColor: '',
-              body: undefined
+              body: undefined,
             })
           }
           className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
@@ -88,8 +89,11 @@ export const StudyMode: React.FC<StudyModeProps> = ({
         <h3 className="text-lg font-semibold">Timer Pomodoro</h3>
         <div className="flex items-center space-x-2">
           <span className="text-xl font-mono">
-            {String(Math.floor(timer.timerSecondsRemaining / 60)).padStart(2, '0')}:
-            {String(timer.timerSecondsRemaining % 60).padStart(2, '0')}
+            {String(Math.floor(timer.timerSecondsRemaining / 60)).padStart(
+              2,
+              '0',
+            )}
+            :{String(timer.timerSecondsRemaining % 60).padStart(2, '0')}
           </span>
           <span className="px-2 py-1 bg-gray-100 rounded">
             {timer.currentTimerMode}
@@ -163,25 +167,25 @@ export const StudyMode: React.FC<StudyModeProps> = ({
       </section>
 
       {/* Quiz via IA */}
-<section className="space-y-2">
-  <h3 className="text-lg font-semibold">Quiz</h3>
-  <button
-    onClick={() => quiz.handleGenerateQuiz(currentItem)}
-    disabled={quiz.isGeneratingQuiz}
-    className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600 disabled:opacity-50"
-  >
-    {quiz.isGeneratingQuiz ? 'Gerando Quiz…' : 'Gerar Quiz'}
-  </button>
+      <section className="space-y-2">
+        <h3 className="text-lg font-semibold">Quiz</h3>
+        <button
+          onClick={() => quiz.handleGenerateQuiz(currentItem)}
+          disabled={quiz.isGeneratingQuiz}
+          className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600 disabled:opacity-50"
+        >
+          {quiz.isGeneratingQuiz ? 'Gerando Quiz…' : 'Gerar Quiz'}
+        </button>
 
-  <QuizModal
-    isOpen={quiz.showQuizModal}
-    isGenerating={quiz.isGeneratingQuiz}
-    studyItemTitle={currentItem.title}
-    questions={quiz.currentQuizQuestions ?? []}
-    error={quiz.quizGenerationError}
-    onClose={quiz.handleCloseQuizModal}
-  />
-</section>
+        <QuizModal
+          isOpen={quiz.showQuizModal}
+          isGenerating={quiz.isGeneratingQuiz}
+          studyItemTitle={currentItem.title}
+          questions={quiz.currentQuizQuestions ?? []}
+          error={quiz.quizGenerationError}
+          onClose={quiz.handleCloseQuizModal}
+        />
+      </section>
 
       {/* Flashcards */}
       <section className="space-y-2">
@@ -195,12 +199,18 @@ export const StudyMode: React.FC<StudyModeProps> = ({
         </button>
         {flashcards.userFlashcards[currentItem.id]?.length > 0 && (
           <ul className="mt-4 space-y-2">
-            {flashcards.userFlashcards[currentItem.id]?.map((card: Flashcard) => (
-              <li key={card.id} className="p-4 border rounded">
-                <p><strong>P:</strong> {card.question}</p>
-                <p><strong>R:</strong> {card.answer}</p>
-              </li>
-            ))}
+            {flashcards.userFlashcards[currentItem.id]?.map(
+              (card: Flashcard) => (
+                <li key={card.id} className="p-4 border rounded">
+                  <p>
+                    <strong>P:</strong> {card.question}
+                  </p>
+                  <p>
+                    <strong>R:</strong> {card.answer}
+                  </p>
+                </li>
+              ),
+            )}
           </ul>
         )}
       </section>

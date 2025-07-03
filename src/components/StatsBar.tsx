@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { getValidatedTailwindColorClasses } from '../utils/getTailwindColorClasses';
 
 interface StatsBarProps {
@@ -78,7 +79,9 @@ export const StatsBar: React.FC<StatsBarProps> = ({
           <div className="text-xl font-mono">{score}</div>
         </div>
         <div className="text-center">
-          <div className="text-xs font-bold uppercase text-yellow-300">🔥 Combo</div>
+          <div className="text-xs font-bold uppercase text-yellow-300">
+            🔥 Combo
+          </div>
           <div className="text-xl font-mono">{streak}</div>
         </div>
         <button
@@ -87,14 +90,18 @@ export const StatsBar: React.FC<StatsBarProps> = ({
         >
           Resetar
         </button>
-        <div className={`w-full mt-2 h-1.5 rounded-full overflow-hidden ${bgSoft}`}>
-  <div
-    className={`${bgColor} h-1.5 rounded-full transition-all duration-500 ease-out`}
-    style={{ width: `${(1 - timerSecondsRemaining / (timerMode === 'focus' ? 1500 : 300)) * 100}%` }}
-    role="progressbar"
-    aria-label="Barra de progresso do Pomodoro"
-  />
-</div>
+        <div
+          className={`w-full mt-2 h-1.5 rounded-full overflow-hidden ${bgSoft}`}
+        >
+          <div
+            className={`${bgColor} h-1.5 rounded-full transition-all duration-500 ease-out`}
+            style={{
+              width: `${(1 - timerSecondsRemaining / (timerMode === 'focus' ? 1500 : 300)) * 100}%`,
+            }}
+            role="progressbar"
+            aria-label="Barra de progresso do Pomodoro"
+          />
+        </div>
       </div>
     </div>
   );

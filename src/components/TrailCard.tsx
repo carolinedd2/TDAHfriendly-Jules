@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import {getValidatedTailwindColorClasses } from '../utils/getTailwindColorClasses';
+
+import { getValidatedTailwindColorClasses } from '../utils/getTailwindColorClasses';
 
 interface TrailCardProps {
   trailId: string;
@@ -31,7 +32,7 @@ export const TrailCard: FC<TrailCardProps> = ({
       onClick={() => onSelect(trailId)}
       role="button"
       tabIndex={0}
-      onKeyDown={(e) => {
+      onKeyDown={e => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
           onSelect(trailId);
@@ -44,7 +45,9 @@ export const TrailCard: FC<TrailCardProps> = ({
         <div className="flex items-center mb-4">
           <span className="text-4xl mr-4">{icon}</span>
           <div className="flex-1">
-            <h4 className={`text-lg font-bold truncate ${textColor}`}>{displayName}</h4>
+            <h4 className={`text-lg font-bold truncate ${textColor}`}>
+              {displayName}
+            </h4>
             <p className="text-xs text-gray-600 mt-1 truncate">{subtitle}</p>
           </div>
         </div>
@@ -67,7 +70,9 @@ export const TrailCard: FC<TrailCardProps> = ({
           </div>
         </div>
       </div>
-      <div className={`absolute bottom-0 left-0 w-full h-1.5 ${bgColor} opacity-80 group-hover:opacity-100 transition-opacity`} />
+      <div
+        className={`absolute bottom-0 left-0 w-full h-1.5 ${bgColor} opacity-80 group-hover:opacity-100 transition-opacity`}
+      />
     </div>
   );
 };

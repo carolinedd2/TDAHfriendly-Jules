@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef, FC, useCallback } from 'react';
+import { FC, useCallback, useEffect, useRef, useState } from 'react';
+
 import { StudyItemMeta } from '../types/types';
 
 interface ReviewModalProps {
@@ -79,7 +80,8 @@ const ReviewModal: FC<ReviewModalProps> = ({
           >
             Revisão:{' '}
             <span className={`text-${baseColor}-600`}>
-              {topicToReview.title.split('.').slice(1).join('.').trim() || topicToReview.title}
+              {topicToReview.title.split('.').slice(1).join('.').trim() ||
+                topicToReview.title}
             </span>
           </h2>
           <button
@@ -125,4 +127,3 @@ const ReviewModal: FC<ReviewModalProps> = ({
 };
 
 export default ReviewModal;
-

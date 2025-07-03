@@ -2,20 +2,20 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-import { useState, useEffect, FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 interface FriendlyReminderProps {
   onDismiss: () => void;
 }
 
 const reminderMessages = [
-  "Sua AFO está sentindo sua falta! 🥺 Que tal um reencontro produtivo hoje?",
+  'Sua AFO está sentindo sua falta! 🥺 Que tal um reencontro produtivo hoje?',
   "O Tópico 'Orçamento Público' me disse que você prometeu voltar... Ele ainda está esperando por você! 😉",
   "Alerta de fofura: seus pontos de estudo estão se sentindo sozinhos! Venha dar um 'oi' e acumular mais! ✨",
-  "A LRF não vai se estudar sozinha, e seu cérebro adora um desafio! Bora dominar mais um conceito? 🚀",
-  "Pssst... Ouvi dizer que revisar aquele resuminho de Contabilidade Pública pode render uns pontinhos extras hoje! 🧐",
+  'A LRF não vai se estudar sozinha, e seu cérebro adora um desafio! Bora dominar mais um conceito? 🚀',
+  'Pssst... Ouvi dizer que revisar aquele resuminho de Contabilidade Pública pode render uns pontinhos extras hoje! 🧐',
   "Seu futuro eu, aprovado(a) e especialista em AFO, mandou um recado: 'Não desista agora!' 💪",
-  "Lembrete amigável: até os maiores especialistas em AFO começaram com o primeiro Pomodoro. Qual será o seu de hoje? 🍅"
+  'Lembrete amigável: até os maiores especialistas em AFO começaram com o primeiro Pomodoro. Qual será o seu de hoje? 🍅',
 ];
 
 export const FriendlyReminder: FC<FriendlyReminderProps> = ({ onDismiss }) => {
@@ -23,7 +23,9 @@ export const FriendlyReminder: FC<FriendlyReminderProps> = ({ onDismiss }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setCurrentMessage(reminderMessages[Math.floor(Math.random() * reminderMessages.length)]);
+    setCurrentMessage(
+      reminderMessages[Math.floor(Math.random() * reminderMessages.length)],
+    );
     const timer = setTimeout(() => setIsVisible(true), 50);
     return () => clearTimeout(timer);
   }, []);
@@ -43,7 +45,9 @@ export const FriendlyReminder: FC<FriendlyReminderProps> = ({ onDismiss }) => {
       <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
         <div>
           <h3 className="text-xl font-semibold mb-2 flex items-center">
-            <span role="img" aria-hidden="true" className="mr-2 text-2xl">👋</span>
+            <span role="img" aria-hidden="true" className="mr-2 text-2xl">
+              👋
+            </span>
             E aí, Mestre(a) da AFO!
           </h3>
           <p className="text-sm mb-4 opacity-90">{currentMessage}</p>
